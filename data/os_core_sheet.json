@@ -1,0 +1,306 @@
+{
+    "sheetData": [
+        {
+            "step_no": 1,
+            "topic": "Introduction to OS",
+            "data": [
+                {
+                    "id": "OS-and-main-functions",
+                    "sl_no_in_step": 1,
+                    "title": "OS and main functions",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Process-Program-and-Thread",
+                    "sl_no_in_step": 2,
+                    "title": "Process Program and Thread",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Types-of-OS",
+                    "sl_no_in_step": 3,
+                    "title": "Types of OS",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Batch-OS",
+                    "sl_no_in_step": 4,
+                    "title": "Batch OS",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Multiprogramming-and-Multitasking-OS",
+                    "sl_no_in_step": 5,
+                    "title": "Multiprogramming and Multitasking OS",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Kernel-and-user-modes",
+                    "sl_no_in_step": 6,
+                    "title": "Kernel and user modes",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Process-and-its-states",
+                    "sl_no_in_step": 7,
+                    "title": "Process and its states",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Normal-function-call-vs-System-Calls-in-OS",
+                    "sl_no_in_step": 8,
+                    "title": "Normal function call vs System Calls in OS",
+                    "yt_link": null,
+                    "article_link": null
+                }
+            ]
+        },
+        {
+            "step_no": 2,
+            "topic": "Process Management",
+            "data": [
+                {
+                    "id": "Process-scheduling-algorithms",
+                    "sl_no_in_step": 1,
+                    "title": "Process scheduling algorithms(Preemptive and Non-Preemptive)",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Scheduling-algorithms",
+                    "sl_no_in_step": 2,
+                    "title": "Scheduling algorithms(FCFS, SJF, SRTF, HRNN, RR, PBS, MLQ, MLFQ)",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Starving-and-Aging",
+                    "sl_no_in_step": 3,
+                    "title": "Starving and Aging",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Producer-consumer-problem",
+                    "sl_no_in_step": 4,
+                    "title": "Producer-consumer problem",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Critical-Section-Problem",
+                    "sl_no_in_step": 5,
+                    "title": "Critical Section Problem",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Process-synchronization-and-its-tools",
+                    "sl_no_in_step": 6,
+                    "title": "Process synchronization and its tools",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Semaphores-and-its-type",
+                    "sl_no_in_step": 7,
+                    "title": "Semaphores and its type",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Deadlock-and-Methods-for-preventing-deadlock",
+                    "sl_no_in_step": 8,
+                    "title": "Deadlock and Methods for preventing deadlock",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Banker's-algorithm",
+                    "sl_no_in_step": 9,
+                    "title": "Banker's algorithm",
+                    "yt_link": null,
+                    "article_link": null
+                }
+            ]
+        },
+        {
+            "step_no": 3,
+            "topic": "Memory Management",
+            "data": [
+                {
+                    "id": "Memory-management-and-Techniques",
+                    "sl_no_in_step": 1,
+                    "title": "Memory management and Techniques(First Fit, Best Fit, Worst Fit)",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Virtual-Memory",
+                    "sl_no_in_step": 2,
+                    "title": "Virtual Memory",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Contiguous-allocation,-Paging-and-Segmentation",
+                    "sl_no_in_step": 3,
+                    "title": "Contiguous allocation , Paging and Segmentation",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Dynamic-binding",
+                    "sl_no_in_step": 4,
+                    "title": "Dynamic binding",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Page-Fault",
+                    "sl_no_in_step": 5,
+                    "title": "Page Fault",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Page-replacement-algorithms",
+                    "sl_no_in_step": 6,
+                    "title": "Page replacement algorithms( LRU, Optimal, FIFO)",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Belady's-Anomaly",
+                    "sl_no_in_step": 7,
+                    "title": "Belady's Anomaly",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Thrashing",
+                    "sl_no_in_step": 8,
+                    "title": "Thrashing",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Disk-Scheduling",
+                    "sl_no_in_step": 9,
+                    "title": "Disk Scheduling",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Disk-Scheduling-Algorithms",
+                    "sl_no_in_step": 10,
+                    "title": "Disk Scheduling Algorithms",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Cache",
+                    "sl_no_in_step": 11,
+                    "title": "Cache",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Direct-and-Associative-mapping",
+                    "sl_no_in_step": 12,
+                    "title": "Direct and Associative mapping",
+                    "yt_link": null,
+                    "article_link": null
+                }
+            ]
+        },
+        {
+            "step_no": 4,
+            "topic": "File Systems",
+            "data": [
+                {
+                    "id": "file-system,-and-what-are-its-components",
+                    "sl_no_in_step": 1,
+                    "title": "file system, and what are its components",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Types-of-file-system",
+                    "sl_no_in_step": 2,
+                    "title": "Types of file system",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "file-allocation-and-deallocation",
+                    "sl_no_in_step": 3,
+                    "title": "file allocation and deallocation",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "fragmentation",
+                    "sl_no_in_step": 4,
+                    "title": "fragmentation",
+                    "yt_link": null,
+                    "article_link": null
+                }
+            ]
+        },
+        {
+            "step_no": 5,
+            "topic": "I/O Systems",
+            "data": [
+                {
+                    "id": "blocking-vs-non-blocking",
+                    "sl_no_in_step": 1,
+                    "title": "blocking vs. non-blocking",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "synchronous-vs.-asynchronous",
+                    "sl_no_in_step": 2,
+                    "title": "synchronous vs. asynchronous",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Spooling",
+                    "sl_no_in_step": 3,
+                    "title": "Spooling",
+                    "yt_link": null,
+                    "article_link": null
+                }
+            ]
+        },
+        {
+            "step_no": 6,
+            "topic": "Storage management and data protection",
+            "data": [
+                {
+                    "id": "RAID-and-its-types",
+                    "sl_no_in_step": 1,
+                    "title": "RAID and its types",
+                    "yt_link": null,
+                    "article_link": null
+                },
+                {
+                    "id": "Security-threats-and-vulnerabilities",
+                    "sl_no_in_step": 2,
+                    "title": "Security threats and vulnerabilities",
+                    "yt_link": null,
+                    "article_link": null
+                }
+            ]
+        }
+    ]
+}
