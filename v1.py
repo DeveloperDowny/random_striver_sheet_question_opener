@@ -5,7 +5,13 @@ should_allow_repeats = False
 
 # sde_sheet | dbms_core_sheet
 to_study_options = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet"] 
-to_study = to_study_options[3]
+knda = True
+if knda:
+    ind = random.randint(1, len(to_study_options)-1)
+    print(f"Randomly selected: {to_study_options[ind]}")
+else:
+    ind = 0
+to_study = to_study_options[ind]
 
 file_path = f"data/{to_study}.json"
 history_file_path = f"history/{to_study}.json"
