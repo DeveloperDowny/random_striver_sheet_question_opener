@@ -1,5 +1,3 @@
 {
-  "solved_ids": [
-    "Disk-Scheduling"
-  ]
+  "solved_ids": ["Disk-Scheduling", "Spooling", "Kernel-and-user-modes"]
 }

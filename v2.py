@@ -1,30 +1,18 @@
-# Upgrade from v1 -> v2
+import json
+import random
+import logging
+import urllib.parse
+from abc import ABC, abstractmethod
+from typing import List, Dict, Any
 
-- Took Object Oriented Approach
-- Used Factory Design Pattern to create object of the required class dynamically
-- This helps improved readability, maintainability and extensibility
-- So in the v1.py, I wanted to have a simple addon, support LeetCode SQL 50 sheet too
-- I found myself making changes to check what type of sheet I am working with everywhere like the following
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[
+                        logging.FileHandler("debug.log"),
+                        logging.StreamHandler()
+                    ])
+logger = logging.getLogger()
 
-```python
-def flatten(data):
-    logger.info(f"Flattening data for {to_study}.")
-    if to_study == "sde_sheet":
-        return sde_flattener(data)
-    elif "core_sheet" in to_study:
-        return core_flattener(data)
-    elif to_study == "lc_sql_50":
-        return lc_sql_50_flattener(data)
-    else:
-        logger.error("Invalid value for to_study")
-        raise ValueError("Invalid value for to_study")
-```
-
-- There are multiple problems with this approach apart from the extensibility problem
-- So, I decided to apply the [Factory Method](https://refactoring.guru/design-patterns/factory-method) Design Pattern and rewrite the code
-- Now, I have SheetHandler, an abstract base class (ABC)
-
-```python
 class SheetHandler(ABC):
     def __init__(self, file_name: str, site: str):
         self.file_name = file_name
@@ -76,10 +64,7 @@ class SheetHandler(ABC):
         link = self.create_link(random_topic["title"])
         logger.info(f"Link: {link}")
         self.update_history(history, id)
-```
 
-And the following subclasses of it
-```python
 class SDESheetHandler(SheetHandler):
     def __init__(self):
         super().__init__("sde_sheet", "naukri")
@@ -105,11 +90,7 @@ class LeetCodeSQLHandler(SheetHandler):
         flattened_list = [item for sublist in data["sheetData"] for item in sublist["questions"]]
         logger.info(f"Total questions: {len(flattened_list)}")
         return flattened_list
-```
 
-The following SheetHandlerFactory class implements the Factory pattern. This pattern provides an interface for creating different derived class of the same base class. In this case, the factory creates different types of SheetHandler objects based on the input sheet type.
-
-```python
 class SheetHandlerFactory:
     @staticmethod
     def create_handler(sheet_type: str) -> SheetHandler:
@@ -122,11 +103,7 @@ class SheetHandlerFactory:
             return LeetCodeSQLHandler()
         else:
             raise ValueError(f"Invalid sheet type: {sheet_type}")
-```
 
-Following is the entry point of the code
-
-```python
 def main():
     logger.info("Script started.")
     sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50"]
@@ -134,4 +111,6 @@ def main():
     handler = SheetHandlerFactory.create_handler(sheet_type)
     handler.process()
     logger.info("Script finished.")
-```
+
+if __name__ == "__main__":
+    main()

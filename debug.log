@@ -1,0 +1,231 @@
+2024-07-08 23:02:31,797 - INFO - Randomly selected: dbms_core_sheet
+2024-07-08 23:02:31,798 - INFO - Script started.
+2024-07-08 23:02:31,799 - INFO - Starting main function.
+2024-07-08 23:02:31,799 - INFO - Flattening data for dbms_core_sheet.
+2024-07-08 23:02:31,800 - INFO - Selected topic: {
+  "id": "DBMS-Architecture",
+  "sl_no_in_step": 6,
+  "title": "DBMS Architecture",
+  "yt_link": "https://www.youtube.com/playlist?list=PLrL_PSQ6q060ZVu6FEpjwNt1ab2J2S1dq",
+  "article_link": null
+}
+2024-07-08 23:02:31,800 - INFO - History updated.
+2024-07-08 23:02:31,800 - INFO - Script finished.
+2024-07-08 23:02:46,799 - INFO - Randomly selected: os_core_sheet
+2024-07-08 23:02:46,799 - INFO - Script started.
+2024-07-08 23:02:46,801 - INFO - Starting main function.
+2024-07-08 23:02:46,801 - INFO - Flattening data for os_core_sheet.
+2024-07-08 23:02:46,802 - INFO - Selected topic: {
+  "id": "Dynamic-binding",
+  "sl_no_in_step": 4,
+  "title": "Dynamic binding",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-08 23:02:46,803 - INFO - History updated.
+2024-07-08 23:02:46,804 - INFO - Script finished.
+2024-07-08 23:05:35,209 - INFO - Randomly selected: cn_core_sheet
+2024-07-08 23:05:35,209 - INFO - Script started.
+2024-07-08 23:05:35,210 - INFO - Starting main function.
+2024-07-08 23:05:35,210 - INFO - Flattening data for cn_core_sheet.
+2024-07-08 23:05:35,210 - INFO - Selected topic: {
+  "id": "Channel-allocations-problem",
+  "sl_no_in_step": 6,
+  "title": "Channel allocations problem",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-08 23:05:35,211 - INFO - History updated.
+2024-07-08 23:05:35,211 - INFO - Script finished.
+2024-07-09 01:07:24,468 - INFO - Randomly selected: os_core_sheet
+2024-07-09 01:07:24,469 - INFO - Script started.
+2024-07-09 01:07:24,470 - INFO - Starting main function.
+2024-07-09 01:07:24,470 - INFO - Flattening data for os_core_sheet.
+2024-07-09 01:07:24,471 - INFO - Selected topic: {
+  "id": "Spooling",
+  "sl_no_in_step": 3,
+  "title": "Spooling",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-09 01:07:24,472 - INFO - History updated.
+2024-07-09 01:07:24,472 - INFO - Script finished.
+2024-07-09 01:09:06,762 - INFO - Randomly selected: cn_core_sheet
+2024-07-09 01:09:06,763 - INFO - Script started.
+2024-07-09 01:09:06,764 - INFO - Starting main function.
+2024-07-09 01:09:06,764 - INFO - Flattening data for cn_core_sheet.
+2024-07-09 01:09:06,764 - INFO - Selected topic: {
+  "id": "Routing-algorithms",
+  "sl_no_in_step": 1,
+  "title": "Routing algorithms",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-09 01:09:06,765 - INFO - History updated.
+2024-07-09 01:09:06,766 - INFO - Script finished.
+2024-07-09 01:10:55,349 - INFO - Script started.
+2024-07-09 01:10:55,354 - INFO - Starting main function.
+2024-07-09 01:10:55,355 - INFO - Flattening data for sde_sheet.
+2024-07-09 01:10:55,355 - INFO - Selected topic: {
+  "id": "sizfthlrgstbstinbinrytr",
+  "step_no": 21,
+  "sl_no_in_step": 7,
+  "head_step_no": "Binary Search Tree Part-II",
+  "title": "Size of the largest BST in a Binary Tree",
+  "post_link": null,
+  "yt_link": "https://youtu.be/X0oXMdtUDwo",
+  "cs_link": "https://bit.ly/3fn6h5V",
+  "gfg_link": null,
+  "lc_link": "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/",
+  "company_tags": null,
+  "difficulty": 1,
+  "ques_topic": "[{\"value\":\"binary-tree\",\"label\":\"Binary Tree\"},{\"value\":\"data-structure\",\"label\":\"Data Structures\"}]"
+}
+2024-07-09 01:10:55,357 - INFO - History updated.
+2024-07-09 01:10:55,358 - INFO - Script finished.
+2024-07-09 12:26:54,204 - INFO - Script started.
+2024-07-09 12:26:54,213 - INFO - Starting main function.
+2024-07-09 12:26:54,216 - INFO - Flattening data for sde_sheet.
+2024-07-09 12:26:54,217 - INFO - Selected topic: {
+  "id": "strnglycnnctdcmpnntsingksrjslg",
+  "step_no": 24,
+  "sl_no_in_step": 1,
+  "head_step_no": "Graph Part-II",
+  "title": "Strongly Connected Component(using KosaRaju\u00ce\u201c\u00c3\u2021\u00c3\u2013s algo)",
+  "post_link": "https://takeuforward.org/graph/strongly-connected-components-kosarajus-algorithm-g-54/",
+  "yt_link": "https://www.youtube.com/watch?v=V8qIqJxCioo&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=27",
+  "cs_link": "https://bit.ly/3twUKJP",
+  "gfg_link": null,
+  "lc_link": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/discuss/766485/kosaraju-algorithm-on",
+  "company_tags": null,
+  "difficulty": 2,
+  "ques_topic": "[{\"value\":\"graph\",\"label\":\"Graph\"},{\"value\":\"data-structure\",\"label\":\"Data Structures\"}]"
+}
+2024-07-09 12:26:54,222 - INFO - History updated.
+2024-07-09 12:26:54,224 - INFO - Script finished.
+
+
+2024-07-10 00:51:30,709 - INFO - Randomly selected: os_core_sheet
+2024-07-10 00:51:30,712 - INFO - Script started.
+2024-07-10 00:51:30,714 - INFO - Starting main function.
+2024-07-10 00:51:30,714 - INFO - Flattening data for os_core_sheet.
+2024-07-10 00:51:30,715 - INFO - Selected topic: {
+  "id": "Kernel-and-user-modes",
+  "sl_no_in_step": 6,
+  "title": "Kernel and user modes",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-10 00:51:30,718 - INFO - History updated.
+2024-07-10 00:51:30,719 - INFO - Script finished.
+2024-07-10 01:01:19,719 - INFO - Script started.
+2024-07-10 01:01:19,721 - INFO - Starting main function.
+2024-07-10 01:01:19,722 - INFO - Flattening data for lc_sql_50.
+2024-07-10 01:01:19,722 - INFO - Total questions: 50
+2024-07-10 01:03:19,954 - INFO - Script started.
+2024-07-10 01:03:19,955 - INFO - Starting main function.
+2024-07-10 01:03:19,955 - INFO - Flattening data for lc_sql_50.
+2024-07-10 01:03:19,955 - INFO - Total questions: 50
+2024-07-10 01:03:19,956 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "list-the-products-ordered-in-a-period",
+  "title": "List the Products Ordered in a Period",
+  "questionFrontendId": "1327",
+  "paidOnly": false,
+  "id": "1462",
+  "difficulty": "EASY",
+  "hasOfficialSolution": false,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-10 01:03:19,957 - INFO - History updated.
+2024-07-10 01:03:19,958 - INFO - Script finished.
+2024-07-10 01:06:19,981 - INFO - Script started.
+2024-07-10 01:06:19,982 - INFO - Starting main function.
+2024-07-10 01:06:19,983 - INFO - Flattening data for lc_sql_50.
+2024-07-10 01:06:19,983 - INFO - Total questions: 50
+2024-07-10 01:06:19,984 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "investments-in-2016",
+  "title": "Investments in 2016",
+  "questionFrontendId": "585",
+  "paidOnly": false,
+  "id": "585",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-10 01:06:19,986 - INFO - Link: https://www.google.com/search?q=Investments in 2016+site%3Alc_sql_50.com
+2024-07-10 01:06:19,987 - INFO - History updated.
+2024-07-10 01:06:19,988 - INFO - Script finished.
+2024-07-10 01:07:16,765 - INFO - Script started.
+2024-07-10 01:07:16,766 - INFO - Starting main function.
+2024-07-10 01:07:16,767 - INFO - Flattening data for lc_sql_50.
+2024-07-10 01:07:16,767 - INFO - Total questions: 50
+2024-07-10 01:07:16,768 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "queries-quality-and-percentage",
+  "title": "Queries Quality and Percentage",
+  "questionFrontendId": "1211",
+  "paidOnly": false,
+  "id": "1338",
+  "difficulty": "EASY",
+  "hasOfficialSolution": false,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-10 01:07:16,771 - INFO - Link: https://www.google.com/search?q=Queries+Quality+and+Percentage+site%3Alc_sql_50.com
+2024-07-10 01:07:16,772 - INFO - History updated.
+2024-07-10 01:07:16,772 - INFO - Script finished.
+2024-07-10 01:08:40,585 - INFO - Script started.
+2024-07-10 01:08:40,586 - INFO - Starting main function.
+2024-07-10 01:08:40,586 - INFO - Flattening data for lc_sql_50.
+2024-07-10 01:08:40,587 - INFO - Total questions: 50
+2024-07-10 01:08:40,587 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "triangle-judgement",
+  "title": "Triangle Judgement",
+  "questionFrontendId": "610",
+  "paidOnly": false,
+  "id": "610",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-10 01:08:40,588 - INFO - Link: https://www.google.com/search?q=Triangle+Judgement+site%3Aleetcode.com
+2024-07-10 01:08:40,589 - INFO - History updated.
+2024-07-10 01:08:40,589 - INFO - Script finished.
+2024-07-10 01:15:06,646 - INFO - Script started.
+2024-07-10 01:15:06,647 - INFO - Processing os_core_sheet
+2024-07-10 01:15:06,649 - INFO - Selected topic: {
+  "id": "Multiprogramming-and-Multitasking-OS",
+  "sl_no_in_step": 5,
+  "title": "Multiprogramming and Multitasking OS",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-10 01:15:06,652 - INFO - Link: https://www.google.com/search?q=Multiprogramming+and+Multitasking+OS+site%3Ageeksforgeeks.com
+2024-07-10 01:15:06,653 - INFO - History updated.
+2024-07-10 01:15:06,654 - INFO - Script finished.
