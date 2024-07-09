@@ -229,3 +229,97 @@
 2024-07-10 01:15:06,652 - INFO - Link: https://www.google.com/search?q=Multiprogramming+and+Multitasking+OS+site%3Ageeksforgeeks.com
 2024-07-10 01:15:06,653 - INFO - History updated.
 2024-07-10 01:15:06,654 - INFO - Script finished.
+2024-07-10 01:42:00,590 - INFO - Script started.
+2024-07-10 01:43:29,259 - INFO - Script started.
+2024-07-10 01:45:08,583 - INFO - Script started.
+2024-07-10 01:45:25,044 - INFO - Processing os_core_sheet
+2024-07-10 01:45:25,047 - INFO - Selected topic: {
+  "id": "Starving-and-Aging",
+  "sl_no_in_step": 3,
+  "title": "Starving and Aging",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-10 01:45:25,048 - INFO - Link: https://www.google.com/search?q=Starving+and+Aging+site%3Ageeksforgeeks.com
+2024-07-10 01:45:25,049 - INFO - History updated.
+2024-07-10 01:45:25,049 - INFO - Script finished.
+2024-07-10 01:46:22,734 - INFO - Script started.
+2024-07-10 01:46:25,163 - INFO - Processing cn_core_sheet
+2024-07-10 01:46:25,166 - INFO - Selected topic: {
+  "id": "Cryptography",
+  "sl_no_in_step": 2,
+  "title": "Cryptography",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-10 01:46:25,168 - INFO - Link: https://www.google.com/search?q=Cryptography+site%3Ageeksforgeeks.org
+2024-07-10 01:46:25,169 - INFO - History updated.
+2024-07-10 01:46:25,170 - INFO - Script finished.
+2024-07-10 01:46:42,617 - INFO - Script started.
+2024-07-10 01:46:44,356 - INFO - Processing lc_sql_50
+2024-07-10 01:46:44,357 - INFO - Total questions: 50
+2024-07-10 01:46:44,358 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "average-selling-price",
+  "title": "Average Selling Price",
+  "questionFrontendId": "1251",
+  "paidOnly": false,
+  "id": "1390",
+  "difficulty": "EASY",
+  "hasOfficialSolution": false,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-10 01:46:44,362 - INFO - Link: https://www.google.com/search?q=Average+Selling+Price+site%3Aleetcode.com
+2024-07-10 01:46:44,363 - INFO - History updated.
+2024-07-10 01:46:44,364 - INFO - Script finished.
+2024-07-10 01:46:56,081 - INFO - Script started.
+2024-07-10 01:46:58,413 - INFO - Processing sde_sheet
+2024-07-10 01:46:58,418 - INFO - Selected topic: {
+  "id": "sbstsm",
+  "step_no": 26,
+  "sl_no_in_step": 3,
+  "head_step_no": "Dynamic Programming Part-II",
+  "title": "Subset Sum",
+  "post_link": "https://takeuforward.org/data-structure/subset-sum-equal-to-target-dp-14/",
+  "yt_link": "https://www.youtube.com/watch?v=fWX9xDmIzRI",
+  "cs_link": "https://bit.ly/3rjUdb7",
+  "gfg_link": null,
+  "lc_link": "https://leetcode.com/problems/partition-equal-subset-sum/",
+  "company_tags": null,
+  "difficulty": 1,
+  "ques_topic": "[{\"value\":\"arrays\",\"label\":\"Arrays\"},{\"value\":\"dynamic-programming\",\"label\":\"Dynamic Programming\"},{\"value\":\"data-structure\",\"label\":\"Data Structures\"}]"
+}
+2024-07-10 01:46:58,422 - INFO - Link: https://www.google.com/search?q=Subset+Sum+site%3Anaukri.com
+2024-07-10 01:46:58,423 - INFO - History updated.
+2024-07-10 01:46:58,424 - INFO - Script finished.
+2024-07-10 01:47:06,276 - INFO - Script started.
+2024-07-10 01:48:27,513 - INFO - Script started.
+2024-07-10 01:48:30,274 - INFO - Processing dbms_core_sheet
+2024-07-10 01:48:30,276 - INFO - Selected topic: {
+  "id": "Functional-dependency",
+  "sl_no_in_step": 6,
+  "title": "Functional dependency",
+  "yt_link": "https://youtu.be/vO-DLOYpJVk?si=rualZejWcwHhLJCK",
+  "article_link": null
+}
+2024-07-10 01:48:30,276 - INFO - Link: https://www.google.com/search?q=Functional+dependency+site%3Ageeksforgeeks.org
+2024-07-10 01:48:30,276 - INFO - Debug mode enabled. Skipping history update.
+2024-07-10 01:48:30,276 - INFO - Script finished.
+2024-07-10 01:48:46,264 - INFO - Script started.
+2024-07-10 01:48:47,820 - INFO - Processing dbms_core_sheet
+2024-07-10 01:48:47,821 - INFO - Selected topic: {
+  "id": "Techniques-for-optimizing-SQL-queries",
+  "sl_no_in_step": 1,
+  "title": "Techniques for optimizing SQL queries",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-10 01:48:47,823 - INFO - Link: https://www.google.com/search?q=Techniques+for+optimizing+SQL+queries+site%3Ageeksforgeeks.org
+2024-07-10 01:48:47,824 - INFO - History updated.
+2024-07-10 01:48:47,824 - INFO - Script finished.

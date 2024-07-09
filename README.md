@@ -21,7 +21,7 @@ def flatten(data):
 ```
 
 - There are multiple problems with this approach apart from the extensibility problem
-- So, I decided to apply the [Factory Method](https://refactoring.guru/design-patterns/factory-method) Design Pattern and rewrite the code
+- So, I decided to apply the [Factory Method](https://refactoring.guru/design-patterns/factory-method) Design Pattern and rewrite the code (now found in v2.py)
 - Now, I have SheetHandler, an abstract base class (ABC)
 
 ```python
@@ -79,6 +79,7 @@ class SheetHandler(ABC):
 ```
 
 And the following subclasses of it
+
 ```python
 class SDESheetHandler(SheetHandler):
     def __init__(self):

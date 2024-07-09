@@ -12,6 +12,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
                         logging.StreamHandler()
                     ])
 logger = logging.getLogger()
+kdebugMode = False
 
 class SheetHandler(ABC):
     def __init__(self, file_name: str, site: str):
@@ -35,9 +36,12 @@ class SheetHandler(ABC):
 
     def create_link(self, title: str) -> str:
         url_safe_title = urllib.parse.quote_plus(title)
-        return f"https://www.google.com/search?q={url_safe_title}+site%3A{self.site}.com"
+        return f"https://www.google.com/search?q={url_safe_title}+site%3A{self.site}"
 
     def update_history(self, history: List[str], new_id: str) -> None:
+        if kdebugMode:
+            logger.info("Debug mode enabled. Skipping history update.")
+            return
         history.append(new_id)
         with open(self.history_file_path, "w") as file:
             json.dump({"solved_ids": history}, file, indent=2)
@@ -67,7 +71,7 @@ class SheetHandler(ABC):
 
 class SDESheetHandler(SheetHandler):
     def __init__(self):
-        super().__init__("sde_sheet", "naukri")
+        super().__init__("sde_sheet", "naukri.com")
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         logger.debug("Flattening SDE sheet data.")
@@ -75,7 +79,7 @@ class SDESheetHandler(SheetHandler):
 
 class CoreSheetHandler(SheetHandler):
     def __init__(self, subject: str):
-        super().__init__(f"{subject}_core_sheet", "geeksforgeeks")
+        super().__init__(f"{subject}_core_sheet", "geeksforgeeks.org")
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         logger.debug("Flattening core sheet data.")
@@ -83,7 +87,7 @@ class CoreSheetHandler(SheetHandler):
 
 class LeetCodeSQLHandler(SheetHandler):
     def __init__(self):
-        super().__init__("lc_sql_50", "leetcode")
+        super().__init__("lc_sql_50", "leetcode.com")
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         logger.debug("Flattening LC SQL 50 data.")
@@ -103,11 +107,22 @@ class SheetHandlerFactory:
             return LeetCodeSQLHandler()
         else:
             raise ValueError(f"Invalid sheet type: {sheet_type}")
+    
+    @staticmethod
+    def get_sheet_type(sheet_types) -> List[str]:
+        inp = input("Enter sheet type: ")
+        if inp.isdigit():
+            return [sheet_types[int(inp)]]
+        elif inp.isalpha():
+            return [sheet for sheet in sheet_types if inp in sheet]
+        else:
+            raise ValueError("Invalid input.")
 
 def main():
     logger.info("Script started.")
     sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50"]
-    sheet_type = random.choice(sheet_types)
+    filtered_sheet_types = SheetHandlerFactory.get_sheet_type(sheet_types)
+    sheet_type = random.choice(filtered_sheet_types)
     handler = SheetHandlerFactory.create_handler(sheet_type)
     handler.process()
     logger.info("Script finished.")
