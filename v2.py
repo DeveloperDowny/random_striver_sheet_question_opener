@@ -20,6 +20,7 @@ class SheetHandler(ABC):
         self.site = site
         self.data_file_path = f"data/{file_name}.json"
         self.history_file_path = f"history/{file_name}.json"
+        self.revision_file_path = f"revision/{file_name}.txt"
         self.should_allow_repeats = False
 
     @abstractmethod
@@ -68,6 +69,23 @@ class SheetHandler(ABC):
         link = self.create_link(random_topic["title"])
         logger.info(f"Link: {link}")
         self.update_history(history, id)
+        
+        should_mark_for_revison = input("Mark for revision? (y/n): ")
+        if should_mark_for_revison.lower() == "y":
+            self.mark_revision(history)
+
+# if marked as revision, delete the last entry from history
+    def mark_revision(self, history: List[str]) -> None:
+        if kdebugMode:
+            logger.info("Debug mode enabled. Skipping history update.")
+            return
+        revision_id = history.pop()
+        with open(self.revision_file_path, "a") as file:
+            file.write(revision_id + "\n")
+            
+        with open(self.history_file_path, "w") as file:
+            json.dump({"solved_ids": history}, file, indent=2)
+        logger.info("History updated.")
 
 class SDESheetHandler(SheetHandler):
     def __init__(self):
@@ -139,6 +157,7 @@ def main():
     sheet_type = random.choice(filtered_sheet_types)
     handler = SheetHandlerFactory.create_handler(sheet_type)
     handler.process()
+
     logger.info("Script finished.")
 
 if __name__ == "__main__":

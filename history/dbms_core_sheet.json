@@ -1,6 +1,7 @@
 {
   "solved_ids": [
     "Locking-protocols(shared-locks,-exclusive-locks)",
-    "Extended-ER-features"
+    "Extended-ER-features",
+    "Unions-in-SQL"
   ]
 }

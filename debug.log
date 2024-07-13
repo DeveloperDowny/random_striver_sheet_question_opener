@@ -389,3 +389,129 @@
 2024-07-13 09:11:56,240 - INFO - Link: https://www.google.com/search?q=Article+Views+I+site%3Aleetcode.com
 2024-07-13 09:11:56,241 - INFO - History updated.
 2024-07-13 09:11:56,242 - INFO - Script finished.
+2024-07-13 09:17:39,079 - INFO - Script started.
+2024-07-13 09:17:42,943 - INFO - Processing lc_sql_50
+2024-07-13 09:17:42,944 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "the-number-of-employees-which-report-to-each-employee",
+  "title": "The Number of Employees Which Report to Each Employee",
+  "questionFrontendId": "1731",
+  "paidOnly": false,
+  "id": "1882",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-13 09:17:42,948 - INFO - Link: https://www.google.com/search?q=The+Number+of+Employees+Which+Report+to+Each+Employee+site%3Aleetcode.com
+2024-07-13 09:17:42,949 - INFO - History updated.
+2024-07-13 09:17:42,950 - INFO - Script finished.
+2024-07-13 09:23:46,127 - INFO - Script started.
+2024-07-13 09:23:48,210 - INFO - Processing lc_sql_50
+2024-07-13 09:23:48,212 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "number-of-unique-subjects-taught-by-each-teacher",
+  "title": "Number of Unique Subjects Taught by Each Teacher",
+  "questionFrontendId": "2356",
+  "paidOnly": false,
+  "id": "2495",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-13 09:23:48,216 - INFO - Link: https://www.google.com/search?q=Number+of+Unique+Subjects+Taught+by+Each+Teacher+site%3Aleetcode.com
+2024-07-13 09:23:48,217 - INFO - History updated.
+2024-07-13 09:23:48,218 - INFO - Script finished.
+2024-07-13 09:29:36,686 - INFO - Script started.
+2024-07-13 09:29:40,702 - INFO - Processing dbms_core_sheet
+2024-07-13 09:29:40,705 - INFO - Selected topic: {
+  "id": "Unions-in-SQL",
+  "sl_no_in_step": 5,
+  "title": "Unions in SQL",
+  "yt_link": "https://youtu.be/uwW0nFGHK1M?si=qaHMAHHM4fvqdHkc",
+  "article_link": null
+}
+2024-07-13 09:29:40,706 - INFO - Link: https://www.google.com/search?q=Unions+in+SQL+site%3Ageeksforgeeks.org
+2024-07-13 09:29:40,707 - INFO - History updated.
+2024-07-13 09:29:40,708 - INFO - Script finished.
+2024-07-13 16:31:24,498 - INFO - Script started.
+2024-07-13 16:31:27,757 - INFO - Processing lc_sql_50
+2024-07-13 16:31:27,759 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "project-employees-i",
+  "title": "Project Employees I",
+  "questionFrontendId": "1075",
+  "paidOnly": false,
+  "id": "1161",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-13 16:31:27,760 - INFO - Link: https://www.google.com/search?q=Project+Employees+I+site%3Aleetcode.com
+2024-07-13 16:31:27,761 - INFO - History updated.
+2024-07-13 16:31:47,157 - INFO - History updated.
+2024-07-13 16:31:47,157 - INFO - Script finished.
+2024-07-13 16:35:00,151 - INFO - Script started.
+2024-07-13 16:35:07,196 - INFO - Processing lc_sql_50
+2024-07-13 16:35:07,196 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "consecutive-numbers",
+  "title": "Consecutive Numbers",
+  "questionFrontendId": "180",
+  "paidOnly": false,
+  "id": "180",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-13 16:35:07,197 - INFO - Link: https://www.google.com/search?q=Consecutive+Numbers+site%3Aleetcode.com
+2024-07-13 16:35:07,198 - INFO - History updated.
+2024-07-13 16:35:19,180 - INFO - History updated.
+2024-07-13 16:35:19,180 - INFO - Script finished.
+2024-07-13 16:35:24,585 - INFO - Script started.
+2024-07-13 16:35:31,067 - INFO - Script started.
+2024-07-13 16:35:33,587 - INFO - Processing lc_sql_50
+2024-07-13 16:35:33,588 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "game-play-analysis-iv",
+  "title": "Game Play Analysis IV",
+  "questionFrontendId": "550",
+  "paidOnly": false,
+  "id": "1182",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-13 16:35:33,589 - INFO - Link: https://www.google.com/search?q=Game+Play+Analysis+IV+site%3Aleetcode.com
+2024-07-13 16:35:33,590 - INFO - History updated.
+2024-07-13 16:35:35,276 - INFO - History updated.
+2024-07-13 16:35:35,276 - INFO - Script finished.
