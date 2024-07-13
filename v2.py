@@ -92,8 +92,18 @@ class LeetCodeSQLHandler(SheetHandler):
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         logger.debug("Flattening LC SQL 50 data.")
         flattened_list = [item for sublist in data["sheetData"] for item in sublist["questions"]]
-        logger.info(f"Total questions: {len(flattened_list)}")
         return flattened_list
+
+class GFGMustDoProductHandler(SheetHandler):
+    def __init__(self):
+        super().__init__("must_do_product_gfg", "geeksforgeeks.org")
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        logger.debug("Flattening GFG must do product data.")
+        return data["sheetData"]
+
+    # def create_link(self, link: str) -> str:
+    #     return link
 
 class SheetHandlerFactory:
     @staticmethod
@@ -105,12 +115,16 @@ class SheetHandlerFactory:
             return CoreSheetHandler(subject)
         elif sheet_type == "lc_sql_50":
             return LeetCodeSQLHandler()
+        elif sheet_type == "must_do_product_gfg":
+            return GFGMustDoProductHandler()
         else:
             raise ValueError(f"Invalid sheet type: {sheet_type}")
     
     @staticmethod
     def get_sheet_type(sheet_types) -> List[str]:
         inp = input("Enter sheet type: ")
+        if inp == "random":
+            return sheet_types
         if inp.isdigit():
             return [sheet_types[int(inp)]]
         elif inp.isalpha():
@@ -120,7 +134,7 @@ class SheetHandlerFactory:
 
 def main():
     logger.info("Script started.")
-    sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50"]
+    sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50", "must_do_product_gfg"]
     filtered_sheet_types = SheetHandlerFactory.get_sheet_type(sheet_types)
     sheet_type = random.choice(filtered_sheet_types)
     handler = SheetHandlerFactory.create_handler(sheet_type)

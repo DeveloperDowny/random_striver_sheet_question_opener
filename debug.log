@@ -323,3 +323,69 @@
 2024-07-10 01:48:47,823 - INFO - Link: https://www.google.com/search?q=Techniques+for+optimizing+SQL+queries+site%3Ageeksforgeeks.org
 2024-07-10 01:48:47,824 - INFO - History updated.
 2024-07-10 01:48:47,824 - INFO - Script finished.
+2024-07-10 01:51:41,661 - INFO - Script started.
+2024-07-10 01:51:44,599 - INFO - Processing dbms_core_sheet
+2024-07-10 01:51:44,601 - INFO - Selected topic: {
+  "id": "Locking-protocols(shared-locks,-exclusive-locks)",
+  "sl_no_in_step": 5,
+  "title": "Locking protocols(shared locks, exclusive locks)",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-10 01:51:44,602 - INFO - Link: https://www.google.com/search?q=Locking+protocols%28shared+locks%2C+exclusive+locks%29+site%3Ageeksforgeeks.org
+2024-07-10 01:51:44,603 - INFO - History updated.
+2024-07-10 01:51:44,604 - INFO - Script finished.
+2024-07-12 23:26:48,682 - INFO - Script started.
+2024-07-12 23:27:04,077 - INFO - Processing dbms_core_sheet
+2024-07-12 23:27:04,078 - INFO - Selected topic: {
+  "id": "Extended-ER-features",
+  "sl_no_in_step": 3,
+  "title": "Extended ER features",
+  "yt_link": "https://www.youtube.com/playlist?list=PLrL_PSQ6q0620RsqRBswISZjUDSKZ9_NY",
+  "article_link": null
+}
+2024-07-12 23:27:04,079 - INFO - Link: https://www.google.com/search?q=Extended+ER+features+site%3Ageeksforgeeks.org
+2024-07-12 23:27:04,080 - INFO - History updated.
+2024-07-12 23:27:04,081 - INFO - Script finished.
+2024-07-13 09:01:05,359 - INFO - Script started.
+2024-07-13 09:01:08,046 - INFO - Processing must_do_product_gfg
+2024-07-13 09:01:08,049 - INFO - Selected topic: {
+  "id": 149,
+  "url": "https://www.geeksforgeeks.org/problems/bipartite-graph/1",
+  "title": "https://www.geeksforgeeks.org/problems/bipartite-graph/1"
+}
+2024-07-13 09:01:08,050 - INFO - Link: https://www.geeksforgeeks.org/problems/bipartite-graph/1
+2024-07-13 09:01:08,051 - INFO - History updated.
+2024-07-13 09:01:08,051 - INFO - Script finished.
+2024-07-13 09:11:44,397 - INFO - Script started.
+2024-07-13 09:11:47,936 - INFO - Processing must_do_product_gfg
+2024-07-13 09:11:47,938 - INFO - Selected topic: {
+  "id": 43,
+  "url": "https://www.geeksforgeeks.org/problems/rotate-by-90-degree0356/1",
+  "title": "https://www.geeksforgeeks.org/problems/rotate-by-90-degree0356/1"
+}
+2024-07-13 09:11:47,939 - INFO - Link: https://www.geeksforgeeks.org/problems/rotate-by-90-degree0356/1
+2024-07-13 09:11:47,940 - INFO - History updated.
+2024-07-13 09:11:47,940 - INFO - Script finished.
+2024-07-13 09:11:53,097 - INFO - Script started.
+2024-07-13 09:11:56,224 - INFO - Processing lc_sql_50
+2024-07-13 09:11:56,227 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "article-views-i",
+  "title": "Article Views I",
+  "questionFrontendId": "1148",
+  "paidOnly": false,
+  "id": "1258",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-13 09:11:56,240 - INFO - Link: https://www.google.com/search?q=Article+Views+I+site%3Aleetcode.com
+2024-07-13 09:11:56,241 - INFO - History updated.
+2024-07-13 09:11:56,242 - INFO - Script finished.

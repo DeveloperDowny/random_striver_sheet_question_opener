@@ -3,7 +3,6 @@
     "HTTP-(Hypertext-Transfer-Protocol)",
     "Basic-Introduction",
     "Channel-allocations-problem",
-    "Routing-algorithms",
-    "Cryptography"
+    "Routing-algorithms"
   ]
 }
