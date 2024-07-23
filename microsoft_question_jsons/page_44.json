@@ -1,0 +1,379 @@
+{
+  "data": {
+    "problem_list": [
+      {
+        "id": 22893,
+        "name": "Longest Palindromic Substring",
+        "offering_id": 6194956,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 35,
+        "offering_name": "Longest Palindromic Substring",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 309,
+        "order": null,
+        "slug": "longest-palindromic-substring_6194956",
+        "company_list": [
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Microsoft",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Amazon",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Grab",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1158/1d505241ba9b4162117f7021908ccd39.png"
+          },
+          {
+            "name": "Tata Consultancy Services (TCS)",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+          },
+          {
+            "name": "Inspirisys",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/inspirisys-small-logo.png"
+          },
+          {
+            "name": "Deloitte",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1293/fa3fdc0f641ff77e1591d423de4a6efd.png"
+          },
+          {
+            "name": "Filenet",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/1200px-FileNet_logo.svg.png"
+          },
+          {
+            "name": "Satyam Software Solutions Private Limited",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/s-cube-33976.jpeg"
+          },
+          {
+            "name": "Hotstar",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Google and Amazon",
+            "order": 0,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Thinkbiz technology pvt ltd",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 6
+      },
+      {
+        "id": 17353,
+        "name": "Find Center of Star Graph",
+        "offering_id": 3846836,
+        "difficulty": "Easy",
+        "avg_time_to_solve": null,
+        "offering_name": "Find Center of Star Graph",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 471,
+        "order": null,
+        "slug": "find-center-of-star-graph_3846836",
+        "company_list": [
+          {
+            "name": "CIS - Cyber Infrastructure",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/40/e44e0645b0128bcfdc06b1e4ccf14e65.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 6
+      },
+      {
+        "id": 15923,
+        "name": "Page Faults",
+        "offering_id": 2826682,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 30,
+        "offering_name": "Page Faults",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 325,
+        "order": null,
+        "slug": "page-faults_2826682",
+        "company_list": [
+          {
+            "name": "Expedia Group",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2091/96021e4c6a6c1850c28a9ab02cac7e10.png"
+          },
+          {
+            "name": "Tata 1mg",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1783/646668a7935067735bd3e6ad40ee2096.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Adobe",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/21/abc1ca60ece68058fd182d8a8fa64086.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 6
+      },
+      {
+        "id": 14511,
+        "name": "Department Top Three Salaries",
+        "offering_id": 2181182,
+        "difficulty": "Hard",
+        "avg_time_to_solve": 10,
+        "offering_name": "Department Top Three Salaries",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 4031,
+        "order": null,
+        "slug": "department-top-three-salaries_2181182",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 10,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          }
+        ],
+        "max_score": 120,
+        "reactions_count": 6
+      },
+      {
+        "id": 14459,
+        "name": "Find The Minimum Length",
+        "offering_id": 2179632,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 25,
+        "offering_name": "Find The Minimum Length",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 1826,
+        "order": null,
+        "slug": "find-the-minimum-length_2179632",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 6
+      },
+      {
+        "id": 10145,
+        "name": "Minimum Weight In A Connected Component",
+        "offering_id": 1170508,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 25,
+        "offering_name": "Minimum Weight In A Connected Component",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 374,
+        "order": null,
+        "slug": "minimum-weight-in-a-connected-component_1170508",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Wipro",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/37361/1b8d4684e2b4c6bbe7aee42c80875427.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 6
+      },
+      {
+        "id": 10000,
+        "name": "Distinct Strings With Odd and Even Swapping Allowed",
+        "offering_id": 1115650,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 15,
+        "offering_name": "Distinct Strings With Odd and Even Swapping Allowed",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 187,
+        "order": null,
+        "slug": "distinct-strings-with-odd-and-even-swapping-allowed_1115650",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Infosys",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/686/2398087c932cba820ce21d86962f9425.png"
+          },
+          {
+            "name": "Tech Mahindra",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/843/33897f6f7008c15bcc36170de2d0f42a.png"
+          },
+          {
+            "name": "Cerner Corporation",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/8b42de667f4b3f90480e158f331efbfa.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 6
+      },
+      {
+        "id": 9093,
+        "name": "Check If Given Words Are Present In A String",
+        "offering_id": 975324,
+        "difficulty": "Hard",
+        "avg_time_to_solve": 35,
+        "offering_name": "Check if given words are present in a string",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 1235,
+        "order": null,
+        "slug": "check-if-given-words-are-present-in-a-string_975324",
+        "company_list": [
+          {
+            "name": "Infosys",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/686/2398087c932cba820ce21d86962f9425.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Quikr",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/0e7aa29d65281c048f0da1e6fdd06478.png"
+          },
+          {
+            "name": "Virtusa",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/virtusa-14743.jfif"
+          },
+          {
+            "name": "Cerner Corporation",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/8b42de667f4b3f90480e158f331efbfa.webp"
+          },
+          {
+            "name": "Kaleidofin",
+            "order": null,
+            "logo_url": "https://kaleidofin.com/wp-content/uploads/2022/11/kaleidofin-logo-1.svg"
+          },
+          {
+            "name": "NVIDIA",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001548_1687144555_Nvidia.png"
+          },
+          {
+            "name": "MAQ Software",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/47/9686a3876507f2640e83b8eea5fe1a6d.png"
+          },
+          {
+            "name": "Tata",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/tata-15780.webp"
+          }
+        ],
+        "max_score": 120,
+        "reactions_count": 6
+      },
+      {
+        "id": 8071,
+        "name": "Euler\u2019s Totient Function",
+        "offering_id": 800302,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 15,
+        "offering_name": "Total number coprime to N",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 545,
+        "order": null,
+        "slug": "total-number-coprime-to-n_800302",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "AMADEUS SOFTWARE LABS INDIA PRIVATE LIMITED",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/97e5251601f6a4181354b402bbfb058a.webp"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 6
+      },
+      {
+        "id": 1542,
+        "name": "Min cost Path",
+        "offering_id": 4296,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": null,
+        "offering_name": "Minimum Cost Path",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 5015,
+        "order": null,
+        "slug": "minimum-cost-path_4296",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 6
+      }
+    ],
+    "total_pages": "53",
+    "page": "44"
+  },
+  "message": "List of problems",
+  "status": 200,
+  "error": null,
+  "disabled": false,
+  "update": false,
+  "external_rating": null
+}

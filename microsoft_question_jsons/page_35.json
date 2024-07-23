@@ -1,0 +1,554 @@
+{
+  "data": {
+    "problem_list": [
+      {
+        "id": 11026,
+        "name": "Minimum Swaps To Make Two Strings Equal",
+        "offering_id": 1376440,
+        "difficulty": "Hard",
+        "avg_time_to_solve": 30,
+        "offering_name": "Minimum swaps to make two strings equal",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 731,
+        "order": null,
+        "slug": "minimum-swaps-to-make-two-strings-equal_1376440",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "EPAM Systems",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001398_1686026467_Emap.png"
+          },
+          {
+            "name": "VMware Inc",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/4038/c330af4c30deb46a528c292786a433d7.png"
+          }
+        ],
+        "max_score": 120,
+        "reactions_count": 14
+      },
+      {
+        "id": 8077,
+        "name": "Minimum Cost to Reach End",
+        "offering_id": 800310,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 25,
+        "offering_name": "Minimum cost to reach end",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 620,
+        "order": null,
+        "slug": "minimum-cost-to-reach-end_800310",
+        "company_list": [
+          {
+            "name": "Deutsche Bank",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/0f4877c82c5490e15d05da9e7348e60e.webp"
+          },
+          {
+            "name": "Visa",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/38/d1bbf452a8f8fdb85ac92821f0cd6fb3.png"
+          },
+          {
+            "name": "Arcesium",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/53/d10823ef4c959e545f1f6eb46ca4978d.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 14
+      },
+      {
+        "id": 8076,
+        "name": "Spiral Matrix",
+        "offering_id": 800309,
+        "difficulty": "Easy",
+        "avg_time_to_solve": null,
+        "offering_name": "Spiral Matrix",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 356,
+        "order": null,
+        "slug": "spiral-matrix_800309",
+        "company_list": [
+          {
+            "name": "JP Morgan",
+            "order": 20,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/23/3cbb97105cf48aa8b79d89c3a3c166a0.png"
+          },
+          {
+            "name": "Cognizant",
+            "order": 21,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/841/90c29fb8e0b9ac9c35cb527aac3d990d.png"
+          },
+          {
+            "name": "GE (General Electric)",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001351_1685986311_GE%2520Electric.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Salesforce",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/30/794e491c9f0a68dadad41b6d36f66945.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 11,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "OYO",
+            "order": 14,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/17/6b66cc9ee03c00d99df00b455d95aebc.png"
+          },
+          {
+            "name": "JP Morgan",
+            "order": 15,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/23/3cbb97105cf48aa8b79d89c3a3c166a0.png"
+          },
+          {
+            "name": "Adobe",
+            "order": 17,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/21/abc1ca60ece68058fd182d8a8fa64086.png"
+          },
+          {
+            "name": "Accenture",
+            "order": 18,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/57/f51594f9664e34708bb61c55d79c1fc0.png"
+          },
+          {
+            "name": "Cisco",
+            "order": 19,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/12572/318e3f39c482936b2839a1dec0dabdea.png"
+          },
+          {
+            "name": "Wipro",
+            "order": 23,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/37361/1b8d4684e2b4c6bbe7aee42c80875427.png"
+          },
+          {
+            "name": "Capegemini Consulting India Private Limited",
+            "order": 16,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001155_1684776194_Capgemini.webp"
+          },
+          {
+            "name": "Hexaview Tech",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001431_1686027831_Hexa%2520view.png"
+          },
+          {
+            "name": "MAQ Software",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/47/9686a3876507f2640e83b8eea5fe1a6d.png"
+          },
+          {
+            "name": "Scaler",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/scaler-21963.webp"
+          },
+          {
+            "name": "EPAM Systems",
+            "order": 9,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001398_1686026467_Emap.png"
+          },
+          {
+            "name": "Symphony Talent, LLC",
+            "order": 10,
+            "logo_url": "https://files.codingninjas.in/ST-Logo%25402x-1.png"
+          },
+          {
+            "name": "BrowserStack",
+            "order": 12,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001240_1684870632_Browser%2520stack.png"
+          },
+          {
+            "name": "Zoho Corporation",
+            "order": 13,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/3225/0b27ea2890728dac1dba4a2f87d1637d.png"
+          },
+          {
+            "name": "AMADEUS SOFTWARE LABS INDIA PRIVATE LIMITED",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/97e5251601f6a4181354b402bbfb058a.webp"
+          },
+          {
+            "name": "Unthinkable Solutions",
+            "order": 22,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2769/1792239d4175c7a30a5b6dff746a148b.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 14
+      },
+      {
+        "id": 7838,
+        "name": "Distinct Subsets Count",
+        "offering_id": 764603,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 40,
+        "offering_name": "Distinct Subsets Count",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 338,
+        "order": null,
+        "slug": "distinct-subsets-count_764603",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Tata Consultancy Services (TCS)",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Pocket FM",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/pocket-15813.webp"
+          },
+          {
+            "name": "Lowe's India",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/02191c593489cce8b9a21222b8c862f7.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 14
+      },
+      {
+        "id": 20257,
+        "name": "Insertion In Doubly Linked List",
+        "offering_id": 4609682,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 15,
+        "offering_name": "Insertion In Doubly Linked List",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 2031,
+        "order": null,
+        "slug": "insertion-in-doubly-linked-list_4609682",
+        "company_list": [
+          {
+            "name": "Red Hat",
+            "order": 11,
+            "logo_url": "https://files.codingninjas.in/33f6714d08981862d3741c594ce77ae3.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Qualcomm",
+            "order": 15,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/673/a22172f7ec33daf15bc6569be5bdf607.png"
+          },
+          {
+            "name": "Tata Consultancy Services (TCS)",
+            "order": 14,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 10,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 12,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Wipro",
+            "order": 13,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/37361/1b8d4684e2b4c6bbe7aee42c80875427.png"
+          },
+          {
+            "name": "BYJUS",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/36118/7f295b5d114dd5c5b0fd2eebc05d3d7b.png"
+          },
+          {
+            "name": "Coditas technology",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 13
+      },
+      {
+        "id": 16837,
+        "name": "Next Greater Element - I",
+        "offering_id": 3651446,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": null,
+        "offering_name": "Next Greater Element - I",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 1102,
+        "order": null,
+        "slug": "next-greater-element-i_3651446",
+        "company_list": [
+          {
+            "name": "MakeMyTrip",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/680/cfb77bef9d74a0a4cf52102daed7bffa.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Flipkart",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/16/89419331b9f7e550a189bd4ba51ca9ce.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Adobe",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/21/abc1ca60ece68058fd182d8a8fa64086.png"
+          },
+          {
+            "name": "Expedia Group",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2091/96021e4c6a6c1850c28a9ab02cac7e10.png"
+          },
+          {
+            "name": "Tata 1mg",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1783/646668a7935067735bd3e6ad40ee2096.png"
+          },
+          {
+            "name": "Tower Research Capital",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/tower-research-capital-16109.webp"
+          },
+          {
+            "name": "Zeta",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/0000000000002568.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 13
+      },
+      {
+        "id": 10986,
+        "name": "Number of Connected Computers.",
+        "offering_id": 1281389,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 10,
+        "offering_name": "Number of Connected Computers.",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 390,
+        "order": null,
+        "slug": "number-of-connected-computers_1281389",
+        "company_list": [
+          {
+            "name": "Facebook",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/671/005b4926e308d9f0cac091529ae09b67.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Microsoft",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Salesforce",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/30/794e491c9f0a68dadad41b6d36f66945.png"
+          },
+          {
+            "name": "Netlink",
+            "order": 2,
+            "logo_url": "data:image/jpeg;base64,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"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 13
+      },
+      {
+        "id": 10819,
+        "name": "Minimum Cost Tree From Leaf Nodes",
+        "offering_id": 1266047,
+        "difficulty": "Hard",
+        "avg_time_to_solve": 20,
+        "offering_name": "Minimum Cost Tree From Leaf Nodes",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 1232,
+        "order": null,
+        "slug": "minimum-cost-tree-from-leaf-nodes_1266047",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Goldman Sachs",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/29/aeacd9c525d4781763b3e38ac94e9611.png"
+          }
+        ],
+        "max_score": 120,
+        "reactions_count": 13
+      },
+      {
+        "id": 7448,
+        "name": "Nearest Multiple of 10",
+        "offering_id": 667099,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 15,
+        "offering_name": "Nearest Multiple of 10",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 1012,
+        "order": null,
+        "slug": "nearest-multiple-of-10_667099",
+        "company_list": [
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Microsoft",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "GreenClouds",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/3c886915d2cb1fdca8b5990988dd6ea2.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 13
+      },
+      {
+        "id": 7288,
+        "name": "Word Search - ll",
+        "offering_id": 630520,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 30,
+        "offering_name": "Word Search",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 1992,
+        "order": null,
+        "slug": "word-search_630520",
+        "company_list": [
+          {
+            "name": "Goldman Sachs",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/29/aeacd9c525d4781763b3e38ac94e9611.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Samsung",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/18/79184636778ed4dd720ebfe7db1965d9.png"
+          },
+          {
+            "name": "Google",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+          },
+          {
+            "name": "Uber",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/776/2ab7f1d4a1d4cb7376d6a1ddc96a8016.png"
+          },
+          {
+            "name": "OYO",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/17/6b66cc9ee03c00d99df00b455d95aebc.png"
+          },
+          {
+            "name": "Media.net",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001525_1687027059_Media%2520net.png"
+          },
+          {
+            "name": "Zepto",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/zepto-24388.webp"
+          },
+          {
+            "name": "Celigo",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/celigo-14761.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 13
+      }
+    ],
+    "total_pages": "53",
+    "page": "35"
+  },
+  "message": "List of problems",
+  "status": 200,
+  "error": null,
+  "disabled": false,
+  "update": false,
+  "external_rating": null
+}

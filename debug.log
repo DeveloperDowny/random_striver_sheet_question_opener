@@ -623,3 +623,351 @@
 2024-07-14 22:26:15,773 - INFO - History updated.
 2024-07-14 22:27:06,307 - INFO - History updated.
 2024-07-14 22:27:06,307 - INFO - Script finished.
+2024-07-19 09:28:23,747 - INFO - Script started.
+2024-07-19 09:28:28,697 - INFO - Processing os_core_sheet
+2024-07-19 09:28:28,698 - INFO - Selected topic: {
+  "id": "Critical-Section-Problem",
+  "sl_no_in_step": 5,
+  "title": "Critical Section Problem",
+  "yt_link": null,
+  "article_link": null
+}
+2024-07-19 09:28:28,699 - INFO - Link: https://www.google.com/search?q=Critical+Section+Problem+site%3Ageeksforgeeks.org
+2024-07-19 09:28:28,701 - INFO - History updated.
+2024-07-19 13:13:13,265 - INFO - History updated.
+2024-07-19 13:13:13,269 - INFO - Script finished.
+2024-07-19 17:05:03,035 - INFO - Script started.
+2024-07-19 17:05:06,361 - INFO - Script started.
+2024-07-19 17:05:07,749 - INFO - Processing lc_sql_50
+2024-07-19 17:05:07,751 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "count-salary-categories",
+  "title": "Count Salary Categories",
+  "questionFrontendId": "1907",
+  "paidOnly": false,
+  "id": "2057",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 17:05:07,753 - INFO - Link: https://www.google.com/search?q=Count+Salary+Categories+site%3Aleetcode.com
+2024-07-19 17:05:07,754 - INFO - History updated.
+2024-07-19 17:12:40,169 - INFO - Script finished.
+2024-07-19 17:12:42,159 - INFO - Script started.
+2024-07-19 17:12:43,926 - INFO - Processing lc_sql_50
+2024-07-19 17:12:43,928 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "confirmation-rate",
+  "title": "Confirmation Rate",
+  "questionFrontendId": "1934",
+  "paidOnly": false,
+  "id": "2087",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": false,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 17:12:43,930 - INFO - Link: https://www.google.com/search?q=Confirmation+Rate+site%3Aleetcode.com
+2024-07-19 17:12:43,931 - INFO - History updated.
+2024-07-19 17:13:07,976 - INFO - Script finished.
+2024-07-19 17:13:10,503 - INFO - Script started.
+2024-07-19 17:13:12,031 - INFO - Processing lc_dsa_75
+2024-07-19 17:13:12,034 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "maximum-average-subarray-i",
+  "title": "Maximum Average Subarray I",
+  "questionFrontendId": "643",
+  "paidOnly": false,
+  "id": "643",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "array",
+      "name": "Array"
+    },
+    {
+      "slug": "sliding-window",
+      "name": "Sliding Window"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 17:13:12,037 - INFO - Link: https://www.google.com/search?q=Maximum+Average+Subarray+I+site%3Aleetcode.com
+2024-07-19 17:13:12,038 - INFO - History updated.
+2024-07-19 17:13:40,625 - INFO - History updated.
+2024-07-19 17:13:40,625 - INFO - Script finished.
+2024-07-19 17:13:42,944 - INFO - Script started.
+2024-07-19 17:13:47,997 - INFO - Script started.
+2024-07-19 17:13:53,949 - INFO - Script started.
+2024-07-19 17:13:56,278 - INFO - Processing lc_sql_50
+2024-07-19 17:13:56,279 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "project-employees-i",
+  "title": "Project Employees I",
+  "questionFrontendId": "1075",
+  "paidOnly": false,
+  "id": "1161",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 17:13:56,282 - INFO - Link: https://www.google.com/search?q=Project+Employees+I+site%3Aleetcode.com
+2024-07-19 17:13:56,283 - INFO - History updated.
+2024-07-19 17:19:13,661 - INFO - Script finished.
+2024-07-19 17:19:15,873 - INFO - Script started.
+2024-07-19 17:19:19,928 - INFO - Processing lc_sql_50
+2024-07-19 17:19:19,930 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "list-the-products-ordered-in-a-period",
+  "title": "List the Products Ordered in a Period",
+  "questionFrontendId": "1327",
+  "paidOnly": false,
+  "id": "1462",
+  "difficulty": "EASY",
+  "hasOfficialSolution": false,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 17:19:19,934 - INFO - Link: https://www.google.com/search?q=List+the+Products+Ordered+in+a+Period+site%3Aleetcode.com
+2024-07-19 17:19:19,935 - INFO - History updated.
+2024-07-19 17:25:35,727 - INFO - Script finished.
+2024-07-19 17:25:53,863 - INFO - Script started.
+2024-07-19 17:26:02,901 - INFO - Processing lc_dsa_75
+2024-07-19 17:26:02,904 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "container-with-most-water",
+  "title": "Container With Most Water",
+  "questionFrontendId": "11",
+  "paidOnly": false,
+  "id": "11",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "array",
+      "name": "Array"
+    },
+    {
+      "slug": "two-pointers",
+      "name": "Two Pointers"
+    },
+    {
+      "slug": "greedy",
+      "name": "Greedy"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 17:26:02,908 - INFO - Link: https://www.google.com/search?q=Container+With+Most+Water+site%3Aleetcode.com
+2024-07-19 17:26:02,909 - INFO - History updated.
+2024-07-19 18:21:54,126 - INFO - Script finished.
+2024-07-19 18:21:56,599 - INFO - Script started.
+2024-07-19 18:21:57,543 - INFO - Processing lc_dsa_75
+2024-07-19 18:21:57,546 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "search-in-a-binary-search-tree",
+  "title": "Search in a Binary Search Tree",
+  "questionFrontendId": "700",
+  "paidOnly": false,
+  "id": "783",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "tree",
+      "name": "Tree"
+    },
+    {
+      "slug": "binary-search-tree",
+      "name": "Binary Search Tree"
+    },
+    {
+      "slug": "binary-tree",
+      "name": "Binary Tree"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 18:21:57,551 - INFO - Link: https://www.google.com/search?q=Search+in+a+Binary+Search+Tree+site%3Aleetcode.com
+2024-07-19 18:21:57,553 - INFO - History updated.
+2024-07-19 18:22:14,639 - INFO - Script finished.
+2024-07-19 18:22:18,086 - INFO - Script started.
+2024-07-19 18:22:19,351 - INFO - Processing sde_sheet
+2024-07-19 18:22:19,364 - INFO - Selected topic: {
+  "id": "nqnsprblm",
+  "step_no": 10,
+  "sl_no_in_step": 2,
+  "head_step_no": "Recursion and Backtracking",
+  "title": "N queens Problem",
+  "post_link": "https://takeuforward.org/data-structure/n-queen-problem-return-all-distinct-solutions-to-the-n-queens-puzzle/",
+  "yt_link": "https://www.youtube.com/watch?v=i05Ju7AftcM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=57",
+  "cs_link": "https://bit.ly/3zSZavC",
+  "gfg_link": null,
+  "lc_link": "https://leetcode.com/problems/n-queens/",
+  "company_tags": null,
+  "difficulty": 2,
+  "ques_topic": "[{\"value\":\"arrays\",\"label\":\"Arrays\"},{\"value\":\"recursion\",\"label\":\"Recursion\"}]"
+}
+2024-07-19 18:22:19,368 - INFO - Link: https://www.google.com/search?q=N+queens+Problem+site%3Anaukri.com
+2024-07-19 18:22:19,369 - INFO - History updated.
+2024-07-19 18:40:35,920 - INFO - Script finished.
+2024-07-19 18:40:38,514 - INFO - Script started.
+2024-07-19 18:40:40,854 - INFO - Processing lc_sql_50
+2024-07-19 18:40:40,858 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "second-highest-salary",
+  "title": "Second Highest Salary",
+  "questionFrontendId": "176",
+  "paidOnly": false,
+  "id": "176",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 18:40:40,862 - INFO - Link: https://www.google.com/search?q=Second+Highest+Salary+site%3Aleetcode.com
+2024-07-19 18:40:40,863 - INFO - History updated.
+2024-07-19 18:41:33,372 - INFO - Script finished.
+2024-07-19 18:41:35,616 - INFO - Script started.
+2024-07-19 18:41:39,282 - INFO - Processing lc_sql_50
+2024-07-19 18:41:39,284 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "find-customer-referee",
+  "title": "Find Customer Referee",
+  "questionFrontendId": "584",
+  "paidOnly": false,
+  "id": "584",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 18:41:39,288 - INFO - Link: https://www.google.com/search?q=Find+Customer+Referee+site%3Aleetcode.com
+2024-07-19 18:41:39,289 - INFO - History updated.
+2024-07-19 18:45:10,147 - INFO - Script finished.
+2024-07-19 18:45:11,469 - INFO - Script started.
+2024-07-19 18:45:14,017 - INFO - Processing lc_sql_50
+2024-07-19 18:45:14,019 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "biggest-single-number",
+  "title": "Biggest Single Number",
+  "questionFrontendId": "619",
+  "paidOnly": false,
+  "id": "619",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2024-07-19 18:45:14,022 - INFO - Link: https://www.google.com/search?q=Biggest+Single+Number+site%3Aleetcode.com
+2024-07-19 18:45:14,023 - INFO - History updated.
+2024-07-19 18:55:33,842 - INFO - Script finished.
+2024-07-23 12:04:28,430 - INFO - Script started.
+2024-07-23 12:04:31,525 - INFO - Processing microsoft_dsa
+2024-07-23 12:04:31,537 - INFO - Selected topic: {
+  "id": 7668,
+  "name": "Return Subsets Sum to K",
+  "offering_id": 759331,
+  "difficulty": "Moderate",
+  "avg_time_to_solve": 40,
+  "offering_name": "Return Subsets Sum to K",
+  "is_new": null,
+  "practice_topics": null,
+  "submission_count": 18046,
+  "order": null,
+  "slug": "return-subsets-sum-to-k_759331",
+  "company_list": [
+    {
+      "name": "Thought Works",
+      "order": 2,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/208/78ef3caf8ba58262dbeb57348ed29456.png"
+    },
+    {
+      "name": "Microsoft",
+      "order": 1,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+    },
+    {
+      "name": "Infosys",
+      "order": 3,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/686/2398087c932cba820ce21d86962f9425.png"
+    },
+    {
+      "name": "Uber",
+      "order": 4,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/776/2ab7f1d4a1d4cb7376d6a1ddc96a8016.png"
+    },
+    {
+      "name": "Samsung",
+      "order": 6,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/18/79184636778ed4dd720ebfe7db1965d9.png"
+    },
+    {
+      "name": "Sprinklr",
+      "order": 7,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/39/069396ca2111d2522a50b7fd40c88b51.png"
+    },
+    {
+      "name": "Pristyn Care",
+      "order": 5,
+      "logo_url": "https://files.codingninjas.in/pristyn-care-28324.webp"
+    },
+    {
+      "name": "Pegasystems",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/pegasystems-15166.webp"
+    },
+    {
+      "name": "Algogenix Pvt Ltd",
+      "order": null,
+      "logo_url": "NA"
+    },
+    {
+      "name": "Avalara",
+      "order": 8,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001175_1684814489_Avalara.webp"
+    }
+  ],
+  "max_score": 80,
+  "reactions_count": 133
+}
+2024-07-23 12:04:31,541 - INFO - Link: https://www.google.com/search?q=Return+Subsets+Sum+to+K+site%3Anaukri.com
+2024-07-23 12:04:31,542 - INFO - History updated.

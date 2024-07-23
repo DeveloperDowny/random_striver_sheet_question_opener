@@ -4,6 +4,7 @@ import logging
 import urllib.parse
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
+import os
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
@@ -47,6 +48,9 @@ class SheetHandler(ABC):
         with open(self.history_file_path, "w") as file:
             json.dump({"solved_ids": history}, file, indent=2)
         logger.info("History updated.")
+    
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["title"]
 
     def process(self) -> None:
         logger.info(f"Processing {self.file_name}")
@@ -66,7 +70,7 @@ class SheetHandler(ABC):
             return
 
         logger.info(f"Selected topic: {json.dumps(random_topic, indent=2)}")
-        link = self.create_link(random_topic["title"])
+        link = self.create_link(self.get_title(random_topic))
         logger.info(f"Link: {link}")
         self.update_history(history, id)
         
@@ -80,6 +84,7 @@ class SheetHandler(ABC):
             logger.info("Debug mode enabled. Skipping history update.")
             return
         revision_id = history.pop()
+        revision_id = str(revision_id)
         with open(self.revision_file_path, "a") as file:
             file.write(revision_id + "\n")
             
@@ -134,6 +139,34 @@ class GFGMustDoProductHandler(SheetHandler):
     # def create_link(self, link: str) -> str:
     #     return link
 
+class MicrosoftDSAHandler(SheetHandler):
+    def __init__(self):
+        super().__init__("microsoft_dsa", "naukri.com") 
+    
+    microsoft_jsons_path = "microsoft_question_jsons"
+    def get_all_jsons(self):
+        files = os.listdir(self.microsoft_jsons_path)
+        return files
+
+    def pick_random_json(self):
+        files = self.get_all_jsons()
+        file = random.choice(files)
+        return file
+
+    def get_json(self, file):
+        with open(f"{self.microsoft_jsons_path}/{file}", "r") as f:
+            data = json.load(f)
+        return data
+
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["name"]
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        random_json_file = self.pick_random_json()
+        data = self.get_json(random_json_file)
+        logger.debug("Flattening Microsoft DSA data.")
+        return data["data"]["problem_list"]
+
 class SheetHandlerFactory:
     @staticmethod
     def create_handler(sheet_type: str) -> SheetHandler:
@@ -148,6 +181,8 @@ class SheetHandlerFactory:
             return GFGMustDoProductHandler()
         elif sheet_type == "lc_dsa_75":
             return LeetCodeDSA75Handler()
+        elif sheet_type == "microsoft_dsa":
+            return MicrosoftDSAHandler()
         else:
             raise ValueError(f"Invalid sheet type: {sheet_type}")
     
@@ -163,7 +198,7 @@ class SheetHandlerFactory:
 
 def main():
     logger.info("Script started.")
-    sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50", "must_do_product_gfg", "lc_dsa_75"]
+    sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50", "must_do_product_gfg", "lc_dsa_75", "microsoft_dsa"]
     filtered_sheet_types = SheetHandlerFactory.get_sheet_type(sheet_types)
     sheet_type = random.choice(filtered_sheet_types)
     handler = SheetHandlerFactory.create_handler(sheet_type)

@@ -1,0 +1,117 @@
+{
+  "data": {
+    "problem_list": [
+      {
+        "id": 16447,
+        "name": "Minimum Elevator",
+        "offering_id": 3155165,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 15,
+        "offering_name": "Minimum Elevator",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 54,
+        "order": null,
+        "slug": "minimum-elevator_3155165",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Google",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 1
+      },
+      {
+        "id": 15669,
+        "name": "Wizard\u2019s Question",
+        "offering_id": 2674113,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 25,
+        "offering_name": "Wizard\u2019s Question",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 49,
+        "order": null,
+        "slug": "wizard-s-question_2674113",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 1
+      },
+      {
+        "id": 12699,
+        "name": "Consecutive Days",
+        "offering_id": 1472842,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 10,
+        "offering_name": "Consecutive Days",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 73,
+        "order": null,
+        "slug": "consecutive-days_1472842",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 1
+      },
+      {
+        "id": 10758,
+        "name": "Rotate Function",
+        "offering_id": 1264290,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 25,
+        "offering_name": "Rotate Function",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 684,
+        "order": null,
+        "slug": "rotate-function_1264290",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Apple",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/670/9ffcf0668216c6bbd1466015b018459a.png"
+          },
+          {
+            "name": "Google",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 1
+      }
+    ],
+    "total_pages": "53",
+    "page": "53"
+  },
+  "message": "List of problems",
+  "status": 200,
+  "error": null,
+  "disabled": false,
+  "update": false,
+  "external_rating": null
+}
