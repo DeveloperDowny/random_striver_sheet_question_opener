@@ -5,6 +5,7 @@ import urllib.parse
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
 import os
+import enum
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
@@ -16,17 +17,52 @@ logger = logging.getLogger()
 kdebugMode = False
 
 class SheetHandler(ABC):
-    def __init__(self, file_name: str, site: str):
+    def __init__(self, file_name: str, site: str, jsons_path = None, difficulty = None):
         self.file_name = file_name
         self.site = site
+        self.jsons_path = jsons_path
+        self.difficulty = difficulty
+        
+        
         self.data_file_path = f"data/{file_name}.json"
         self.history_file_path = f"history/{file_name}.json"
         self.revision_file_path = f"revision/{file_name}.txt"
+        
+        # making the file reference absolute
+        self.base_dir =  r"D:\DPythonProjects\random_striver_sheet_question_opener"
+        self.data_file_path = os.path.join(self.base_dir, self.data_file_path)
+        self.history_file_path = os.path.join(self.base_dir, self.history_file_path)
+        self.revision_file_path = os.path.join(self.base_dir, self.revision_file_path)
+        
+        
+        
         self.should_allow_repeats = False
 
     @abstractmethod
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         pass
+
+    def get_all_jsons(self):
+        files = os.listdir(self.jsons_path)
+        return files
+
+    def pick_random_json(self):
+        files = self.get_all_jsons()
+        file = random.choice(files)
+        return file
+
+    def get_json(self, file):
+        with open(f"{self.jsons_path}/{file}", "r") as f:
+            data = json.load(f)
+        return data
+    
+    def questions_from_jsons(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        random_json_file = self.pick_random_json()
+        data = self.get_json(random_json_file) 
+        logger.debug(f"Flattening {self.file_name} data.") 
+        questions =  data["data"]["problem_list"]
+        questions = [item for item in questions if item["difficulty"] == self.difficulty.value]
+        return questions
 
     def remove_solved(self, sheet_data: List[Dict[str, Any]], solved_ids: List[str]) -> List[Dict[str, Any]]:
         logger.debug("Removing solved items from sheet data.")
@@ -139,33 +175,36 @@ class GFGMustDoProductHandler(SheetHandler):
     # def create_link(self, link: str) -> str:
     #     return link
 
+class NaukriDifficulties(enum.Enum):
+    EASY = "Easy"
+    MEDIUM = "Moderate"
+    HARD = "Hard"   
+
 class MicrosoftDSAHandler(SheetHandler):
     def __init__(self):
-        super().__init__("microsoft_dsa", "naukri.com") 
+        super().__init__("microsoft_dsa", "naukri.com", "microsoft_question_jsons", NaukriDifficulties.MEDIUM) 
+        self.difficulty = NaukriDifficulties.MEDIUM # default difficulty
     
-    microsoft_jsons_path = "microsoft_question_jsons"
-    def get_all_jsons(self):
-        files = os.listdir(self.microsoft_jsons_path)
-        return files
 
-    def pick_random_json(self):
-        files = self.get_all_jsons()
-        file = random.choice(files)
-        return file
-
-    def get_json(self, file):
-        with open(f"{self.microsoft_jsons_path}/{file}", "r") as f:
-            data = json.load(f)
-        return data
 
     def get_title(self, topic: Dict[str, Any]) -> str:
         return topic["name"]
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
-        random_json_file = self.pick_random_json()
-        data = self.get_json(random_json_file)
-        logger.debug("Flattening Microsoft DSA data.")
-        return data["data"]["problem_list"]
+        return self.questions_from_jsons(data)
+
+class OracleDSAHandler(SheetHandler):
+    def __init__(self):
+        super().__init__("oracle_dsa", "leetcode.com", "oracle_question_jsons", NaukriDifficulties.MEDIUM) 
+        self.difficulty = NaukriDifficulties.MEDIUM # default difficulty
+    
+
+
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["name"]
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        return self.questions_from_jsons(data)
 
 class SheetHandlerFactory:
     @staticmethod
@@ -181,8 +220,10 @@ class SheetHandlerFactory:
             return GFGMustDoProductHandler()
         elif sheet_type == "lc_dsa_75":
             return LeetCodeDSA75Handler()
-        elif sheet_type == "microsoft_dsa":
-            return MicrosoftDSAHandler()
+        elif sheet_type == "microsoft_dsa": 
+            return MicrosoftDSAHandler() 
+        elif sheet_type == "oracle_dsa":
+            return OracleDSAHandler()
         else:
             raise ValueError(f"Invalid sheet type: {sheet_type}")
     
@@ -198,7 +239,7 @@ class SheetHandlerFactory:
 
 def main():
     logger.info("Script started.")
-    sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50", "must_do_product_gfg", "lc_dsa_75", "microsoft_dsa"]
+    sheet_types = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50", "must_do_product_gfg", "lc_dsa_75", "microsoft_dsa", "oracle_dsa"] 
     filtered_sheet_types = SheetHandlerFactory.get_sheet_type(sheet_types)
     sheet_type = random.choice(filtered_sheet_types)
     handler = SheetHandlerFactory.create_handler(sheet_type)

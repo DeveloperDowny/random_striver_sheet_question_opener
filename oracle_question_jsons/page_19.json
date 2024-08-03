@@ -1,0 +1,254 @@
+{
+  "data": {
+    "problem_list": [
+      {
+        "id": 15600,
+        "name": "Anish and MEX!",
+        "offering_id": 2656028,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 20,
+        "offering_name": "Anish and MEX!",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 45,
+        "order": null,
+        "slug": "anish-and-mex_2656028",
+        "company_list": [
+          {
+            "name": "Oracle",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 2
+      },
+      {
+        "id": 12449,
+        "name": "Burgers At Ninja-Cafe",
+        "offering_id": 1461339,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 15,
+        "offering_name": "burgers",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 91,
+        "order": null,
+        "slug": "burgers_1461339",
+        "company_list": [
+          {
+            "name": "Oracle",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 1
+      },
+      {
+        "id": 9276,
+        "name": "Leftmost and rightmost nodes in a binary tree",
+        "offering_id": 981310,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 20,
+        "offering_name": "Leftmost and rightmost nodes in a binary tree",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 218,
+        "order": null,
+        "slug": "leftmost-and-rightmost-nodes-in-a-binary-tree_981310",
+        "company_list": [
+          {
+            "name": "Adobe",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/21/abc1ca60ece68058fd182d8a8fa64086.png"
+          },
+          {
+            "name": "SAP Labs",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/684/13223139a6b57c3d630adc4670606180.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Cisco",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/12572/318e3f39c482936b2839a1dec0dabdea.png"
+          },
+          {
+            "name": "Grab",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1158/1d505241ba9b4162117f7021908ccd39.png"
+          },
+          {
+            "name": "Disney + Hotstar",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/disney-hotstar-16055.webp"
+          },
+          {
+            "name": "Swiggy",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/864/2c120a9026db28f71a44fbc5391314f7.png"
+          },
+          {
+            "name": "Oracle",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Netcore",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/netcore-11888.webp"
+          },
+          {
+            "name": "Cumulus Systems",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/0000000000002020.png"
+          },
+          {
+            "name": "LeadVenture",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 1
+      },
+      {
+        "id": 9111,
+        "name": "Convert A Given Number To Words",
+        "offering_id": 975382,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 15,
+        "offering_name": "Convert a given number to words",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 230,
+        "order": null,
+        "slug": "convert-a-given-number-to-words_975382",
+        "company_list": [
+          {
+            "name": "Goldman Sachs",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/29/aeacd9c525d4781763b3e38ac94e9611.png"
+          },
+          {
+            "name": "HSBC",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/22/9104778d403290c07df98eea1a492294.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Zenon",
+            "order": 2,
+            "logo_url": "https://zenon.ai/docs/layout1/img/logo_Zenon_125x30px.png"
+          },
+          {
+            "name": "Zoho Corporation",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/3225/0b27ea2890728dac1dba4a2f87d1637d.png"
+          },
+          {
+            "name": "99acres",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001132_1684771507_99%2520Acers.png"
+          },
+          {
+            "name": "HashedIn",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1899/823ec2e447d91f9a1482eff3c062bb2e.png"
+          },
+          {
+            "name": "Clearwater Analytics",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001199_1684815354_Clear%2520water.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 1
+      },
+      {
+        "id": 349,
+        "name": "Check Permutation",
+        "offering_id": 624575,
+        "difficulty": "Easy",
+        "avg_time_to_solve": null,
+        "offering_name": "Check Permutation",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 276650,
+        "order": null,
+        "slug": "check-permutation_624575",
+        "company_list": [
+          {
+            "name": "Oracle",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "GeeksforGeeks",
+            "order": 10,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001372_1685987036_App%2520-%2520Geeks%2520for%2520Geeks.webp"
+          },
+          {
+            "name": "Adobe",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/21/abc1ca60ece68058fd182d8a8fa64086.png"
+          },
+          {
+            "name": "Zemoso",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/5e700f53a406cc2ae8d6a892_zemoso_logo-p-500.webp"
+          },
+          {
+            "name": "Saxo Bank",
+            "order": 8,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Incedo Inc.",
+            "order": 9,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001382_1685987639_Incedo.webp"
+          },
+          {
+            "name": "Accolite",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/672/d8858264f44a00852f8f90c3ac557086.png"
+          },
+          {
+            "name": "Newton School",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001537_1687144250_Newton%2520School.png"
+          },
+          {
+            "name": "Emerson electric co.",
+            "order": 6,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Guardian Life",
+            "order": 7,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 1
+      }
+    ],
+    "total_pages": "19",
+    "page": "19"
+  },
+  "message": "List of problems",
+  "status": 200,
+  "error": null,
+  "disabled": false,
+  "update": false,
+  "external_rating": null
+}

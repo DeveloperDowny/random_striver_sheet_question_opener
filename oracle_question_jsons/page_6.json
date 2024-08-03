@@ -1,0 +1,1229 @@
+{
+  "data": {
+    "problem_list": [
+      {
+        "id": 10007,
+        "name": "Check If One String Is A Rotation Of Another String",
+        "offering_id": 1115683,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 15,
+        "offering_name": "Check if one string is a rotation of another string",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 34823,
+        "order": null,
+        "slug": "check-if-one-string-is-a-rotation-of-another-string_1115683",
+        "company_list": [
+          {
+            "name": "Oracle",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "SAP Labs",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/684/13223139a6b57c3d630adc4670606180.png"
+          },
+          {
+            "name": "Myntra",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/679/5061b078d366b2c0736be2e7ee9317f3.png"
+          },
+          {
+            "name": "Tata 1mg",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1783/646668a7935067735bd3e6ad40ee2096.png"
+          },
+          {
+            "name": "American Express",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/42/3e977fa248f0de6f0458b7e0a189153f.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Flipkart",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/16/89419331b9f7e550a189bd4ba51ca9ce.png"
+          },
+          {
+            "name": "Zop Smart",
+            "order": 9,
+            "logo_url": "https://files.codingninjas.in/851095a49b3ebdc28253323e5eb3e02d.webp"
+          },
+          {
+            "name": "Societe Generale",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/societe-generale-15376.webp"
+          },
+          {
+            "name": "Norsk Hydro",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/1200px-Norsk_Hydro.svg.png"
+          },
+          {
+            "name": "Velocix",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/velocix-14640.webp"
+          },
+          {
+            "name": "Fareportal Private Ltd",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "FinIQ",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Nagaaro",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/50b3d16449d111c29a1619f99db0f646.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 150
+      },
+      {
+        "id": 7280,
+        "name": "Find Number Of Islands",
+        "offering_id": 630512,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 34,
+        "offering_name": "Find Number of Islands",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 9157,
+        "order": null,
+        "slug": "find-number-of-islands_630512",
+        "company_list": [
+          {
+            "name": "Arcesium",
+            "order": 34,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/53/d10823ef4c959e545f1f6eb46ca4978d.png"
+          },
+          {
+            "name": "American Express",
+            "order": 35,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/42/3e977fa248f0de6f0458b7e0a189153f.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 36,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Walmart",
+            "order": 38,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/20/13416f98fdf46c67388b12569096cbad.png"
+          },
+          {
+            "name": "Infosys",
+            "order": 39,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/686/2398087c932cba820ce21d86962f9425.png"
+          },
+          {
+            "name": "ShareChat",
+            "order": 41,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/3426/3f81c10c1b5322c48b42fd244cf15866.png"
+          },
+          {
+            "name": "Thales",
+            "order": 48,
+            "logo_url": "https://files.codingninjas.in/acaa1cbec3175599e2383aed322aaf3a.webp"
+          },
+          {
+            "name": "Sprinklr",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/39/069396ca2111d2522a50b7fd40c88b51.png"
+          },
+          {
+            "name": "Atlassian",
+            "order": null,
+            "logo_url": "https://files.codingninjas.com/atlassian_logo-1200x630-1-1709031685.webp"
+          },
+          {
+            "name": "MakeMyTrip",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/680/cfb77bef9d74a0a4cf52102daed7bffa.png"
+          },
+          {
+            "name": "Samsung Electronics",
+            "order": null,
+            "logo_url": "https://files.codingninjas.com/samsung-2024-1709039387.webp"
+          },
+          {
+            "name": "OLX Group",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/495/cfc1f1f04dc6d38db8157b12d2ea19e7.png"
+          },
+          {
+            "name": "Disney + Hotstar",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/disney-hotstar-16055.webp"
+          },
+          {
+            "name": "Amazon",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "HSBC",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/22/9104778d403290c07df98eea1a492294.png"
+          },
+          {
+            "name": "Cisco",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/12572/318e3f39c482936b2839a1dec0dabdea.png"
+          },
+          {
+            "name": "Dunzo",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/818/6813ecb3bc598d5845b532c14135c271.png"
+          },
+          {
+            "name": "CIS - Cyber Infrastructure",
+            "order": 45,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/40/e44e0645b0128bcfdc06b1e4ccf14e65.png"
+          },
+          {
+            "name": "Swiggy",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/864/2c120a9026db28f71a44fbc5391314f7.png"
+          },
+          {
+            "name": "Paypal",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/675/c432d22f611cbb68026f70492d2f6852.png"
+          },
+          {
+            "name": "IBM",
+            "order": 42,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/677/50ba61e47b5594d7c34efe141ee43725.png"
+          },
+          {
+            "name": "Morgan Stanley",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/19/49a90af13a5e7694d7ecaec75ca9e1db.png"
+          },
+          {
+            "name": "Hike",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001434_1686027927_App%2520-%2520Hike.webp"
+          },
+          {
+            "name": "Google",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Uber",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/776/2ab7f1d4a1d4cb7376d6a1ddc96a8016.png"
+          },
+          {
+            "name": "Apple",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/670/9ffcf0668216c6bbd1466015b018459a.png"
+          },
+          {
+            "name": "Salesforce",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/30/794e491c9f0a68dadad41b6d36f66945.png"
+          },
+          {
+            "name": "CIS - Cyber Infrastructure",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/40/e44e0645b0128bcfdc06b1e4ccf14e65.png"
+          },
+          {
+            "name": "Goldman Sachs",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/29/aeacd9c525d4781763b3e38ac94e9611.png"
+          },
+          {
+            "name": "SAP Labs",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/684/13223139a6b57c3d630adc4670606180.png"
+          },
+          {
+            "name": "Meesho",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/meesho-14803.webp"
+          },
+          {
+            "name": "OYO",
+            "order": 9,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/17/6b66cc9ee03c00d99df00b455d95aebc.png"
+          },
+          {
+            "name": "Cognizant",
+            "order": 12,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/841/90c29fb8e0b9ac9c35cb527aac3d990d.png"
+          },
+          {
+            "name": "Wells Fargo",
+            "order": 15,
+            "logo_url": "data:image/png;base64,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"
+          },
+          {
+            "name": "Zomato",
+            "order": 18,
+            "logo_url": "https://files.codingninjas.in/0000000000002285.png"
+          },
+          {
+            "name": "Intuit",
+            "order": 19,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/28/9f2f3fbbd8df9ea24fec84404902dc39.png"
+          },
+          {
+            "name": "Flipkart",
+            "order": 21,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/16/89419331b9f7e550a189bd4ba51ca9ce.png"
+          },
+          {
+            "name": "Accenture",
+            "order": 22,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/57/f51594f9664e34708bb61c55d79c1fc0.png"
+          },
+          {
+            "name": "HCL Technologies",
+            "order": 23,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1067/2a70ec6d52f0e1205579203bd01102f9.png"
+          },
+          {
+            "name": "Delhivery",
+            "order": 25,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001265_1684871704_Delhivery.png"
+          },
+          {
+            "name": "MongoDB",
+            "order": 26,
+            "logo_url": "https://files.codingninjas.in/1562088387077-12340.webp"
+          },
+          {
+            "name": "Expedia Group",
+            "order": 27,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2091/96021e4c6a6c1850c28a9ab02cac7e10.png"
+          },
+          {
+            "name": "Samsung",
+            "order": 28,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/18/79184636778ed4dd720ebfe7db1965d9.png"
+          },
+          {
+            "name": "Urban Company (UrbanClap)",
+            "order": 29,
+            "logo_url": "https://files.codingninjas.in/5fab8566ddaff.png"
+          },
+          {
+            "name": "Ola",
+            "order": 32,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/125/1b8b966b288e0184f83c464c04f0755c.png"
+          },
+          {
+            "name": "LinkedIn",
+            "order": 33,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001025_1684166979_App%2520-%2520Linkedin.png"
+          },
+          {
+            "name": "Rudder Analytics",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/0000000000004568.webp"
+          },
+          {
+            "name": "WinZO",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/winzo-24957.webp"
+          },
+          {
+            "name": "Zeta",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/0000000000002568.webp"
+          },
+          {
+            "name": "Josh Technology Group",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/206/f76170e8afc31e6c6f2ddb7c558c6fad.png"
+          },
+          {
+            "name": "Liberin Technologies",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/1656437311385-31830.webp"
+          },
+          {
+            "name": "Busibud solutions pvt ltd",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/busibud-26641.webp"
+          },
+          {
+            "name": "RedBus",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/6639/7de7b3ccc8bc7209c32aebe056e4dbfd.png"
+          },
+          {
+            "name": "Mercer Mettl",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/mercer-26297.webp"
+          },
+          {
+            "name": "DTCC",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/AGIKgqOZWdsAXosFAWHA-rGdEGsJY3W3WyJaLQjd5Zn_mQ%3Ds900-c-k-c0x00ffffff-no-rj.webp"
+          },
+          {
+            "name": "BarRaiser",
+            "order": null,
+            "logo_url": "https://media.licdn.com/dms/image/D560BAQFmGkvGs3ZoMQ/company-logo_200_200/0/1665577889489?e=1689206400&v=beta&t=8eM1Z2uMT91V33bE91DJJ3oyh-CHhX5Q3ytkwYZ6Kvc"
+          },
+          {
+            "name": "Pegasystems",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/pegasystems-15166.webp"
+          },
+          {
+            "name": "Twilio",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/15424/940f74e15760a7e0ec04a6c2a3c63a99.png"
+          },
+          {
+            "name": "CRISIL",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/crisil-14685.webp"
+          },
+          {
+            "name": "Practo",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/practo-16099.jpeg"
+          },
+          {
+            "name": "Quizizz Inc.",
+            "order": 11,
+            "logo_url": "https://files.codingninjas.in/quizizz-inc-13776.webp"
+          },
+          {
+            "name": "Pluang",
+            "order": 13,
+            "logo_url": "https://pluang-production-uploads.s3-ap-southeast-1.amazonaws.com/website-items/pluang-website/pluang-logo-header-font.svg"
+          },
+          {
+            "name": "Trilogy Innovations",
+            "order": 14,
+            "logo_url": "https://files.codingninjas.in/35d547_c1cf512a72d24db4972da23fc03c5c46~mv2.webp"
+          },
+          {
+            "name": "NI (National Instruments)",
+            "order": 17,
+            "logo_url": "https://files.codingninjas.in/ni-national-instruments-15775.webp"
+          },
+          {
+            "name": "Tekion Corp",
+            "order": 20,
+            "logo_url": "https://files.codingninjas.in/tekioncorp-14745.jfif"
+          },
+          {
+            "name": "Accolite",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/672/d8858264f44a00852f8f90c3ac557086.png"
+          },
+          {
+            "name": "MAQ Software",
+            "order": 24,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/47/9686a3876507f2640e83b8eea5fe1a6d.png"
+          },
+          {
+            "name": "ION",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/6ebcd44695010997181ea7fe5f5b148a.png"
+          },
+          {
+            "name": "Truminds Software Systems",
+            "order": 31,
+            "logo_url": "https://files.codingninjas.in/truminds-software-systems-14580.webp"
+          },
+          {
+            "name": "Springworks",
+            "order": 37,
+            "logo_url": "https://files.codingninjas.in/581f91277055fd6debe02b978831c21a.png"
+          },
+          {
+            "name": "Nykaa",
+            "order": 40,
+            "logo_url": "https://files.codingninjas.in/nykaa-14655.webp"
+          },
+          {
+            "name": "BYJUS",
+            "order": 43,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/36118/7f295b5d114dd5c5b0fd2eebc05d3d7b.png"
+          },
+          {
+            "name": "HashedIn",
+            "order": 44,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1899/823ec2e447d91f9a1482eff3c062bb2e.png"
+          },
+          {
+            "name": "Jupiter Money",
+            "order": 46,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001467_1686631003_App%2520-%2520Jupitor%2520money.png"
+          },
+          {
+            "name": "MasterCard",
+            "order": 47,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001518_1687025514_MAQ%2520Software.webp"
+          },
+          {
+            "name": "Tower Research Capital",
+            "order": 49,
+            "logo_url": "https://files.codingninjas.in/tower-research-capital-16109.webp"
+          },
+          {
+            "name": "Nagaaro",
+            "order": 10,
+            "logo_url": "https://files.codingninjas.in/50b3d16449d111c29a1619f99db0f646.webp"
+          },
+          {
+            "name": "Teamlease Services Limited",
+            "order": 30,
+            "logo_url": "NA"
+          },
+          {
+            "name": "SS SUPPLY CHAIN SOLUTIONS PVT LTD",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Impact Analytics",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "DealShare.in",
+            "order": 16,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001269_1684872081_App%2520-%2520Deal%2520share.png"
+          },
+          {
+            "name": "Hotstar",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Veridic Private Limited",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "KLA",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 144
+      },
+      {
+        "id": 11605,
+        "name": "Infix To Postfix ",
+        "offering_id": 1382146,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 20,
+        "offering_name": " Infix to Postfix ",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 13198,
+        "order": null,
+        "slug": "infix-to-postfix_1382146",
+        "company_list": [
+          {
+            "name": "Delhivery",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001265_1684871704_Delhivery.png"
+          },
+          {
+            "name": "RIVIGO",
+            "order": 12,
+            "logo_url": "https://files.codingninjas.in/08ced6064936c5e93ece0def559984a4.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Oracle",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Expedia Group",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2091/96021e4c6a6c1850c28a9ab02cac7e10.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Hike",
+            "order": 9,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001434_1686027927_App%2520-%2520Hike.webp"
+          },
+          {
+            "name": "Amazon",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Samsung",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/18/79184636778ed4dd720ebfe7db1965d9.png"
+          },
+          {
+            "name": "Envestnet | Yodlee India",
+            "order": 11,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001397_1686026214_Envestnet.webp"
+          },
+          {
+            "name": "Nutanix",
+            "order": 10,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001547_1687144501_Nutanix.webp"
+          },
+          {
+            "name": "DeHaat",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/dehaat-22616.webp"
+          },
+          {
+            "name": "VMware Inc",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/4038/c330af4c30deb46a528c292786a433d7.png"
+          },
+          {
+            "name": "Discovery Inc.",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "ThoughtSpot",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 131
+      },
+      {
+        "id": 10160,
+        "name": "Maximum Distance",
+        "offering_id": 1170523,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 15,
+        "offering_name": "Maximum Distance",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 3791,
+        "order": null,
+        "slug": "maximum-distance_1170523",
+        "company_list": [
+          {
+            "name": "Google",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+          },
+          {
+            "name": "MakeMyTrip",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/680/cfb77bef9d74a0a4cf52102daed7bffa.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 129
+      },
+      {
+        "id": 9083,
+        "name": "Find Minimum Number Of Coins",
+        "offering_id": 975277,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 15,
+        "offering_name": "Find minimum number of coins",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 29818,
+        "order": null,
+        "slug": "find-minimum-number-of-coins_975277",
+        "company_list": [
+          {
+            "name": "Adobe",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/21/abc1ca60ece68058fd182d8a8fa64086.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Myntra",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/679/5061b078d366b2c0736be2e7ee9317f3.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Intel Corporation",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001504_1686978890_Intel%2520Corporation%25201.webp"
+          },
+          {
+            "name": "Tata consultancy services Ltd",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/tcs-23268.webp"
+          },
+          {
+            "name": "Fidelity International",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001328_1685985728_Fidelity%2520international.webp"
+          },
+          {
+            "name": "D.E.Shaw",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001257_1684871463_DE%2520Shaw.png"
+          },
+          {
+            "name": "Norsk Hydro",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/1200px-Norsk_Hydro.svg.png"
+          },
+          {
+            "name": "Fareportal Private Ltd",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Keyideas",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 129
+      },
+      {
+        "id": 10664,
+        "name": "All substrings",
+        "offering_id": 1262347,
+        "difficulty": "Easy",
+        "avg_time_to_solve": null,
+        "offering_name": "All substrings",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 18884,
+        "order": null,
+        "slug": "all-substrings_1262347",
+        "company_list": [
+          {
+            "name": "Oracle",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Sophos",
+            "order": 2,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 125
+      },
+      {
+        "id": 9610,
+        "name": "Jumping Numbers",
+        "offering_id": 1069220,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 15,
+        "offering_name": "Jumping Numbers",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 2596,
+        "order": null,
+        "slug": "jumping-numbers_1069220",
+        "company_list": [
+          {
+            "name": "Microsoft",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Info Edge India (Naukri.com)",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001387_1685987773_Infoedge.png"
+          },
+          {
+            "name": "Opera",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/13001b7d2e043d7f01d770c0f0c1947e.webp"
+          },
+          {
+            "name": "Oracle",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Google",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+          },
+          {
+            "name": "Directi",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/683/23b00b0fb929ab3e433d87c9d74d57a0.png"
+          },
+          {
+            "name": "HPC Sphere Pvt Ltd",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001436_1686028087_HPC%2520Sphere.webp"
+          },
+          {
+            "name": "Mindtree",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/844/0bc1489979904edf5dd3eb2a97e1de7b.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 122
+      },
+      {
+        "id": 13318,
+        "name": "Covid Vaccination",
+        "offering_id": 1558385,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": null,
+        "offering_name": "Covid Vaccination",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 1322,
+        "order": null,
+        "slug": "covid-vaccination_1558385",
+        "company_list": [
+          {
+            "name": "Infosys",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/686/2398087c932cba820ce21d86962f9425.png"
+          },
+          {
+            "name": "Tata Consultancy Services (TCS)",
+            "order": 20,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+          },
+          {
+            "name": "Accenture",
+            "order": 25,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/57/f51594f9664e34708bb61c55d79c1fc0.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 15,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "American Express",
+            "order": 27,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/42/3e977fa248f0de6f0458b7e0a189153f.png"
+          },
+          {
+            "name": "ShareChat",
+            "order": 29,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/3426/3f81c10c1b5322c48b42fd244cf15866.png"
+          },
+          {
+            "name": "Ola",
+            "order": 30,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/125/1b8b966b288e0184f83c464c04f0755c.png"
+          },
+          {
+            "name": "Intuit",
+            "order": 31,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/28/9f2f3fbbd8df9ea24fec84404902dc39.png"
+          },
+          {
+            "name": "Phone Pe",
+            "order": 33,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+          },
+          {
+            "name": "Cisco",
+            "order": 38,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/12572/318e3f39c482936b2839a1dec0dabdea.png"
+          },
+          {
+            "name": "Google",
+            "order": 40,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+          },
+          {
+            "name": "Curefit",
+            "order": 44,
+            "logo_url": "https://files.codingninjas.in/fc893c2f3925d4d479f819012a590ec5.webp"
+          },
+          {
+            "name": "Microsoft",
+            "order": 45,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 46,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Squadstack",
+            "order": 47,
+            "logo_url": "https://files.codingninjas.in/squadstack-logo-4935.png"
+          },
+          {
+            "name": "SAP Labs",
+            "order": 54,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/684/13223139a6b57c3d630adc4670606180.png"
+          },
+          {
+            "name": "BNY Mellon",
+            "order": 55,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/972/32bc80116f86710de5fe38621bc0926d.png"
+          },
+          {
+            "name": "Cognizant",
+            "order": 57,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/841/90c29fb8e0b9ac9c35cb527aac3d990d.png"
+          },
+          {
+            "name": "Ernst & Young (EY)",
+            "order": 28,
+            "logo_url": "https://files.codingninjas.com/group-1437252848-1721041021.webp"
+          },
+          {
+            "name": "Lumiq",
+            "order": 26,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001511_1687025259_Lumiq.webp"
+          },
+          {
+            "name": "LBB - Little Black Book",
+            "order": 32,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001476_1686631365_Little%2520Black%2520Book.png"
+          },
+          {
+            "name": "Airtel",
+            "order": 42,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/921/163a61f144dc9dcd87a90e40554a4019.png"
+          },
+          {
+            "name": "AVIZVA",
+            "order": 43,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001177_1684814595_Avizva.webp"
+          },
+          {
+            "name": "Capegemini Consulting India Private Limited",
+            "order": 53,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001155_1684776194_Capgemini.webp"
+          },
+          {
+            "name": "Newgen Software",
+            "order": 58,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/898/7d0629420559005b2612ff4f062f1196.png"
+          },
+          {
+            "name": "Bristlecone",
+            "order": 56,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001239_1684870588_Bristlecone.png"
+          },
+          {
+            "name": "Mindtree",
+            "order": 48,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/844/0bc1489979904edf5dd3eb2a97e1de7b.png"
+          },
+          {
+            "name": "Technovert",
+            "order": 49,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Sigmoid",
+            "order": 52,
+            "logo_url": "https://files.codingninjas.in/sigmoid-14599.webp"
+          },
+          {
+            "name": "Incedo Inc.",
+            "order": 41,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001382_1685987639_Incedo.webp"
+          },
+          {
+            "name": "WatchGuard Technologies",
+            "order": null,
+            "logo_url": "https://www.watchguard.com/themes/custom/watchguard/images/watchguard-logo.svg"
+          },
+          {
+            "name": "Wipro",
+            "order": 10,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/37361/1b8d4684e2b4c6bbe7aee42c80875427.png"
+          },
+          {
+            "name": "Justdial",
+            "order": 39,
+            "logo_url": "https://files.codingninjas.in/just-dail-11524.png"
+          },
+          {
+            "name": "Dell India",
+            "order": 51,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001266_1684871726_Dell.png"
+          },
+          {
+            "name": "Careem",
+            "order": 34,
+            "logo_url": "https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg"
+          },
+          {
+            "name": "Josh Technology Group",
+            "order": 35,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/206/f76170e8afc31e6c6f2ddb7c558c6fad.png"
+          },
+          {
+            "name": "Lifesight",
+            "order": 36,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001481_1686631534_Lifesight.webp"
+          },
+          {
+            "name": "Bloomreach",
+            "order": 37,
+            "logo_url": "https://files.codingninjas.in/357143f39f5b8143e5a4470b0047cdb7.webp"
+          },
+          {
+            "name": "Nagaaro",
+            "order": 50,
+            "logo_url": "https://files.codingninjas.in/50b3d16449d111c29a1619f99db0f646.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 116
+      },
+      {
+        "id": 8638,
+        "name": "Remove Consecutive Duplicates ",
+        "offering_id": 893195,
+        "difficulty": "Easy",
+        "avg_time_to_solve": null,
+        "offering_name": "Remove Consecutive Duplicates ",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 6744,
+        "order": null,
+        "slug": "remove-consecutive-duplicates_893195",
+        "company_list": [
+          {
+            "name": "Ola",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/125/1b8b966b288e0184f83c464c04f0755c.png"
+          },
+          {
+            "name": "Tata Consultancy Services (TCS)",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+          },
+          {
+            "name": "Walmart",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/20/13416f98fdf46c67388b12569096cbad.png"
+          },
+          {
+            "name": "Samsung",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/18/79184636778ed4dd720ebfe7db1965d9.png"
+          },
+          {
+            "name": "Dunzo",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/818/6813ecb3bc598d5845b532c14135c271.png"
+          },
+          {
+            "name": "HCL Technologies",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1067/2a70ec6d52f0e1205579203bd01102f9.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 8,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Amazon",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Paytm (One97 Communications Limited)",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/e62c495df2288b8eea4aeb4e575e8552.webp"
+          },
+          {
+            "name": "Meesho",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/meesho-14803.webp"
+          },
+          {
+            "name": "Info Edge India (Naukri.com)",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001387_1685987773_Infoedge.png"
+          },
+          {
+            "name": "DDN Storage",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001261_1684871553_DDN.webp"
+          },
+          {
+            "name": "Josh Technology Group",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/206/f76170e8afc31e6c6f2ddb7c558c6fad.png"
+          },
+          {
+            "name": "VMware Inc",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/4038/c330af4c30deb46a528c292786a433d7.png"
+          },
+          {
+            "name": "Mercer Mettl",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/mercer-26297.webp"
+          },
+          {
+            "name": "Aditya Birla group",
+            "order": null,
+            "logo_url": "NA"
+          },
+          {
+            "name": "Veridic Private Limited",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 112
+      },
+      {
+        "id": 16461,
+        "name": "Add Strings",
+        "offering_id": 3161877,
+        "difficulty": "Easy",
+        "avg_time_to_solve": null,
+        "offering_name": "Strings Sum",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 9677,
+        "order": null,
+        "slug": "strings-sum_3161877",
+        "company_list": [
+          {
+            "name": "Oracle",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Amazon",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Snapdeal",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/678/ddb217b423660064d0a5b57e0084e83c.png"
+          },
+          {
+            "name": "Apple",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/670/9ffcf0668216c6bbd1466015b018459a.png"
+          },
+          {
+            "name": "Adobe",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/21/abc1ca60ece68058fd182d8a8fa64086.png"
+          },
+          {
+            "name": "Facebook",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/671/005b4926e308d9f0cac091529ae09b67.png"
+          },
+          {
+            "name": "Cognizant",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/841/90c29fb8e0b9ac9c35cb527aac3d990d.png"
+          },
+          {
+            "name": "Nutanix",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001547_1687144501_Nutanix.webp"
+          },
+          {
+            "name": "HashedIn",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1899/823ec2e447d91f9a1482eff3c062bb2e.png"
+          },
+          {
+            "name": "TCS",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/oid00d200000000wi7ids0683y00000jvywbda3y000000iazmsgikkcyh5cad4etln20g6hz3b1gdurj453kqqoqlxgaaspdffalse3%3Fformat%3Djpeg%26bgcolor%3Dwhite%26quality%3D75%26height%3D75.webp"
+          },
+          {
+            "name": "Google and Microsoft",
+            "order": null,
+            "logo_url": "NA"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 110
+      }
+    ],
+    "total_pages": "19",
+    "page": "6"
+  },
+  "message": "List of problems",
+  "status": 200,
+  "error": null,
+  "disabled": false,
+  "update": false,
+  "external_rating": null
+}

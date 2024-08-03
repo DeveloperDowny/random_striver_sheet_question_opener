@@ -12,7 +12,7 @@ import aiofiles
 class DataFetcher:
     BASE_URL = "https://www.naukri.com/code360/api/v3/public_section/company_problem_list"
     PARAMS = {
-        "slug": "microsoft",
+        "slug": "oracle",
         "request_differentiator": "1721714951384",
         "naukri_request": "true"
     }
