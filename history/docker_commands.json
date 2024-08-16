@@ -1,3 +1,5 @@
 {
-  "solved_ids": []
+  "solved_ids": [
+    "docker pull"
+  ]
 }

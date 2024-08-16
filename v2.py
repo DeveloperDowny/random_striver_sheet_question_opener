@@ -29,7 +29,8 @@ class SheetHandler(ABC):
         self.revision_file_path = f"revision/{file_name}.txt"
 
         # making the file reference absolute
-        self.base_dir = r"D:\DPythonProjects\random_striver_sheet_question_opener"
+        # self.base_dir = r"D:\DPythonProjects\random_striver_sheet_question_opener"
+        self.base_dir = os.path.dirname(os.path.abspath(__file__))
         self.data_file_path = os.path.join(self.base_dir, self.data_file_path)
         self.history_file_path = os.path.join(self.base_dir, self.history_file_path)
         self.revision_file_path = os.path.join(self.base_dir, self.revision_file_path)
