@@ -7,12 +7,7 @@ from typing import List, Dict, Any
 import os
 import enum
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("debug.log"), logging.StreamHandler()],
-)
+
 logger = logging.getLogger()
 kdebugMode = False
 
@@ -240,7 +235,7 @@ class LinuxCommandsHandler(SheetHandler):
 
 class DockerCommandsHandler(SheetHandler):
     def __init__(self):
-        super().__init__("docker_commands", "google.com")
+        super().__init__("docker_commands", "docs.docker.com")
 
     def get_title(self, topic: Dict[str, Any]) -> str:
         return topic["id"] + " command"
@@ -309,4 +304,10 @@ def main():
 
 
 if __name__ == "__main__":
+    # Configure logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        handlers=[logging.FileHandler("debug.log"), logging.StreamHandler()],
+    )
     main()
