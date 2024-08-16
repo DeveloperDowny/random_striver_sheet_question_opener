@@ -1,9 +1,0 @@
-{
-  "solved_ids": [
-    "docker search",
-    "docker import",
-    "docker events",
-    "docker rm",
-    "docker exec"
-  ]
-}
