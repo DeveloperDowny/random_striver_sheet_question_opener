@@ -243,7 +243,7 @@ class DockerCommandsHandler(SheetHandler):
         super().__init__("docker_commands", "google.com")
 
     def get_title(self, topic: Dict[str, Any]) -> str:
-        return topic["id"]
+        return topic["id"] + " command"
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         return data["data"]
