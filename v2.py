@@ -224,7 +224,7 @@ class OracleDSAHandler(SheetHandler):
 
 class LinuxCommandsHandler(SheetHandler):
     def __init__(self):
-        super().__init__("linux_commands", "google.com")
+        super().__init__("linux_commands", "manpages.ubuntu.com")
 
     def get_title(self, topic: Dict[str, Any]) -> str:
         return topic["id"]
