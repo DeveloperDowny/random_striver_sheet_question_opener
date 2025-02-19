@@ -1,0 +1,221 @@
+{
+  "data": {
+    "problem_list": [
+      {
+        "id": 16555,
+        "name": "Minimum Number Of Moves To Get All Keys",
+        "offering_id": 3208458,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 25,
+        "offering_name": "Minimum Number Of Moves To Get All Keys",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 113,
+        "order": null,
+        "slug": "minimum-number-of-moves-to-get-all-keys_3208458",
+        "company_list": [
+          {
+            "name": "PhonePe",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+          },
+          {
+            "name": "PayPal",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/675/c432d22f611cbb68026f70492d2f6852.png"
+          },
+          {
+            "name": "Wells Fargo",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/1839/6eaeed540dff1be3cf1691c377fb311d.png"
+          },
+          {
+            "name": "Bytedance",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/bytedance-16045.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 3
+      },
+      {
+        "id": 8992,
+        "name": "Longest Path",
+        "offering_id": 973008,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 25,
+        "offering_name": "Longest Path",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 336,
+        "order": null,
+        "slug": "longest-path_973008",
+        "company_list": [
+          {
+            "name": "PhonePe",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+          },
+          {
+            "name": "Amazon",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+          },
+          {
+            "name": "Zepto",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/31935/7c6c4a376a48f69e164555409cf68733.webp"
+          },
+          {
+            "name": "WinZO",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/winzo-24957.webp"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 3
+      },
+      {
+        "id": 16333,
+        "name": "Maximum Path Sum",
+        "offering_id": 3125903,
+        "difficulty": "Easy",
+        "avg_time_to_solve": null,
+        "offering_name": "Maximum Path Sum",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 956,
+        "order": null,
+        "slug": "maximum-path-sum_3125903",
+        "company_list": [
+          {
+            "name": "Flipkart",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/16/89419331b9f7e550a189bd4ba51ca9ce.png"
+          },
+          {
+            "name": "Oracle",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+          },
+          {
+            "name": "Microsoft",
+            "order": 3,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+          },
+          {
+            "name": "Goldman Sachs",
+            "order": 4,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/29/aeacd9c525d4781763b3e38ac94e9611.png"
+          },
+          {
+            "name": "Hexaware Technologies",
+            "order": 5,
+            "logo_url": "https://files.codingninjas.in/809c7d3fd4fd7347d1c3871aa3c64ee3.png"
+          },
+          {
+            "name": "PhonePe",
+            "order": 7,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+          },
+          {
+            "name": "ANSYS, Inc.",
+            "order": 6,
+            "logo_url": "https://files.codingninjas.in/asset_0000000000001074_1684399412_Ansys%2520inc.png"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 2
+      },
+      {
+        "id": 10498,
+        "name": "Circular Permutation In Binary Representation",
+        "offering_id": 1229778,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 25,
+        "offering_name": "Circular Permutation in Binary Representation",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 68,
+        "order": null,
+        "slug": "circular-permutation-in-binary-representation_1229778",
+        "company_list": [
+          {
+            "name": "Walmart",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/20/13416f98fdf46c67388b12569096cbad.png"
+          },
+          {
+            "name": "PhonePe",
+            "order": 2,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 2
+      },
+      {
+        "id": 19797,
+        "name": "Ninja And Matrix",
+        "offering_id": 4537652,
+        "difficulty": "Easy",
+        "avg_time_to_solve": 15,
+        "offering_name": "Ninja And Matrix",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 166,
+        "order": null,
+        "slug": "ninja-and-matrix_4537652",
+        "company_list": [
+          {
+            "name": "PhonePe",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+          },
+          {
+            "name": "Tata Consultancy Services (TCS)",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+          },
+          {
+            "name": "Virsoftech Private Limited",
+            "order": null,
+            "logo_url": "https://files.codingninjas.in/vir-softech-15221.webp"
+          }
+        ],
+        "max_score": 40,
+        "reactions_count": 1
+      },
+      {
+        "id": 16499,
+        "name": "Last Exam",
+        "offering_id": 3167806,
+        "difficulty": "Moderate",
+        "avg_time_to_solve": 20,
+        "offering_name": "Last Exam",
+        "is_new": null,
+        "practice_topics": null,
+        "submission_count": 91,
+        "order": null,
+        "slug": "last-exam_3167806",
+        "company_list": [
+          {
+            "name": "PhonePe",
+            "order": 1,
+            "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+          }
+        ],
+        "max_score": 80,
+        "reactions_count": 1
+      }
+    ],
+    "total_pages": "7",
+    "page": "7"
+  },
+  "message": "List of problems",
+  "status": 200,
+  "error": null,
+  "disabled": false,
+  "update": false,
+  "external_rating": null
+}

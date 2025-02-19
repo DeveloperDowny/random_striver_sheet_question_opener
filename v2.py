@@ -203,6 +203,38 @@ class MicrosoftDSAHandler(SheetHandler):
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         return self.questions_from_jsons(data)
+    
+class PhonePeDSAHandler(SheetHandler):
+    def __init__(self):
+        super().__init__(
+            "phonepe_dsa",
+            "naukri.com",
+            "phonepe_question_jsons",
+            NaukriDifficulties.MEDIUM,
+        )
+        self.difficulty = NaukriDifficulties.MEDIUM  # default difficulty
+
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["name"]
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        return self.questions_from_jsons(data)
+    
+class PhonePeDSAHandler(SheetHandler):
+    def __init__(self):
+        super().__init__(
+            "phonepe_dsa",
+            "naukri.com",
+            "phonepe_question_jsons",
+            NaukriDifficulties.MEDIUM,
+        )
+        self.difficulty = NaukriDifficulties.MEDIUM  # default difficulty
+
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["name"]
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        return self.questions_from_jsons(data)
 
 
 class OracleDSAHandler(SheetHandler):
@@ -260,6 +292,8 @@ class SheetHandlerFactory:
             return LeetCodeDSA75Handler()
         elif sheet_type == "microsoft_dsa":
             return MicrosoftDSAHandler()
+        elif sheet_type == "phonepe_dsa":
+            return PhonePeDSAHandler()
         elif sheet_type == "oracle_dsa":
             return OracleDSAHandler()
         elif sheet_type == "linux_commands":

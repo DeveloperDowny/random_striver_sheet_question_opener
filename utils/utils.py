@@ -12,11 +12,11 @@ import aiofiles
 class DataFetcher:
     BASE_URL = "https://www.naukri.com/code360/api/v3/public_section/company_problem_list"
     PARAMS = {
-        "slug": "oracle",
+        "slug": "phonepe",
         "request_differentiator": "1721714951384",
         "naukri_request": "true"
     }
-    TOTAL_PAGES = 53
+    TOTAL_PAGES = 7
     MAX_CONCURRENT_REQUESTS = 5
     MAX_RETRIES = 3
     RETRY_DELAY = 5
