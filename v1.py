@@ -15,8 +15,8 @@ logger = logging.getLogger()
 should_allow_repeats = False
 
 # sde_sheet | dbms_core_sheet
-to_study_options = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50"]
-corresponding_site_list = ["naukri", "geeksforgeeks", "geeksforgeeks", "geeksforgeeks", "leetcode"]
+to_study_options = ["sde_sheet", "dbms_core_sheet", "os_core_sheet", "cn_core_sheet", "lc_sql_50", "phonepe_dsa"]
+corresponding_site_list = ["naukri", "geeksforgeeks", "geeksforgeeks", "geeksforgeeks", "leetcode", "naukri"]
 knda = False
 if knda:
     ind = random.randint(1, len(to_study_options)-1)

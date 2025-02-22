@@ -2926,3 +2926,158 @@
 2024-11-16 18:06:33,211 - INFO - Link: https://www.google.com/search?q=Queries+Quality+and+Percentage+site%3Aleetcode.com
 2024-11-16 18:06:33,211 - INFO - History updated.
 2025-02-19 21:19:53,921 - INFO - Script started.
+2025-02-19 21:45:23,239 - INFO - Script started.
+2025-02-19 21:46:42,800 - INFO - Script started.
+2025-02-19 21:47:01,342 - INFO - Script started.
+2025-02-19 21:47:08,373 - INFO - Processing lc_dsa_75
+2025-02-19 21:47:08,375 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "daily-temperatures",
+  "title": "Daily Temperatures",
+  "questionFrontendId": "739",
+  "paidOnly": false,
+  "id": "739",
+  "difficulty": "MEDIUM",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "array",
+      "name": "Array"
+    },
+    {
+      "slug": "stack",
+      "name": "Stack"
+    },
+    {
+      "slug": "monotonic-stack",
+      "name": "Monotonic Stack"
+    }
+  ],
+  "solutionInfo": null
+}
+2025-02-19 21:47:08,376 - INFO - Link: https://www.google.com/search?q=Daily+Temperatures+site%3Aleetcode.com
+2025-02-19 21:47:08,376 - INFO - History updated.
+2025-02-19 21:47:20,209 - INFO - History updated.
+2025-02-19 21:47:20,209 - INFO - Script finished.
+2025-02-19 21:48:51,678 - INFO - Script started.
+2025-02-19 21:48:54,041 - INFO - Processing phonepe_dsa
+2025-02-19 21:50:24,459 - INFO - Script started.
+2025-02-19 21:50:28,706 - INFO - Script started.
+2025-02-19 21:50:30,446 - INFO - Processing phonepe_dsa
+2025-02-19 21:51:37,820 - INFO - Script started.
+2025-02-19 21:51:52,254 - INFO - Processing phonepe_dsa
+2025-02-19 21:52:32,177 - INFO - Script started.
+2025-02-19 21:52:35,423 - INFO - Processing microsoft_dsa
+2025-02-19 21:52:35,427 - INFO - Selected topic: {
+  "id": 7227,
+  "name": "Distinct Islands",
+  "offering_id": 630460,
+  "difficulty": "Moderate",
+  "avg_time_to_solve": 25,
+  "offering_name": "Distinct Island",
+  "is_new": null,
+  "practice_topics": null,
+  "submission_count": 14177,
+  "order": null,
+  "slug": "distinct-island_630460",
+  "company_list": [
+    {
+      "name": "Barclays",
+      "order": 1,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/411/8c96971016a4f16e03c49f9927fb7c41.png"
+    },
+    {
+      "name": "Salesforce",
+      "order": 1,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/30/794e491c9f0a68dadad41b6d36f66945.png"
+    },
+    {
+      "name": "Expedia Group",
+      "order": 2,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/2091/96021e4c6a6c1850c28a9ab02cac7e10.png"
+    },
+    {
+      "name": "Cognizant",
+      "order": 3,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/841/90c29fb8e0b9ac9c35cb527aac3d990d.png"
+    },
+    {
+      "name": "Microsoft",
+      "order": 4,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+    },
+    {
+      "name": "Samsung",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/18/79184636778ed4dd720ebfe7db1965d9.png"
+    },
+    {
+      "name": "IBM",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/677/50ba61e47b5594d7c34efe141ee43725.png"
+    },
+    {
+      "name": "Hindustan times",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/hindustan-times-23391.webp"
+    },
+    {
+      "name": "Ion Trading",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001499_1686978842_ION%2520Group.webp"
+    },
+    {
+      "name": "VMware Inc",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/4038/c330af4c30deb46a528c292786a433d7.png"
+    }
+  ],
+  "max_score": 80,
+  "reactions_count": 122
+}
+2025-02-19 21:52:35,428 - INFO - Link: https://www.google.com/search?q=Distinct+Islands+site%3Anaukri.com
+2025-02-19 21:52:35,428 - INFO - History updated.
+2025-02-19 21:52:37,296 - INFO - Script finished.
+2025-02-19 21:55:39,764 - INFO - Script started.
+2025-02-19 21:55:41,566 - INFO - Processing phonepe_dsa
+2025-02-19 21:57:40,773 - INFO - Script started.
+2025-02-19 21:57:43,207 - INFO - Processing phonepe_dsa
+2025-02-19 21:57:43,209 - INFO - Selected topic: {
+  "id": 18802,
+  "name": "Minimum Number of Deletions and Insertions",
+  "offering_id": 4244510,
+  "difficulty": "Moderate",
+  "avg_time_to_solve": null,
+  "offering_name": "Can You Make",
+  "is_new": null,
+  "practice_topics": null,
+  "submission_count": 25309,
+  "order": null,
+  "slug": "can-you-make_4244510",
+  "company_list": [
+    {
+      "name": "Microsoft",
+      "order": 1,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+    },
+    {
+      "name": "PhonePe",
+      "order": 2,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+    },
+    {
+      "name": "Coding Ninjas",
+      "order": 3,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/76/b09a4f41fa02378bf8bd3b6b8f61b361.png"
+    },
+    {
+      "name": "Flock",
+      "order": 4,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001334_1685985919_Flock.png"
+    }
+  ],
+  "max_score": 80,
+  "reactions_count": 83
+}
+2025-02-19 21:57:43,209 - INFO - Link: https://www.google.com/search?q=Minimum+Number+of+Deletions+and+Insertions+site%3Anaukri.com
+2025-02-19 21:57:43,210 - INFO - History updated.

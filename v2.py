@@ -203,23 +203,8 @@ class MicrosoftDSAHandler(SheetHandler):
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         return self.questions_from_jsons(data)
-    
-class PhonePeDSAHandler(SheetHandler):
-    def __init__(self):
-        super().__init__(
-            "phonepe_dsa",
-            "naukri.com",
-            "phonepe_question_jsons",
-            NaukriDifficulties.MEDIUM,
-        )
-        self.difficulty = NaukriDifficulties.MEDIUM  # default difficulty
 
-    def get_title(self, topic: Dict[str, Any]) -> str:
-        return topic["name"]
 
-    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
-        return self.questions_from_jsons(data)
-    
 class PhonePeDSAHandler(SheetHandler):
     def __init__(self):
         super().__init__(
@@ -325,6 +310,7 @@ def main():
         "must_do_product_gfg",
         "lc_dsa_75",
         "microsoft_dsa",
+        "phonepe_dsa",
         "oracle_dsa",
         "linux_commands",
         "docker_commands",
