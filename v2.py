@@ -261,6 +261,17 @@ class DockerCommandsHandler(SheetHandler):
         return data["data"]
 
 
+class DSACommonPatterns(SheetHandler):
+    def __init__(self):
+        super().__init__("dsa_common_patterns", "naukri.com")
+
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["id"]
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        return data["data"]
+
+
 class SheetHandlerFactory:
     @staticmethod
     def create_handler(sheet_type: str) -> SheetHandler:
@@ -285,6 +296,8 @@ class SheetHandlerFactory:
             return LinuxCommandsHandler()
         elif sheet_type == "docker_commands":
             return DockerCommandsHandler()
+        elif sheet_type == "dsa_common_patterns":
+            return DSACommonPatterns()
         else:
             raise ValueError(f"Invalid sheet type: {sheet_type}")
 
@@ -314,6 +327,7 @@ def main():
         "oracle_dsa",
         "linux_commands",
         "docker_commands",
+        "dsa_common_patterns",
     ]
     filtered_sheet_types = SheetHandlerFactory.get_sheet_type(sheet_types)
     sheet_type = random.choice(filtered_sheet_types)

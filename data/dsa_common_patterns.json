@@ -1,0 +1,25 @@
+{
+  "data": [
+    { "id": "Fast and Slow Pointer" },
+    { "id": "Merge Intervals" },
+    { "id": "Sliding Window" },
+    { "id": "Islands (Matrix Traversal)" },
+    { "id": "Two Pointers" },
+    { "id": "Cyclic Sort" },
+    { "id": "In-place Reversal of Linked List" },
+    { "id": "Breadth First Search" },
+    { "id": "Depth First Search" },
+    { "id": "Two Heaps" },
+    { "id": "Subsets" },
+    { "id": "Modified Binary Search" },
+    { "id": "Bitwise XOR" },
+    { "id": "Top 'K' elements" },
+    { "id": "K-way Merge" },
+    { "id": "0/1 Knapsack (Dynamic Programming)" },
+    { "id": "Unbounded Knapsack (Dynamic Programming)" },
+    { "id": "Topological Sort (Graphs)" },
+    { "id": "Monotonic Stack" },
+    { "id": "Backtracking" },
+    { "id": "Greedy Algorithm" }
+  ]
+}
