@@ -3586,3 +3586,225 @@
 2025-03-30 16:55:19,277 - INFO - History updated.
 2025-03-30 16:55:23,269 - INFO - History updated.
 2025-03-30 16:55:23,269 - INFO - Script finished.
+2025-04-01 07:42:11,115 - INFO - Script started.
+2025-04-01 07:42:13,956 - INFO - Processing phonepe_dsa
+2025-04-01 07:42:13,960 - INFO - Selected topic: {
+  "id": 625,
+  "name": "Pairs with difference K",
+  "offering_id": 5393,
+  "difficulty": "Moderate",
+  "avg_time_to_solve": null,
+  "offering_name": "Pair with diff K",
+  "is_new": null,
+  "practice_topics": null,
+  "submission_count": 158334,
+  "order": null,
+  "slug": "pair-with-diff-k_5393",
+  "company_list": [
+    {
+      "name": "Acko",
+      "order": 3,
+      "logo_url": "https://files.codingninjas.in/ac38d4c94265217e767fb26845b63fae.png"
+    },
+    {
+      "name": "Accenture",
+      "order": 6,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/57/f51594f9664e34708bb61c55d79c1fc0.png"
+    },
+    {
+      "name": "Goldman Sachs",
+      "order": 8,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/29/aeacd9c525d4781763b3e38ac94e9611.png"
+    },
+    {
+      "name": "Oracle",
+      "order": 7,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+    },
+    {
+      "name": "PhonePe",
+      "order": 5,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+    },
+    {
+      "name": "BNY Mellon",
+      "order": 4,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/972/32bc80116f86710de5fe38621bc0926d.png"
+    },
+    {
+      "name": "Tata Consultancy Services (TCS)",
+      "order": 14,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+    },
+    {
+      "name": "TCS",
+      "order": 13,
+      "logo_url": "https://files.codingninjas.in/oid00d200000000wi7ids0683y00000jvywbda3y000000iazmsgikkcyh5cad4etln20g6hz3b1gdurj453kqqoqlxgaaspdffalse3%3Fformat%3Djpeg%26bgcolor%3Dwhite%26quality%3D75%26height%3D75.webp"
+    },
+    {
+      "name": "Unthinkable Solutions",
+      "order": 9,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/2769/1792239d4175c7a30a5b6dff746a148b.png"
+    },
+    {
+      "name": "Nagarro Software",
+      "order": 15,
+      "logo_url": "https://files.codingninjas.in/50b3d16449d111c29a1619f99db0f646.webp"
+    },
+    {
+      "name": "D.E.Shaw",
+      "order": 10,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001257_1684871463_DE%2520Shaw.png"
+    },
+    {
+      "name": "Hexaview Technologies",
+      "order": 11,
+      "logo_url": "https://media-exp2.licdn.com/dms/image/C560BAQFNpgr_rMJyaA/company-logo_200_200/0/1641302459069?e=1665619200&v=beta&t=5iMFjA9W_DlJUW64jjPPGVWRvLLZ-Uaps_12b-VRbeE"
+    },
+    {
+      "name": "Newgen Software",
+      "order": 12,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/898/7d0629420559005b2612ff4f062f1196.png"
+    }
+  ],
+  "max_score": 80,
+  "reactions_count": 46
+}
+2025-04-01 07:42:13,967 - INFO - Link: https://www.google.com/search?q=Pairs+with+difference+K+site%3Anaukri.com
+2025-04-01 07:42:13,970 - INFO - History updated.
+2025-04-01 07:42:43,726 - INFO - Script finished.
+2025-04-01 07:42:50,646 - INFO - Script started.
+2025-04-01 07:42:50,653 - INFO - Processing docker_commands
+2025-04-01 07:42:50,654 - INFO - Selected topic: {
+  "id": "docker config"
+}
+2025-04-01 07:42:50,655 - INFO - Link: https://www.google.com/search?q=docker+config+command+site%3Adocs.docker.com
+2025-04-01 07:42:50,656 - INFO - History updated.
+2025-04-01 07:42:53,192 - INFO - Script finished.
+2025-04-01 07:43:20,226 - INFO - Script started.
+2025-04-01 07:43:22,349 - INFO - Processing phonepe_dsa
+2025-04-01 07:43:22,352 - INFO - Selected topic: {
+  "id": 9108,
+  "name": "Merge K Sorted Arrays",
+  "offering_id": 975379,
+  "difficulty": "Moderate",
+  "avg_time_to_solve": 15,
+  "offering_name": "Merge K Sorted Arrays",
+  "is_new": null,
+  "practice_topics": null,
+  "submission_count": 46123,
+  "order": null,
+  "slug": "merge-k-sorted-arrays_975379",
+  "company_list": [
+    {
+      "name": "Flipkart",
+      "order": 11,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/16/89419331b9f7e550a189bd4ba51ca9ce.png"
+    },
+    {
+      "name": "Samsung",
+      "order": 12,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/18/79184636778ed4dd720ebfe7db1965d9.png"
+    },
+    {
+      "name": "eBay",
+      "order": 13,
+      "logo_url": "https://files.codingninjas.in/72e184150c7502468fbe3f4ae72b0d92.png"
+    },
+    {
+      "name": "Mathworks",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/24/9ed1a6b669fb7d793644197949232519.webp"
+    },
+    {
+      "name": "CIS - Cyber Infrastructure",
+      "order": 16,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/40/e44e0645b0128bcfdc06b1e4ccf14e65.png"
+    },
+    {
+      "name": "Microsoft",
+      "order": 3,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+    },
+    {
+      "name": "PhonePe",
+      "order": 18,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+    },
+    {
+      "name": "Directi",
+      "order": 6,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/683/23b00b0fb929ab3e433d87c9d74d57a0.png"
+    },
+    {
+      "name": "Oracle",
+      "order": 5,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+    },
+    {
+      "name": "Citrix",
+      "order": 2,
+      "logo_url": "https://files.codingninjas.in/be52fe86082dff01a19b6712ba160e3f.webp"
+    },
+    {
+      "name": "VMware Inc",
+      "order": 1,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/4038/c330af4c30deb46a528c292786a433d7.png"
+    },
+    {
+      "name": "Fidelity International",
+      "order": 4,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/3442/35275ad6caa1bac0384561d909209272.jpeg"
+    },
+    {
+      "name": "Josh Technology Group",
+      "order": 7,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/206/f76170e8afc31e6c6f2ddb7c558c6fad.png"
+    },
+    {
+      "name": "HashedIn",
+      "order": 9,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/1899/823ec2e447d91f9a1482eff3c062bb2e.png"
+    },
+    {
+      "name": "Accolite",
+      "order": 14,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/672/d8858264f44a00852f8f90c3ac557086.png"
+    },
+    {
+      "name": "Credit Suisse",
+      "order": 15,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001246_1684871108_Credit%2520Suisse.webp"
+    },
+    {
+      "name": "Rakuten India",
+      "order": 17,
+      "logo_url": "https://files.codingninjas.in/34c3fda2da65c7459756622099240478.webp"
+    },
+    {
+      "name": "Park+",
+      "order": 19,
+      "logo_url": "https://files.codingninjas.in/park-logo-11386.png"
+    },
+    {
+      "name": "Twilio",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/15424/940f74e15760a7e0ec04a6c2a3c63a99.png"
+    },
+    {
+      "name": "HashedIn",
+      "order": 10,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/1899/823ec2e447d91f9a1482eff3c062bb2e.png"
+    },
+    {
+      "name": "Avalara",
+      "order": 8,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001175_1684814489_Avalara.webp"
+    }
+  ],
+  "max_score": 80,
+  "reactions_count": 306
+}
+2025-04-01 07:43:22,363 - INFO - Link: https://www.google.com/search?q=Merge+K+Sorted+Arrays+site%3Anaukri.com
+2025-04-01 07:43:22,364 - INFO - History updated.
+2025-04-01 07:43:59,123 - INFO - Script finished.

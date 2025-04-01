@@ -1,5 +1,6 @@
 {
   "solved_ids": [
-    "docker import"
+    "docker import",
+    "docker config"
   ]
 }
