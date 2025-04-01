@@ -182,7 +182,7 @@ import enum
 
 
 logger = logging.getLogger()
-kdebugMode = False
+Config.kDebugMode = False
 
 
 class SheetHandler(ABC):
@@ -248,7 +248,7 @@ class SheetHandler(ABC):
         return f"https://www.google.com/search?q={url_safe_title}+site%3A{self.site}"
 
     def update_history(self, history: List[str], new_id: str) -> None:
-        if kdebugMode:
+        if Config.kDebugMode:
             logger.info("Debug mode enabled. Skipping history update.")
             return
         history.append(new_id)
@@ -287,7 +287,7 @@ class SheetHandler(ABC):
 
     # if marked as revision, delete the last entry from history
     def mark_revision(self, history: List[str]) -> None:
-        if kdebugMode:
+        if Config.kDebugMode:
             logger.info("Debug mode enabled. Skipping history update.")
             return
         revision_id = history.pop()

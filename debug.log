@@ -3808,3 +3808,26 @@
 2025-04-01 07:43:22,363 - INFO - Link: https://www.google.com/search?q=Merge+K+Sorted+Arrays+site%3Anaukri.com
 2025-04-01 07:43:22,364 - INFO - History updated.
 2025-04-01 07:43:59,123 - INFO - Script finished.
+2025-04-01 23:20:15,814 - INFO - Script started.
+2025-04-01 23:20:21,302 - INFO - Processing lc_sql_50
+2025-04-01 23:20:21,303 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "delete-duplicate-emails",
+  "title": "Delete Duplicate Emails",
+  "questionFrontendId": "196",
+  "paidOnly": false,
+  "id": "196",
+  "difficulty": "EASY",
+  "hasOfficialSolution": true,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2025-04-01 23:20:21,304 - INFO - Link: https://www.google.com/search?q=Delete+Duplicate+Emails+site%3Aleetcode.com
+2025-04-01 23:20:21,304 - INFO - Debug mode enabled. Skipping history update.
+2025-04-01 23:20:25,869 - INFO - Debug mode enabled. Skipping history update.
+2025-04-01 23:20:25,869 - INFO - Script finished.
