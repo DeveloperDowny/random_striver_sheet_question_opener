@@ -20,6 +20,7 @@ def main():
         "oracle_dsa",
         "linux_commands",
         "docker_commands",
+        "langgraph",
         "dsa_common_patterns",
     ]
     filtered_sheet_types = SheetHandlerFactory.get_sheet_type(sheet_types)

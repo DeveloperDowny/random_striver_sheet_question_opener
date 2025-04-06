@@ -1,2 +1,2 @@
 class Config:
-    kDebugMode = True
+    kDebugMode = False
