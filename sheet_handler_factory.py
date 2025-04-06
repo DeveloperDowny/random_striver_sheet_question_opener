@@ -12,6 +12,7 @@ from sheet_handlers import (
     LinuxCommandsHandler,
     DockerCommandsHandler,
     DSACommonPatterns,
+    LanggraphHandler
 )
 
 class SheetHandlerFactory:
@@ -38,6 +39,8 @@ class SheetHandlerFactory:
             return LinuxCommandsHandler()
         elif sheet_type == "docker_commands":
             return DockerCommandsHandler()
+        elif sheet_type == "langgraph":
+            return LanggraphHandler()
         elif sheet_type == "dsa_common_patterns":
             return DSACommonPatterns()
         else:

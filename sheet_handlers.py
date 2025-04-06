@@ -139,6 +139,16 @@ class DockerCommandsHandler(SheetHandler):
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         return data["data"]
 
+class LanggraphHandler(SheetHandler):
+    def __init__(self):
+        super().__init__("langgraph", "langchain.com")
+
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["id"] + " langgraph"
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        return data["data"]
+
 
 class DSACommonPatterns(SheetHandler):
     def __init__(self):

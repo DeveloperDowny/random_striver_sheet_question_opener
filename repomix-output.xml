@@ -45,9 +45,21 @@ The content is organized as follows:
 <directory_structure>
 .gitignore
 .repomixignore
+config.py
+main.py
 requirements.txt
+revision/docker_commands.txt
+revision/dsa_common_patterns.txt
+revision/lc_dsa_75.txt
+revision/lc_sql_50.txt
+revision/linux_commands.txt
+revision/microsoft_dsa.txt
+revision/os_core_sheet.txt
+revision/phonepe_dsa.txt
+sheet_handler_factory.py
+sheet_handler.py
+sheet_handlers.py
 utils/utils.py
-v2.py
 </directory_structure>
 
 <files>
@@ -61,128 +73,94 @@ TODO.md
 LEARNINGS.md
 </file>
 
+<file path="config.py">
+class Config:
+    kDebugMode = True
+</file>
+
 <file path="requirements.txt">
 aiohttp
 aiofiles
 </file>
 
-<file path="utils/utils.py">
-import asyncio
-import aiohttp
-import json
-from pathlib import Path
-import logging
-from typing import Optional
-from aiohttp import ClientSession, TCPConnector
-from asyncio import Semaphore
-import random
-import aiofiles 
-
-class DataFetcher:
-    BASE_URL = "https://www.naukri.com/code360/api/v3/public_section/company_problem_list"
-    PARAMS = {
-        "slug": "phonepe",
-        "request_differentiator": "1721714951384",
-        "naukri_request": "true"
-    }
-    TOTAL_PAGES = 7
-    MAX_CONCURRENT_REQUESTS = 5
-    MAX_RETRIES = 3
-    RETRY_DELAY = 5
-
-    def __init__(self, output_dir: str = "output"):
-        self.output_dir = Path(output_dir)
-        self.output_dir.mkdir(exist_ok=True)
-        self.session: Optional[ClientSession] = None
-        self.semaphore: Optional[Semaphore] = None
-        logging.basicConfig(level=logging.INFO)
-        self.logger = logging.getLogger(__name__)
-
-    async def __aenter__(self):
-        connector = TCPConnector(limit=self.MAX_CONCURRENT_REQUESTS, ssl=False)
-        self.session = ClientSession(connector=connector)
-        self.semaphore = Semaphore(self.MAX_CONCURRENT_REQUESTS)
-        return self
-
-    async def __aexit__(self, exc_type, exc_val, exc_tb):
-        await self.session.close()
-
-    def get_headers(self):
-        return {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Referer": "https://www.naukri.com/",
-            "Origin": "https://www.naukri.com",
-            "DNT": "1",
-            "Connection": "keep-alive",
-        }
-
-    async def fetch_page(self, page: int) -> dict:
-        params = {**self.PARAMS, "page": page}
-        for attempt in range(self.MAX_RETRIES):
-            try:
-                async with self.semaphore:
-                    await asyncio.sleep(random.uniform(1, 3))  # Random delay between requests
-                    async with self.session.get(self.BASE_URL, params=params, headers=self.get_headers()) as response:
-                        response.raise_for_status()
-                        return await response.json()
-            except aiohttp.ClientError as e:
-                if attempt == self.MAX_RETRIES - 1:
-                    raise
-                self.logger.warning(f"Retrying page {page} (attempt {attempt + 1})")
-                await asyncio.sleep(self.RETRY_DELAY * (attempt + 1))  # Exponential backoff
-
-    async def save_json(self, data: dict, filename: str):
-        file_path = self.output_dir / filename
-        async with aiofiles.open(file_path, mode='w') as file:
-            await file.write(json.dumps(data, indent=2))
-
-    async def process_page(self, page: int):
-        try:
-            data = await self.fetch_page(page)
-            filename = f"page_{page}.json"
-            await self.save_json(data, filename)
-            self.logger.info(f"Saved data for page {page}")
-        except Exception as e:
-            self.logger.error(f"Error processing page {page}: {str(e)}")
-
-    async def run(self):
-        tasks = [self.process_page(page) for page in range(1, self.TOTAL_PAGES + 1)]
-        await asyncio.gather(*tasks)
-
-async def main():
-    async with DataFetcher() as fetcher:
-        await fetcher.run()
-
-if __name__ == "__main__":
-    asyncio.run(main())
+<file path="revision/dsa_common_patterns.txt">
+docker ps
+Two Pointers
+Merge Intervals
 </file>
 
-<file path=".gitignore">
-TODO.md
-
-
-__pycache__/ 
-history/
-revision/
-
-debug.log
+<file path="revision/phonepe_dsa.txt">
+9453
 </file>
 
-<file path="v2.py">
-import json
-import random
-import logging
-import urllib.parse
+<file path="sheet_handler_factory.py">
+from typing import List, Any
+from sheet_handler import SheetHandler
+from sheet_handlers import (
+    SDESheetHandler,
+    CoreSheetHandler,
+    LeetCodeDSA75Handler,
+    LeetCodeSQLHandler,
+    GFGMustDoProductHandler,
+    MicrosoftDSAHandler,
+    PhonePeDSAHandler,
+    OracleDSAHandler,
+    LinuxCommandsHandler,
+    DockerCommandsHandler,
+    DSACommonPatterns,
+)
+
+class SheetHandlerFactory:
+    @staticmethod
+    def create_handler(sheet_type: str) -> SheetHandler:
+        if sheet_type == "sde_sheet":
+            return SDESheetHandler()
+        elif sheet_type in ["dbms_core_sheet", "os_core_sheet", "cn_core_sheet"]:
+            subject = sheet_type.split("_")[0]
+            return CoreSheetHandler(subject)
+        elif sheet_type == "lc_sql_50":
+            return LeetCodeSQLHandler()
+        elif sheet_type == "must_do_product_gfg":
+            return GFGMustDoProductHandler()
+        elif sheet_type == "lc_dsa_75":
+            return LeetCodeDSA75Handler()
+        elif sheet_type == "microsoft_dsa":
+            return MicrosoftDSAHandler()
+        elif sheet_type == "phonepe_dsa":
+            return PhonePeDSAHandler()
+        elif sheet_type == "oracle_dsa":
+            return OracleDSAHandler()
+        elif sheet_type == "linux_commands":
+            return LinuxCommandsHandler()
+        elif sheet_type == "docker_commands":
+            return DockerCommandsHandler()
+        elif sheet_type == "dsa_common_patterns":
+            return DSACommonPatterns()
+        else:
+            raise ValueError(f"Invalid sheet type: {sheet_type}")
+
+    @staticmethod
+    def get_sheet_type(sheet_types) -> List[str]:
+        inp = input("Enter sheet type: ")
+        if inp == "random":
+            return sheet_types
+        if inp.isdigit():
+            return [sheet_types[int(inp)]]
+        else:
+            return [sheet for sheet in sheet_types if inp in sheet]
+</file>
+
+<file path="sheet_handler.py">
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
+import json
+import logging
 import os
-import enum
-
+import random
+import urllib.parse
+from config import Config
 
 logger = logging.getLogger()
-Config.kDebugMode = False
 
 
 class SheetHandler(ABC):
@@ -298,6 +276,15 @@ class SheetHandler(ABC):
         with open(self.history_file_path, "w") as file:
             json.dump({"solved_ids": history}, file, indent=2)
         logger.info("History updated.")
+</file>
+
+<file path="sheet_handlers.py">
+from sheet_handler import SheetHandler
+import logging
+from typing import List, Dict, Any
+import enum
+
+logger = logging.getLogger()
 
 
 class SDESheetHandler(SheetHandler):
@@ -443,47 +430,15 @@ class DSACommonPatterns(SheetHandler):
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         return data["data"]
+</file>
+
+<file path="main.py">
+import random
+import logging
+from sheet_handler_factory import SheetHandlerFactory
 
 
-class SheetHandlerFactory:
-    @staticmethod
-    def create_handler(sheet_type: str) -> SheetHandler:
-        if sheet_type == "sde_sheet":
-            return SDESheetHandler()
-        elif sheet_type in ["dbms_core_sheet", "os_core_sheet", "cn_core_sheet"]:
-            subject = sheet_type.split("_")[0]
-            return CoreSheetHandler(subject)
-        elif sheet_type == "lc_sql_50":
-            return LeetCodeSQLHandler()
-        elif sheet_type == "must_do_product_gfg":
-            return GFGMustDoProductHandler()
-        elif sheet_type == "lc_dsa_75":
-            return LeetCodeDSA75Handler()
-        elif sheet_type == "microsoft_dsa":
-            return MicrosoftDSAHandler()
-        elif sheet_type == "phonepe_dsa":
-            return PhonePeDSAHandler()
-        elif sheet_type == "oracle_dsa":
-            return OracleDSAHandler()
-        elif sheet_type == "linux_commands":
-            return LinuxCommandsHandler()
-        elif sheet_type == "docker_commands":
-            return DockerCommandsHandler()
-        elif sheet_type == "dsa_common_patterns":
-            return DSACommonPatterns()
-        else:
-            raise ValueError(f"Invalid sheet type: {sheet_type}")
-
-    @staticmethod
-    def get_sheet_type(sheet_types) -> List[str]:
-        inp = input("Enter sheet type: ")
-        if inp == "random":
-            return sheet_types
-        if inp.isdigit():
-            return [sheet_types[int(inp)]]
-        else:
-            return [sheet for sheet in sheet_types if inp in sheet]
-
+logger = logging.getLogger()
 
 def main():
     logger.info("Script started.")
@@ -518,6 +473,143 @@ if __name__ == "__main__":
         handlers=[logging.FileHandler("debug.log"), logging.StreamHandler()],
     )
     main()
+</file>
+
+<file path="revision/docker_commands.txt">
+docker ps
+</file>
+
+<file path="revision/linux_commands.txt">
+msgcomm
+ppmtopuzz
+chown
+</file>
+
+<file path="revision/os_core_sheet.txt">
+Critical-Section-Problem
+</file>
+
+<file path="utils/utils.py">
+import asyncio
+import aiohttp
+import json
+from pathlib import Path
+import logging
+from typing import Optional
+from aiohttp import ClientSession, TCPConnector
+from asyncio import Semaphore
+import random
+import aiofiles 
+
+class DataFetcher:
+    BASE_URL = "https://www.naukri.com/code360/api/v3/public_section/company_problem_list"
+    PARAMS = {
+        "slug": "phonepe",
+        "request_differentiator": "1721714951384",
+        "naukri_request": "true"
+    }
+    TOTAL_PAGES = 7
+    MAX_CONCURRENT_REQUESTS = 5
+    MAX_RETRIES = 3
+    RETRY_DELAY = 5
+
+    def __init__(self, output_dir: str = "output"):
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(exist_ok=True)
+        self.session: Optional[ClientSession] = None
+        self.semaphore: Optional[Semaphore] = None
+        logging.basicConfig(level=logging.INFO)
+        self.logger = logging.getLogger(__name__)
+
+    async def __aenter__(self):
+        connector = TCPConnector(limit=self.MAX_CONCURRENT_REQUESTS, ssl=False)
+        self.session = ClientSession(connector=connector)
+        self.semaphore = Semaphore(self.MAX_CONCURRENT_REQUESTS)
+        return self
+
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        await self.session.close()
+
+    def get_headers(self):
+        return {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Referer": "https://www.naukri.com/",
+            "Origin": "https://www.naukri.com",
+            "DNT": "1",
+            "Connection": "keep-alive",
+        }
+
+    async def fetch_page(self, page: int) -> dict:
+        params = {**self.PARAMS, "page": page}
+        for attempt in range(self.MAX_RETRIES):
+            try:
+                async with self.semaphore:
+                    await asyncio.sleep(random.uniform(1, 3))  # Random delay between requests
+                    async with self.session.get(self.BASE_URL, params=params, headers=self.get_headers()) as response:
+                        response.raise_for_status()
+                        return await response.json()
+            except aiohttp.ClientError as e:
+                if attempt == self.MAX_RETRIES - 1:
+                    raise
+                self.logger.warning(f"Retrying page {page} (attempt {attempt + 1})")
+                await asyncio.sleep(self.RETRY_DELAY * (attempt + 1))  # Exponential backoff
+
+    async def save_json(self, data: dict, filename: str):
+        file_path = self.output_dir / filename
+        async with aiofiles.open(file_path, mode='w') as file:
+            await file.write(json.dumps(data, indent=2))
+
+    async def process_page(self, page: int):
+        try:
+            data = await self.fetch_page(page)
+            filename = f"page_{page}.json"
+            await self.save_json(data, filename)
+            self.logger.info(f"Saved data for page {page}")
+        except Exception as e:
+            self.logger.error(f"Error processing page {page}: {str(e)}")
+
+    async def run(self):
+        tasks = [self.process_page(page) for page in range(1, self.TOTAL_PAGES + 1)]
+        await asyncio.gather(*tasks)
+
+async def main():
+    async with DataFetcher() as fetcher:
+        await fetcher.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+</file>
+
+<file path="revision/microsoft_dsa.txt">
+8613
+7294
+8613
+</file>
+
+<file path="revision/lc_dsa_75.txt">
+2553
+643
+937
+739
+</file>
+
+<file path=".gitignore">
+TODO.md
+
+
+__pycache__/ 
+
+debug.log
+</file>
+
+<file path="revision/lc_sql_50.txt">
+626
+570
+1155
+1452
+1664
 </file>
 
 </files>

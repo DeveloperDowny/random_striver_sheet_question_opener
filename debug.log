@@ -3831,3 +3831,380 @@
 2025-04-01 23:20:21,304 - INFO - Debug mode enabled. Skipping history update.
 2025-04-01 23:20:25,869 - INFO - Debug mode enabled. Skipping history update.
 2025-04-01 23:20:25,869 - INFO - Script finished.
+2025-04-02 07:37:43,255 - INFO - Script started.
+2025-04-02 07:37:48,718 - INFO - Processing phonepe_dsa
+2025-04-02 07:37:48,720 - INFO - Selected topic: {
+  "id": 9453,
+  "name": "Gas Stations",
+  "offering_id": 985357,
+  "difficulty": "Moderate",
+  "avg_time_to_solve": 10,
+  "offering_name": "Gas Stations",
+  "is_new": null,
+  "practice_topics": null,
+  "submission_count": 3568,
+  "order": null,
+  "slug": "gas-stations_985357",
+  "company_list": [
+    {
+      "name": "Ola",
+      "order": 2,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/125/1b8b966b288e0184f83c464c04f0755c.png"
+    },
+    {
+      "name": "Flipkart",
+      "order": 3,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/16/89419331b9f7e550a189bd4ba51ca9ce.png"
+    },
+    {
+      "name": "PhonePe",
+      "order": 7,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+    },
+    {
+      "name": "Infosys",
+      "order": 8,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/686/2398087c932cba820ce21d86962f9425.png"
+    },
+    {
+      "name": "Apple",
+      "order": 9,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/670/9ffcf0668216c6bbd1466015b018459a.png"
+    },
+    {
+      "name": "Amazon",
+      "order": 10,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+    },
+    {
+      "name": "Goldman Sachs",
+      "order": 11,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/29/aeacd9c525d4781763b3e38ac94e9611.png"
+    },
+    {
+      "name": "Atlassian",
+      "order": 5,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/1965/1494cfc4bcc82622e5c8db9b68366b76.jpeg"
+    },
+    {
+      "name": "Accenture",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/57/f51594f9664e34708bb61c55d79c1fc0.png"
+    },
+    {
+      "name": "Ernst & Young (EY)",
+      "order": null,
+      "logo_url": "https://files.codingninjas.com/ey-ernst-young-2-1729071651.webp"
+    },
+    {
+      "name": "Icertis",
+      "order": 12,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001377_1685987520_Icertis.png"
+    },
+    {
+      "name": "Jupiter Money",
+      "order": 13,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001467_1686631003_App%2520-%2520Jupitor%2520money.png"
+    },
+    {
+      "name": "Zepto",
+      "order": 14,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/31935/7c6c4a376a48f69e164555409cf68733.webp"
+    },
+    {
+      "name": "Zippin",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/zippinlogowhite-266x68.png%3Fwidth%3D399%26height%3D102%26name%3Dzippinlogowhite-266x68.png"
+    },
+    {
+      "name": "D.E.Shaw",
+      "order": 1,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001257_1684871463_DE%2520Shaw.png"
+    },
+    {
+      "name": "Josh Technology Group",
+      "order": 4,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/206/f76170e8afc31e6c6f2ddb7c558c6fad.png"
+    },
+    {
+      "name": "Cognizant technologies",
+      "order": 6,
+      "logo_url": "https://files.codingninjas.in/cognizant-26324.webp"
+    },
+    {
+      "name": "Signzy",
+      "order": null,
+      "logo_url": "https://files.codingninjas.in/0000000000004508.png"
+    }
+  ],
+  "max_score": 80,
+  "reactions_count": 33
+}
+2025-04-02 07:37:48,724 - INFO - Link: https://www.google.com/search?q=Gas+Stations+site%3Anaukri.com
+2025-04-02 07:37:48,724 - INFO - Debug mode enabled. Skipping history update.
+2025-04-02 07:37:52,307 - INFO - Script finished.
+2025-04-02 07:38:13,953 - INFO - Script started.
+2025-04-02 07:38:18,580 - INFO - Processing phonepe_dsa
+2025-04-02 07:38:18,582 - INFO - Selected topic: {
+  "id": 13318,
+  "name": "Covid Vaccination",
+  "offering_id": 1558385,
+  "difficulty": "Moderate",
+  "avg_time_to_solve": null,
+  "offering_name": "Covid Vaccination",
+  "is_new": null,
+  "practice_topics": null,
+  "submission_count": 1435,
+  "order": null,
+  "slug": "covid-vaccination_1558385",
+  "company_list": [
+    {
+      "name": "Google",
+      "order": 40,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/13/4d8a29a3a87330e2b251970b6e6ab4b9.png"
+    },
+    {
+      "name": "Cultfit",
+      "order": 44,
+      "logo_url": "https://files.codingninjas.in/fc893c2f3925d4d479f819012a590ec5.webp"
+    },
+    {
+      "name": "Microsoft",
+      "order": 45,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/14/a18b52c13a74e0d83f599b2be75d593b.png"
+    },
+    {
+      "name": "Amazon",
+      "order": 46,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/2/731aacbd5ef5e7c6d6195f96525fdc79.png"
+    },
+    {
+      "name": "Squadstack",
+      "order": 47,
+      "logo_url": "https://files.codingninjas.in/squadstack-logo-4935.png"
+    },
+    {
+      "name": "SAP Labs",
+      "order": 54,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/684/13223139a6b57c3d630adc4670606180.png"
+    },
+    {
+      "name": "BNY Mellon",
+      "order": 55,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/972/32bc80116f86710de5fe38621bc0926d.png"
+    },
+    {
+      "name": "Cognizant",
+      "order": 57,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/841/90c29fb8e0b9ac9c35cb527aac3d990d.png"
+    },
+    {
+      "name": "Cisco",
+      "order": 38,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/12572/318e3f39c482936b2839a1dec0dabdea.png"
+    },
+    {
+      "name": "Infosys",
+      "order": 5,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/686/2398087c932cba820ce21d86962f9425.png"
+    },
+    {
+      "name": "Tata Consultancy Services (TCS)",
+      "order": 20,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/885/1b107798c82fea68d11a1b7c75ee70a1.png"
+    },
+    {
+      "name": "Accenture",
+      "order": 25,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/57/f51594f9664e34708bb61c55d79c1fc0.png"
+    },
+    {
+      "name": "Oracle",
+      "order": 15,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/70/d232b6b9f6a38d274b2045711a2419b2.png"
+    },
+    {
+      "name": "American Express",
+      "order": 27,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/42/3e977fa248f0de6f0458b7e0a189153f.png"
+    },
+    {
+      "name": "ShareChat",
+      "order": 29,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/3426/3f81c10c1b5322c48b42fd244cf15866.png"
+    },
+    {
+      "name": "Ola",
+      "order": 30,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/125/1b8b966b288e0184f83c464c04f0755c.png"
+    },
+    {
+      "name": "Intuit",
+      "order": 31,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/28/9f2f3fbbd8df9ea24fec84404902dc39.png"
+    },
+    {
+      "name": "PhonePe",
+      "order": 33,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/135/7fe5dd3ca91bd6fc22ba838ff2fe92c0.png"
+    },
+    {
+      "name": "Lumiq",
+      "order": 26,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001511_1687025259_Lumiq.webp"
+    },
+    {
+      "name": "LBB - Little Black Book",
+      "order": 32,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001476_1686631365_Little%2520Black%2520Book.png"
+    },
+    {
+      "name": "Ernst & Young (EY)",
+      "order": 28,
+      "logo_url": "https://files.codingninjas.com/ey-ernst-young-2-1729071651.webp"
+    },
+    {
+      "name": "WatchGuard Technologies",
+      "order": null,
+      "logo_url": "https://www.watchguard.com/themes/custom/watchguard/images/watchguard-logo.svg"
+    },
+    {
+      "name": "Wipro",
+      "order": 10,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/37361/1b8d4684e2b4c6bbe7aee42c80875427.png"
+    },
+    {
+      "name": "Careem",
+      "order": 34,
+      "logo_url": "https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg"
+    },
+    {
+      "name": "Josh Technology Group",
+      "order": 35,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/206/f76170e8afc31e6c6f2ddb7c558c6fad.png"
+    },
+    {
+      "name": "Lifesight",
+      "order": 36,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001481_1686631534_Lifesight.webp"
+    },
+    {
+      "name": "Bloomreach",
+      "order": 37,
+      "logo_url": "https://files.codingninjas.in/357143f39f5b8143e5a4470b0047cdb7.webp"
+    },
+    {
+      "name": "Justdial",
+      "order": 39,
+      "logo_url": "https://files.codingninjas.in/just-dail-11524.png"
+    },
+    {
+      "name": "Incedo Inc.",
+      "order": 41,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001382_1685987639_Incedo.webp"
+    },
+    {
+      "name": "Airtel",
+      "order": 42,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/921/163a61f144dc9dcd87a90e40554a4019.png"
+    },
+    {
+      "name": "AVIZVA",
+      "order": 43,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001177_1684814595_Avizva.webp"
+    },
+    {
+      "name": "Mindtree",
+      "order": 48,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/844/0bc1489979904edf5dd3eb2a97e1de7b.png"
+    },
+    {
+      "name": "Technovert",
+      "order": 49,
+      "logo_url": "NA"
+    },
+    {
+      "name": "Dell India",
+      "order": 51,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001266_1684871726_Dell.png"
+    },
+    {
+      "name": "Nagarro Software",
+      "order": 50,
+      "logo_url": "https://files.codingninjas.in/50b3d16449d111c29a1619f99db0f646.webp"
+    },
+    {
+      "name": "Sigmoid",
+      "order": 52,
+      "logo_url": "https://files.codingninjas.in/sigmoid-14599.webp"
+    },
+    {
+      "name": "Capegemini Consulting India Private Limited",
+      "order": 53,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001155_1684776194_Capgemini.webp"
+    },
+    {
+      "name": "Bristlecone",
+      "order": 56,
+      "logo_url": "https://files.codingninjas.in/asset_0000000000001239_1684870588_Bristlecone.png"
+    },
+    {
+      "name": "Newgen Software",
+      "order": 58,
+      "logo_url": "https://files.codingninjas.in/company-short-logo-url/898/7d0629420559005b2612ff4f062f1196.png"
+    }
+  ],
+  "max_score": 80,
+  "reactions_count": 121
+}
+2025-04-02 07:38:18,594 - INFO - Link: https://www.google.com/search?q=Covid+Vaccination+site%3Anaukri.com
+2025-04-02 07:38:18,594 - INFO - Debug mode enabled. Skipping history update.
+2025-04-02 07:38:20,611 - INFO - Script finished.
+2025-04-02 07:46:03,441 - INFO - Script started.
+2025-04-02 07:46:07,335 - INFO - Processing langgraph
+2025-04-02 07:46:07,336 - INFO - Selected topic: {
+  "id": "Multi-modal agents"
+}
+2025-04-02 07:46:07,336 - INFO - Link: https://www.google.com/search?q=Multi-modal+agents+langgraph+site%3Adocs.docker.com
+2025-04-02 07:46:07,336 - INFO - Debug mode enabled. Skipping history update.
+2025-04-02 07:46:12,273 - INFO - Script finished.
+2025-04-02 07:46:48,688 - INFO - Script started.
+2025-04-02 07:46:51,370 - INFO - Processing langgraph
+2025-04-02 07:46:51,371 - INFO - Selected topic: {
+  "id": "Conditional branching"
+}
+2025-04-02 07:46:51,371 - INFO - Link: https://www.google.com/search?q=Conditional+branching+langgraph+site%3Alangchain.com
+2025-04-02 07:46:51,372 - INFO - Debug mode enabled. Skipping history update.
+2025-04-02 07:47:17,358 - INFO - Script finished.
+2025-04-02 07:47:38,269 - INFO - Script started.
+2025-04-02 07:47:41,496 - INFO - Processing langgraph
+2025-04-02 07:47:41,496 - INFO - Selected topic: {
+  "id": "Python function calling agents"
+}
+2025-04-02 07:47:41,497 - INFO - Link: https://www.google.com/search?q=Python+function+calling+agents+langgraph+site%3Alangchain.com
+2025-04-02 07:47:41,497 - INFO - History updated.
+2025-04-02 08:03:20,363 - INFO - Script finished.
+2025-04-03 22:27:34,133 - INFO - Script started.
+2025-04-03 22:27:40,979 - INFO - Script started.
+2025-04-03 22:27:50,903 - INFO - Processing linux_commands
+2025-04-03 22:27:55,441 - INFO - Script started.
+2025-04-03 22:28:01,538 - INFO - Processing lc_sql_50
+2025-04-03 22:28:01,552 - INFO - Selected topic: {
+  "translatedTitle": null,
+  "titleSlug": "employees-whose-manager-left-the-company",
+  "title": "Employees Whose Manager Left the Company",
+  "questionFrontendId": "1978",
+  "paidOnly": false,
+  "id": "2127",
+  "difficulty": "EASY",
+  "hasOfficialSolution": false,
+  "topicTags": [
+    {
+      "slug": "database",
+      "name": "Database"
+    }
+  ],
+  "solutionInfo": null
+}
+2025-04-03 22:28:01,553 - INFO - Link: https://www.google.com/search?q=Employees+Whose+Manager+Left+the+Company+site%3Aleetcode.com
+2025-04-03 22:28:01,554 - INFO - History updated.
