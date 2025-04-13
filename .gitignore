@@ -4,3 +4,8 @@ TODO.md
 __pycache__/ 
 
 debug.log
+.env
+venv
+*.log
+
+repomix-output.xml

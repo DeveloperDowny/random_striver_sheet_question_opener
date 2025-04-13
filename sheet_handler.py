@@ -49,14 +49,39 @@ class SheetHandler(ABC):
         return data
 
     def questions_from_jsons(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
-        random_json_file = self.pick_random_json()
-        data = self.get_json(random_json_file)
-        logger.debug(f"Flattening {self.file_name} data.")
-        questions = data["data"]["problem_list"]
-        questions = [
-            item for item in questions if item["difficulty"] == self.difficulty.value
-        ]
-        return questions
+        """
+        Example method for handlers that load questions from auxiliary JSONs.
+        Needs to be implemented properly in subclasses like MicrosoftDSAHandler if used.
+        """
+        # This implementation is specific and might belong in the subclass
+        # Keeping structure for reference
+        # random_json_file = self.pick_random_json()
+        files = self.get_all_jsons()
+        data_array = []
+        data_array = [self.get_json(file) for file in files]
+        questions_array = []
+        
+        for data in data_array:
+            if not data or "data" not in data or "problem_list" not in data["data"]:
+                logger.warning(
+                    f"Invalid structure in auxiliary JSON {files} for {self.file_name}"
+                )
+                return []
+
+            logger.debug(
+                f"Processing auxiliary JSON {files} for {self.file_name}"
+            )
+            questions = data["data"]["problem_list"]
+            if self.difficulty:
+                questions = [
+                    item
+                    for item in questions
+                    if item.get("difficulty")
+                    == self.difficulty.value  # Use .get for safety
+                ]
+            questions_array.extend(questions)
+        return questions_array
+
 
     def remove_solved(
         self, sheet_data: List[Dict[str, Any]], solved_ids: List[str]
