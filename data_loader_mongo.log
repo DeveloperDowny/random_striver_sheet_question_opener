@@ -1,0 +1,1078 @@
+2025-04-13 16:43:34 - __main__ - INFO - Starting JSON to MongoDB data loading script.
+2025-04-13 16:43:34 - __main__ - INFO - Successfully connected to MongoDB. Using database: 'roulette_db'
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/cn_core_sheet.json (Full path: d:\DPythonProjects\roulette\migration\data/cn_core_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/cn_core_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/dbms_core_sheet.json (Full path: d:\DPythonProjects\roulette\migration\data/dbms_core_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/dbms_core_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/docker_commands.json (Full path: d:\DPythonProjects\roulette\migration\data/docker_commands.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/docker_commands.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/dsa_common_patterns.json (Full path: d:\DPythonProjects\roulette\migration\data/dsa_common_patterns.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/dsa_common_patterns.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/langgraph.json (Full path: d:\DPythonProjects\roulette\migration\data/langgraph.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/langgraph.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/lc_dsa_75.json (Full path: d:\DPythonProjects\roulette\migration\data/lc_dsa_75.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/lc_dsa_75.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/lc_sql_50.json (Full path: d:\DPythonProjects\roulette\migration\data/lc_sql_50.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/lc_sql_50.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/linux_commands.json (Full path: d:\DPythonProjects\roulette\migration\data/linux_commands.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/linux_commands.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/microsoft_dsa.json (Full path: d:\DPythonProjects\roulette\migration\data/microsoft_dsa.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/microsoft_dsa.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/must_do_product_gfg.json (Full path: d:\DPythonProjects\roulette\migration\data/must_do_product_gfg.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/must_do_product_gfg.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/oracle_dsa.json (Full path: d:\DPythonProjects\roulette\migration\data/oracle_dsa.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/oracle_dsa.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/os_core_sheet.json (Full path: d:\DPythonProjects\roulette\migration\data/os_core_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/os_core_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/phonepe_dsa.json (Full path: d:\DPythonProjects\roulette\migration\data/phonepe_dsa.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/phonepe_dsa.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: data/sde_sheet.json (Full path: d:\DPythonProjects\roulette\migration\data/sde_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\data/sde_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/cn_core_sheet.json (Full path: d:\DPythonProjects\roulette\migration\history/cn_core_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/cn_core_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/dbms_core_sheet.json (Full path: d:\DPythonProjects\roulette\migration\history/dbms_core_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/dbms_core_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/docker_commands.json (Full path: d:\DPythonProjects\roulette\migration\history/docker_commands.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/docker_commands.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/dsa_common_patterns.json (Full path: d:\DPythonProjects\roulette\migration\history/dsa_common_patterns.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/dsa_common_patterns.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/langgraph.json (Full path: d:\DPythonProjects\roulette\migration\history/langgraph.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/langgraph.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/lc_dsa_75.json (Full path: d:\DPythonProjects\roulette\migration\history/lc_dsa_75.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/lc_dsa_75.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/lc_sql_50.json (Full path: d:\DPythonProjects\roulette\migration\history/lc_sql_50.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/lc_sql_50.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/microsoft_dsa.json (Full path: d:\DPythonProjects\roulette\migration\history/microsoft_dsa.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/microsoft_dsa.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/must_do_product_gfg.json (Full path: d:\DPythonProjects\roulette\migration\history/must_do_product_gfg.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/must_do_product_gfg.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/oracle_dsa.json (Full path: d:\DPythonProjects\roulette\migration\history/oracle_dsa.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/oracle_dsa.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/os_core_sheet.json (Full path: d:\DPythonProjects\roulette\migration\history/os_core_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/os_core_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/phonepe_dsa.json (Full path: d:\DPythonProjects\roulette\migration\history/phonepe_dsa.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/phonepe_dsa.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: history/sde_sheet.json (Full path: d:\DPythonProjects\roulette\migration\history/sde_sheet.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\history/sde_sheet.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_1.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_1.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_1.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_10.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_10.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_10.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_11.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_11.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_11.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_12.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_12.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_12.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_13.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_13.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_13.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_14.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_14.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_14.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_15.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_15.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_15.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_16.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_16.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_16.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_17.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_17.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_17.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_18.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_18.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_18.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_19.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_19.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_19.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_2.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_2.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_2.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_20.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_20.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_20.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_21.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_21.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_21.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_22.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_22.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_22.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_23.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_23.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_23.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_24.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_24.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_24.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_25.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_25.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_25.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_26.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_26.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_26.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_27.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_27.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_27.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_28.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_28.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_28.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_29.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_29.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_29.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_3.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_3.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_3.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_30.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_30.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_30.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_31.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_31.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_31.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_32.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_32.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_32.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_33.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_33.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_33.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_34.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_34.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_34.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_35.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_35.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_35.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_36.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_36.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_36.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_37.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_37.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_37.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_38.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_38.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_38.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_39.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_39.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_39.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_4.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_4.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_4.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_40.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_40.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_40.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_41.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_41.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_41.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_42.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_42.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_42.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_43.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_43.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_43.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_44.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_44.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_44.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_45.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_45.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_45.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_46.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_46.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_46.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_47.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_47.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_47.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_48.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_48.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_48.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_49.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_49.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_49.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_5.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_5.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_5.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_50.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_50.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_50.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_51.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_51.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_51.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_52.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_52.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_52.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_53.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_53.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_53.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_6.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_6.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_6.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_7.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_7.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_7.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_8.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_8.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_8.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: microsoft_question_jsons/page_9.json (Full path: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_9.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\microsoft_question_jsons/page_9.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_1.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_1.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_1.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_10.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_10.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_10.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_11.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_11.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_11.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_12.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_12.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_12.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_13.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_13.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_13.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_14.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_14.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_14.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_15.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_15.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_15.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_16.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_16.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_16.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_17.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_17.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_17.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_18.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_18.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_18.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_19.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_19.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_19.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_2.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_2.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_2.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_3.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_3.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_3.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_4.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_4.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_4.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_5.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_5.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_5.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_6.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_6.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_6.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_7.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_7.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_7.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_8.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_8.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_8.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: oracle_question_jsons/page_9.json (Full path: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_9.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\oracle_question_jsons/page_9.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: phonepe_question_jsons/page_1.json (Full path: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_1.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_1.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: phonepe_question_jsons/page_2.json (Full path: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_2.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_2.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: phonepe_question_jsons/page_3.json (Full path: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_3.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_3.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: phonepe_question_jsons/page_4.json (Full path: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_4.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_4.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: phonepe_question_jsons/page_5.json (Full path: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_5.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_5.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: phonepe_question_jsons/page_6.json (Full path: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_6.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_6.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - Processing file: phonepe_question_jsons/page_7.json (Full path: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_7.json)
+2025-04-13 16:43:34 - __main__ - ERROR - File not found: d:\DPythonProjects\roulette\migration\phonepe_question_jsons/page_7.json. Skipping.
+2025-04-13 16:43:34 - __main__ - INFO - ------------------------------
+2025-04-13 16:43:34 - __main__ - INFO - Script finished.
+2025-04-13 16:43:34 - __main__ - INFO - Total files listed: 106
+2025-04-13 16:43:34 - __main__ - INFO - Files attempted for processing: 0
+2025-04-13 16:43:34 - __main__ - INFO - Files skipped (read errors, etc.): 106
+2025-04-13 16:43:34 - __main__ - INFO - ------------------------------
+2025-04-13 16:43:34 - __main__ - INFO - MongoDB connection closed.
+2025-04-13 16:44:33 - __main__ - INFO - Starting JSON to MongoDB data loading script.
+2025-04-13 16:44:33 - __main__ - INFO - Successfully connected to MongoDB. Using database: 'roulette_db'
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/cn_core_sheet.json (Full path: D:\DPythonProjects\roulette\data/cn_core_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'cn_core_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/cn_core_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/dbms_core_sheet.json (Full path: D:\DPythonProjects\roulette\data/dbms_core_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'dbms_core_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/dbms_core_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/docker_commands.json (Full path: D:\DPythonProjects\roulette\data/docker_commands.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'docker_commands': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/docker_commands.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/dsa_common_patterns.json (Full path: D:\DPythonProjects\roulette\data/dsa_common_patterns.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'dsa_common_patterns': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/dsa_common_patterns.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/langgraph.json (Full path: D:\DPythonProjects\roulette\data/langgraph.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'langgraph': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/langgraph.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/lc_dsa_75.json (Full path: D:\DPythonProjects\roulette\data/lc_dsa_75.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'lc_dsa_75': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/lc_dsa_75.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/lc_sql_50.json (Full path: D:\DPythonProjects\roulette\data/lc_sql_50.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'lc_sql_50': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/lc_sql_50.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/linux_commands.json (Full path: D:\DPythonProjects\roulette\data/linux_commands.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'linux_commands': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/linux_commands.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/microsoft_dsa.json (Full path: D:\DPythonProjects\roulette\data/microsoft_dsa.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'microsoft_dsa': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/microsoft_dsa.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/must_do_product_gfg.json (Full path: D:\DPythonProjects\roulette\data/must_do_product_gfg.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'must_do_product_gfg': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/must_do_product_gfg.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/oracle_dsa.json (Full path: D:\DPythonProjects\roulette\data/oracle_dsa.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'oracle_dsa': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/oracle_dsa.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/os_core_sheet.json (Full path: D:\DPythonProjects\roulette\data/os_core_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'os_core_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/os_core_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/phonepe_dsa.json (Full path: D:\DPythonProjects\roulette\data/phonepe_dsa.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'phonepe_dsa': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/phonepe_dsa.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: data/sde_sheet.json (Full path: D:\DPythonProjects\roulette\data/sde_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'sde_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for data/sde_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/cn_core_sheet.json (Full path: D:\DPythonProjects\roulette\history/cn_core_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'cn_core_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/cn_core_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/dbms_core_sheet.json (Full path: D:\DPythonProjects\roulette\history/dbms_core_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'dbms_core_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/dbms_core_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/docker_commands.json (Full path: D:\DPythonProjects\roulette\history/docker_commands.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'docker_commands': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/docker_commands.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/dsa_common_patterns.json (Full path: D:\DPythonProjects\roulette\history/dsa_common_patterns.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'dsa_common_patterns': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/dsa_common_patterns.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/langgraph.json (Full path: D:\DPythonProjects\roulette\history/langgraph.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'langgraph': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/langgraph.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/lc_dsa_75.json (Full path: D:\DPythonProjects\roulette\history/lc_dsa_75.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'lc_dsa_75': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/lc_dsa_75.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/lc_sql_50.json (Full path: D:\DPythonProjects\roulette\history/lc_sql_50.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'lc_sql_50': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/lc_sql_50.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/microsoft_dsa.json (Full path: D:\DPythonProjects\roulette\history/microsoft_dsa.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'microsoft_dsa': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/microsoft_dsa.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/must_do_product_gfg.json (Full path: D:\DPythonProjects\roulette\history/must_do_product_gfg.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'must_do_product_gfg': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/must_do_product_gfg.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/oracle_dsa.json (Full path: D:\DPythonProjects\roulette\history/oracle_dsa.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'oracle_dsa': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/oracle_dsa.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/os_core_sheet.json (Full path: D:\DPythonProjects\roulette\history/os_core_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'os_core_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/os_core_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/phonepe_dsa.json (Full path: D:\DPythonProjects\roulette\history/phonepe_dsa.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'phonepe_dsa': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/phonepe_dsa.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: history/sde_sheet.json (Full path: D:\DPythonProjects\roulette\history/sde_sheet.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'sde_sheet': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for history/sde_sheet.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_1.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_1.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_1': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_1.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_10.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_10.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_10': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_10.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_11.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_11.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_11': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_11.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_12.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_12.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_12': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_12.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_13.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_13.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_13': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_13.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_14.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_14.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_14': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_14.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_15.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_15.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_15': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_15.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_16.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_16.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_16': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_16.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_17.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_17.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_17': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_17.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_18.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_18.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_18': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_18.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_19.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_19.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_19': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_19.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_2.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_2.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_2': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_2.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_20.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_20.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_20': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_20.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_21.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_21.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_21': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_21.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_22.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_22.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_22': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_22.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_23.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_23.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_23': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_23.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_24.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_24.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_24': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_24.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_25.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_25.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_25': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_25.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_26.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_26.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_26': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_26.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_27.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_27.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_27': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_27.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_28.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_28.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_28': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_28.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_29.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_29.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_29': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_29.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_3.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_3.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_3': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_3.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_30.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_30.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_30': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_30.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_31.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_31.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_31': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_31.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_32.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_32.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_32': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_32.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_33.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_33.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_33': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_33.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_34.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_34.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_34': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_34.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_35.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_35.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_35': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_35.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_36.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_36.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_36': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_36.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_37.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_37.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_37': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_37.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_38.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_38.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_38': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_38.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_39.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_39.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_39': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_39.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_4.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_4.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_4': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_4.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_40.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_40.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_40': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_40.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_41.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_41.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_41': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_41.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_42.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_42.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_42': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_42.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_43.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_43.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_43': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_43.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_44.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_44.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_44': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_44.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_45.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_45.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_45': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_45.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_46.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_46.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_46': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_46.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_47.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_47.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_47': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_47.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_48.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_48.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_48': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_48.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_49.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_49.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_49': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_49.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_5.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_5.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_5': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_5.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_50.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_50.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_50': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_50.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_51.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_51.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_51': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_51.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_52.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_52.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_52': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_52.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_53.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_53.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_53': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_53.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_6.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_6.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_6': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_6.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_7.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_7.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_7': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_7.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_8.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_8.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_8': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_8.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: microsoft_question_jsons/page_9.json (Full path: D:\DPythonProjects\roulette\microsoft_question_jsons/page_9.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_9': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for microsoft_question_jsons/page_9.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_1.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_1.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_1': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_1.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_10.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_10.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_10': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_10.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_11.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_11.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_11': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_11.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_12.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_12.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_12': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_12.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_13.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_13.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_13': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_13.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_14.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_14.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_14': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_14.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_15.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_15.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_15': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_15.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_16.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_16.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_16': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_16.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_17.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_17.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_17': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_17.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_18.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_18.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_18': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_18.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_19.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_19.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_19': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_19.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_2.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_2.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_2': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_2.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_3.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_3.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_3': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_3.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_4.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_4.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_4': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_4.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_5.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_5.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_5': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_5.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_6.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_6.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_6': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_6.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_7.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_7.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_7': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_7.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_8.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_8.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_8': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_8.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: oracle_question_jsons/page_9.json (Full path: D:\DPythonProjects\roulette\oracle_question_jsons/page_9.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_9': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for oracle_question_jsons/page_9.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: phonepe_question_jsons/page_1.json (Full path: D:\DPythonProjects\roulette\phonepe_question_jsons/page_1.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_1': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for phonepe_question_jsons/page_1.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: phonepe_question_jsons/page_2.json (Full path: D:\DPythonProjects\roulette\phonepe_question_jsons/page_2.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_2': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for phonepe_question_jsons/page_2.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: phonepe_question_jsons/page_3.json (Full path: D:\DPythonProjects\roulette\phonepe_question_jsons/page_3.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_3': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for phonepe_question_jsons/page_3.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: phonepe_question_jsons/page_4.json (Full path: D:\DPythonProjects\roulette\phonepe_question_jsons/page_4.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_4': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for phonepe_question_jsons/page_4.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: phonepe_question_jsons/page_5.json (Full path: D:\DPythonProjects\roulette\phonepe_question_jsons/page_5.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_5': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for phonepe_question_jsons/page_5.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: phonepe_question_jsons/page_6.json (Full path: D:\DPythonProjects\roulette\phonepe_question_jsons/page_6.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_6': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for phonepe_question_jsons/page_6.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - Processing file: phonepe_question_jsons/page_7.json (Full path: D:\DPythonProjects\roulette\phonepe_question_jsons/page_7.json)
+2025-04-13 16:44:33 - __main__ - ERROR - Error during flattening by handler for 'page_7': SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+Traceback (most recent call last):
+  File "d:\DPythonProjects\roulette\migration\json_to_mongo.py", line 220, in flatten_json_data
+    handler = SheetHandlerFactory.create_handler(sheet_type=collection_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SheetHandlerFactory.create_handler() missing 2 required positional arguments: 'mongo_client' and 'db_name'
+2025-04-13 16:44:33 - __main__ - INFO - No documents to insert for phonepe_question_jsons/page_7.json after attempting flattening (or handler skipped).
+2025-04-13 16:44:33 - __main__ - INFO - ------------------------------
+2025-04-13 16:44:33 - __main__ - INFO - Script finished.
+2025-04-13 16:44:33 - __main__ - INFO - Total files listed: 106
+2025-04-13 16:44:33 - __main__ - INFO - Files attempted for processing: 106
+2025-04-13 16:44:33 - __main__ - INFO - Files skipped (read errors, etc.): 0
+2025-04-13 16:44:33 - __main__ - INFO - ------------------------------
+2025-04-13 16:44:33 - __main__ - INFO - MongoDB connection closed.
