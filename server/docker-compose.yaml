@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017
+      - DATABASE_NAME=sheet_roulette
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  default:
+    driver: bridge
+    name: sheet_roulette_network
+    external: false
+    attachable: true
+
+# To run the application, use the following command in the terminal:
+# docker-compose up --build
+# This will build the API service and start both the API and MongoDB services.
+# The API will be accessible at http://localhost:8000 and MongoDB at mongodb://localhost:27017.
+# To stop the services, use the following command:
+# docker-compose down
+# This will stop and remove the containers, but the MongoDB data will persist in the volume.
+# To remove the volume as well, use the following command:
+# docker-compose down -v
+# This will stop and remove the containers and the volume, deleting all data in MongoDB.
+# Note: Make sure to have Docker and Docker Compose installed on your machine.
