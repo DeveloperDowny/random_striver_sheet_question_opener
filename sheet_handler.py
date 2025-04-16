@@ -2,18 +2,20 @@
 """
 Abstract base class for handling different types of sheets (e.g., SDE, Core subjects),
 fetching data from MongoDB, and processing it to select a random topic.
+History and revision tracking now also use MongoDB instead of local files.
 """
 
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional, Union
 import json
 import logging
-import os
 import random
 import urllib.parse
 from pymongo import MongoClient
 from pymongo.collection import Collection
 from pymongo.errors import PyMongoError
+
+import os
 
 
 # Assuming Config class exists and provides kDebugMode
@@ -28,17 +30,17 @@ logger = logging.getLogger(__name__)  # Use __name__ for logger
 class SheetHandler(ABC):
     """
     Abstract base class for sheet handlers. Fetches data from MongoDB.
-    Handles history and revision tracking using local files.
+    Handles history and revision tracking using MongoDB collections.
     """
 
     def __init__(
         self,
         file_name: str,
         site: str,
-        mongo_client: MongoClient,  # Added MongoDB client
-        db_name: str,  # Added Database name
+        mongo_client: MongoClient,
+        db_name: str,
         jsons_path: Optional[str] = None,
-        difficulty: Optional[Any] = None,  # Consider using an Enum for difficulty
+        difficulty: Optional[Any] = None,
     ):
         """
         Initializes the SheetHandler.
@@ -48,7 +50,7 @@ class SheetHandler(ABC):
             site (str): The website domain for creating search links (e.g., "leetcode.com").
             mongo_client (MongoClient): An active PyMongo client instance.
             db_name (str): The name of the MongoDB database containing the collections.
-            jsons_path (Optional[str]): Path for specific handlers needing extra JSONs (e.g., MicrosoftDSAHandler). Defaults to None.
+            jsons_path (Optional[str]): Path for specific handlers needing extra JSONs. Defaults to None.
             difficulty (Optional[Any]): Difficulty level for specific handlers. Defaults to None.
         """
         if not mongo_client:
@@ -63,33 +65,40 @@ class SheetHandler(ABC):
         self.jsons_path = jsons_path  # Keep for handlers that might still need it
         self.difficulty = difficulty  # Keep for handlers that might still need it
 
-        # History and revision still use local files relative to this script's location
-        self.base_dir = os.path.dirname(os.path.abspath(__file__))
-        self.history_file_path = os.path.join(
-            self.base_dir, f"history/{file_name}.json"
-        )
-        self.revision_file_path = os.path.join(
-            self.base_dir, f"revision/{file_name}.txt"
-        )
+        # Get MongoDB database
+        self.db = self.mongo_client[self.db_name]
 
-        # Ensure history/revision directories exist
-        os.makedirs(os.path.dirname(self.history_file_path), exist_ok=True)
-        os.makedirs(os.path.dirname(self.revision_file_path), exist_ok=True)
+        # Set collection names for data, history, and revision
+        self.data_collection_name = self.file_name
+        self.history_collection_name = "history"
+        self.revision_collection_name = "revision"
+
+        # Ensure collections exist
+        self._ensure_collections_exist()
 
         self.should_allow_repeats = False
+
+    def _ensure_collections_exist(self):
+        """Ensures that the necessary collections exist in the database."""
+        collection_names = self.db.list_collection_names()
+
+        # Create collections if they don't exist
+        if self.history_collection_name not in collection_names:
+            self.db.create_collection(self.history_collection_name)
+            logger.info(f"Created history collection: {self.history_collection_name}")
+
+        if self.revision_collection_name not in collection_names:
+            self.db.create_collection(self.revision_collection_name)
+            logger.info(f"Created revision collection: {self.revision_collection_name}")
 
     @abstractmethod
     def flatten(self, data: Union[Dict[str, Any], List[Any]]) -> List[Dict[str, Any]]:
         """
         Abstract method for flattening data.
-        NOTE: This is likely NO LONGER CALLED in the main `process` flow
-              if data from MongoDB is already considered flat.
-              It's kept for potential subclass use or future refactoring.
+        Kept for potential subclass use or future refactoring.
         """
         pass
 
-    # --- Methods potentially kept for specific handlers (like MicrosoftDSAHandler) ---
-    # These might need refactoring if their data source also moves to Mongo
     def get_all_jsons(self) -> List[str]:
         """Gets all JSON filenames from the specific jsons_path."""
         if not self.jsons_path or not os.path.exists(self.jsons_path):
@@ -131,16 +140,12 @@ class SheetHandler(ABC):
     def questions_from_jsons(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
         Example method for handlers that load questions from auxiliary JSONs.
-        Needs to be implemented properly in subclasses like MicrosoftDSAHandler if used.
         """
-        # This implementation is specific and might belong in the subclass
-        # Keeping structure for reference
-        # random_json_file = self.pick_random_json()
         files = self.get_all_jsons()
         data_array = []
         data_array = [self.get_json(file) for file in files]
         questions_array = []
-        
+
         for data in data_array:
             if not data or "data" not in data or "problem_list" not in data["data"]:
                 logger.warning(
@@ -148,68 +153,57 @@ class SheetHandler(ABC):
                 )
                 return []
 
-            logger.debug(
-                f"Processing auxiliary JSON {files} for {self.file_name}"
-            )
+            logger.debug(f"Processing auxiliary JSON {files} for {self.file_name}")
             questions = data["data"]["problem_list"]
             if self.difficulty:
                 questions = [
                     item
                     for item in questions
-                    if item.get("difficulty")
-                    == self.difficulty.value  # Use .get for safety
+                    if item.get("difficulty") == self.difficulty.value
                 ]
             questions_array.extend(questions)
         return questions_array
 
-    # --- End of potentially specific methods ---
-
     def _read_history(self) -> List[str]:
-        """Reads the list of solved IDs from the local history file."""
+        """
+        Reads the list of solved IDs from MongoDB history collection.
+        """
         try:
-            if not os.path.exists(self.history_file_path):
-                logger.warning(
-                    f"History file not found: {self.history_file_path}. Starting with empty history."
+            # Query the history collection for documents related to this sheet
+            history_collection = self.db[self.history_collection_name]
+            history_doc = history_collection.find_one({"sheet_name": self.file_name})
+
+            if not history_doc:
+                # Create a new history document if none exists
+                logger.info(
+                    f"No history found for {self.file_name}. Creating new history."
                 )
-                # Create an empty history file
-                with open(self.history_file_path, "w", encoding="utf-8") as file:
-                    json.dump({"solved_ids": []}, file, indent=2)
+                history_collection.insert_one(
+                    {"sheet_name": self.file_name, "solved_ids": []}
+                )
                 return []
 
-            with open(self.history_file_path, "r", encoding="utf-8") as file:
-                content = file.read()
-                if not content.strip():  # Handle empty file
-                    logger.warning(
-                        f"History file is empty: {self.history_file_path}. Starting with empty history."
-                    )
-                    return []
-                history_data = json.loads(content)
-                # Validate structure
-                if (
-                    isinstance(history_data, dict)
-                    and "solved_ids" in history_data
-                    and isinstance(history_data["solved_ids"], list)
-                ):
-                    # Ensure IDs are strings for consistency
-                    return [str(id_val) for id_val in history_data["solved_ids"]]
-                else:
-                    logger.error(
-                        f"Invalid format in history file: {self.history_file_path}. Expected {{'solved_ids': [...]}}. Starting fresh."
-                    )
-                    return []
-        except json.JSONDecodeError:
-            logger.exception(
-                f"Error decoding JSON from history file: {self.history_file_path}. Starting fresh."
-            )
-            return []
-        except IOError as e:
-            logger.exception(
-                f"Error reading history file {self.history_file_path}: {e}. Starting fresh."
-            )
+            # Ensure solved_ids exists and is a list
+            if "solved_ids" not in history_doc or not isinstance(
+                history_doc["solved_ids"], list
+            ):
+                logger.warning(
+                    f"Invalid history format for {self.file_name}. Resetting history."
+                )
+                history_collection.update_one(
+                    {"sheet_name": self.file_name}, {"$set": {"solved_ids": []}}
+                )
+                return []
+
+            # Convert all IDs to strings for consistency
+            return [str(id_val) for id_val in history_doc["solved_ids"]]
+
+        except PyMongoError as e:
+            logger.exception(f"MongoDB error reading history for {self.file_name}: {e}")
             return []
         except Exception as e:
             logger.exception(
-                f"Unexpected error reading history file {self.history_file_path}: {e}. Starting fresh."
+                f"Unexpected error reading history for {self.file_name}: {e}"
             )
             return []
 
@@ -219,12 +213,8 @@ class SheetHandler(ABC):
         """Removes items from sheet_data whose 'id' is present in solved_ids."""
         logger.debug(f"Removing {len(solved_ids)} solved items from sheet data.")
         solved_set = set(solved_ids)  # Convert list to set for efficient lookup
-        # Ensure item["id"] exists and convert to string for comparison
         return [
-            item
-            for item in sheet_data
-            if str(item.get("id", None))
-            not in solved_set  # Use .get and str() for safety
+            item for item in sheet_data if str(item.get("id", None)) not in solved_set
         ]
 
     def get_random_topic(
@@ -236,21 +226,23 @@ class SheetHandler(ABC):
             return None
         try:
             return random.choice(filtered_data)
-        except (
-            IndexError
-        ):  # Should not happen if filtered_data is not empty, but good practice
+        except IndexError:
             logger.error("IndexError during random choice, though list was not empty.")
             return None
 
     def create_link(self, title: str) -> str:
         """Creates a Google search link for the topic title on the specified site."""
-        # URL encodes the title to handle special characters
         url_safe_title = urllib.parse.quote_plus(title)
-        # Constructs the search URL
         return f"https://www.google.com/search?q={url_safe_title}+site%3A{self.site}"
 
     def update_history(self, history: List[str], new_id: str) -> None:
-        """Appends the new ID to the history list and saves it to the local file."""
+        """
+        Updates the history in MongoDB with a new ID.
+
+        Args:
+            history (List[str]): Current list of solved IDs (not used directly)
+            new_id (str): New ID to add to history
+        """
         if Config.kDebugMode:
             logger.info("Debug mode enabled. Skipping history update.")
             return
@@ -259,35 +251,41 @@ class SheetHandler(ABC):
             return
 
         new_id_str = str(new_id)  # Ensure ID is a string
-        history.append(new_id_str)
+
         try:
-            with open(self.history_file_path, "w", encoding="utf-8") as file:
-                json.dump({"solved_ids": history}, file, indent=2)
+            # Update the history document in MongoDB
+            history_collection = self.db[self.history_collection_name]
+            result = history_collection.update_one(
+                {"sheet_name": self.file_name},
+                {
+                    "$addToSet": {"solved_ids": new_id_str}
+                },  # $addToSet prevents duplicates
+            )
+
+            if result.matched_count == 0:
+                # Create a new document if none exists
+                history_collection.insert_one(
+                    {"sheet_name": self.file_name, "solved_ids": [new_id_str]}
+                )
+
             logger.info(f"History updated with ID: {new_id_str}")
-        except IOError as e:
+
+        except PyMongoError as e:
             logger.exception(
-                f"Error writing history file {self.history_file_path}: {e}"
+                f"MongoDB error updating history for {self.file_name}: {e}"
             )
         except Exception as e:
             logger.exception(
-                f"Unexpected error writing history file {self.history_file_path}: {e}"
+                f"Unexpected error updating history for {self.file_name}: {e}"
             )
 
     def get_title(self, topic: Dict[str, Any]) -> str:
         """Extracts the title from the topic dictionary."""
-        # Use .get for safer access, provide a default title if missing
         return topic.get("title", "Unknown Title")
 
     def process(self) -> None:
         """
-        Main processing logic:
-        1. Fetches data from the MongoDB collection.
-        2. Reads history from the local file.
-        3. Filters out solved items.
-        4. Selects a random unsolved topic.
-        5. Creates a search link.
-        6. Updates history (local file).
-        7. Handles revision marking (local files).
+        Main processing logic using MongoDB for all data operations.
         """
         logger.info(
             f"Processing sheet: {self.file_name} (Collection: {self.file_name})"
@@ -296,35 +294,29 @@ class SheetHandler(ABC):
         # 1. Fetch data from MongoDB
         sheet_data_from_db: List[Dict[str, Any]] = []
         try:
-            db = self.mongo_client[self.db_name]
-            collection: Collection = db[
-                self.file_name
-            ]  # Use file_name as collection name
-            # Find all documents in the collection
-            sheet_data_from_db = list(collection.find({}))  # Convert cursor to list
+            collection: Collection = self.db[self.file_name]
+            sheet_data_from_db = list(collection.find({}))
             if not sheet_data_from_db:
                 logger.warning(
                     f"No data found in MongoDB collection: '{self.file_name}'"
                 )
-                # Decide if you want to stop or continue with empty data
-                # return # Option to stop if no data
+                return
 
         except PyMongoError as pe:
             logger.exception(
                 f"MongoDB error fetching data for collection '{self.file_name}': {pe}"
             )
-            return  # Stop processing if DB error occurs
+            return
         except Exception as e:
             logger.exception(
                 f"Unexpected error fetching data for collection '{self.file_name}': {e}"
             )
-            return  # Stop processing
+            return
 
-        # 2. Read history from local file
+        # 2. Read history from MongoDB
         history = self._read_history()
 
         # 3. Filter out solved items
-        # Data from Mongo is assumed flat, skip self.flatten()
         filtered_data = self.remove_solved(sheet_data_from_db, history)
 
         # 4. Select a random topic
@@ -332,7 +324,6 @@ class SheetHandler(ABC):
 
         if random_topic is None:
             logger.info(f"No unsolved topics remaining for {self.file_name}.")
-            # Maybe add logic here if all topics are solved?
             return
 
         # Ensure the selected topic has an ID
@@ -341,28 +332,25 @@ class SheetHandler(ABC):
             logger.error(
                 f"Selected random topic for {self.file_name} is missing an 'id' field: {random_topic}"
             )
-            # Maybe try picking another one? For now, stop.
             return
 
-        topic_id_str = str(topic_id)  # Use string version for comparisons and history
+        topic_id_str = str(topic_id)
 
-        # 5. Check for repeats (should be rare now if filtering works, but keep as safeguard)
+        # 5. Check for repeats (safeguard)
         if topic_id_str in history and not self.should_allow_repeats:
             logger.warning(
-                f"Repeat ID '{topic_id_str}' found unexpectedly after filtering. Check filtering logic or history."
+                f"Repeat ID '{topic_id_str}' found unexpectedly after filtering."
             )
-            # Potentially add logic to re-pick or handle this scenario
-            return  # Avoid infinite loops
+            return
 
         # 6. Log, create link, update history
-        # logger.info(f"Selected topic: {json.dumps(random_topic, indent=2)}")
         logger.info(f"Selected topic: {random_topic}")
         title = self.get_title(random_topic)
         link = self.create_link(title)
         logger.info(f"Link: {link}")
 
-        # Update history *before* asking for revision input
-        self.update_history(history, topic_id_str)  # Pass the string ID
+        # Update history before asking for revision input
+        self.update_history(history, topic_id_str)
 
         # 7. Handle revision marking
         try:
@@ -370,8 +358,7 @@ class SheetHandler(ABC):
                 input("Mark for revision? (y/n): ").strip().lower()
             )
             if should_mark_for_revision == "y":
-                # Pass the *current* history state (which includes the new ID)
-                self.mark_revision(history)
+                self.mark_revision(topic_id_str)
         except EOFError:
             logger.warning(
                 "EOF encountered while waiting for revision input. Skipping revision marking."
@@ -379,48 +366,53 @@ class SheetHandler(ABC):
         except Exception as e:
             logger.exception(f"Error during revision input/marking: {e}")
 
-    def mark_revision(self, current_history: List[str]) -> None:
-        """Marks the last added item for revision."""
+    def mark_revision(self, revision_id: str) -> None:
+        """
+        Marks an item for revision in MongoDB and removes it from history.
+
+        Args:
+            revision_id (str): ID to mark for revision
+        """
         if Config.kDebugMode:
             logger.info("Debug mode enabled. Skipping revision marking.")
             return
 
-        if not current_history:
-            logger.warning("Cannot mark for revision: history is empty.")
+        if not revision_id:
+            logger.warning("Cannot mark for revision: ID is empty.")
             return
 
-        # The ID to mark for revision is the last one added
-        revision_id = current_history[-1]
-
-        # 1. Add to revision file
         try:
-            with open(self.revision_file_path, "a", encoding="utf-8") as file:
-                file.write(revision_id + "\n")
+            # 1. Add to revision collection
+            revision_collection = self.db[self.revision_collection_name]
+            revision_doc = revision_collection.find_one({"sheet_name": self.file_name})
+
+            if revision_doc:
+                # Update existing document
+                revision_collection.update_one(
+                    {"sheet_name": self.file_name},
+                    {"$addToSet": {"revision_ids": revision_id}},
+                )
+            else:
+                # Create new document
+                revision_collection.insert_one(
+                    {"sheet_name": self.file_name, "revision_ids": [revision_id]}
+                )
+
             logger.info(f"ID '{revision_id}' marked for revision.")
-        except IOError as e:
-            logger.exception(
-                f"Error writing revision file {self.revision_file_path}: {e}"
-            )
-            # Continue to update history even if revision file fails
-        except Exception as e:
-            logger.exception(
-                f"Unexpected error writing revision file {self.revision_file_path}: {e}"
+
+            # 2. Remove from history collection
+            history_collection = self.db[self.history_collection_name]
+            history_collection.update_one(
+                {"sheet_name": self.file_name}, {"$pull": {"solved_ids": revision_id}}
             )
 
-        # 2. Remove the ID from the current history list (as it was just added)
-        #    and save the *corrected* history.
-        history_without_revision = current_history[
-            :-1
-        ]  # Create a new list without the last element
-        try:
-            with open(self.history_file_path, "w", encoding="utf-8") as file:
-                json.dump({"solved_ids": history_without_revision}, file, indent=2)
-            logger.info(f"History reverted to exclude revision ID '{revision_id}'.")
-        except IOError as e:
+            logger.info(f"ID '{revision_id}' removed from history.")
+
+        except PyMongoError as e:
             logger.exception(
-                f"Error reverting history file {self.history_file_path} after revision marking: {e}"
+                f"MongoDB error marking revision for {self.file_name}: {e}"
             )
         except Exception as e:
             logger.exception(
-                f"Unexpected error reverting history file {self.history_file_path}: {e}"
+                f"Unexpected error marking revision for {self.file_name}: {e}"
             )
