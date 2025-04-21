@@ -1,0 +1,6 @@
+*.json
+__pycache__
+*.log
+requirements.txt
+Dockerfile
+docker-compose.yaml
