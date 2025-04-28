@@ -10,10 +10,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose API port
-EXPOSE 8000
+EXPOSE 8080
 
 # Set environment variables (override with docker run -e)
 ENV ENV_FILE_PATH=/app/.env
 
 # Command to run the API server
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
