@@ -1,0 +1,16 @@
+{
+    "configurations": [
+      {
+        "name": "Python Debugger: FastAPI",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "uvicorn",
+        "args": ["main:app", "--reload"],
+        "jinja": true,
+        "python": "${command:python.interpreterPath}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      }
+    ]
+  }

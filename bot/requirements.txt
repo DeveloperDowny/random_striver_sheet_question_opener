@@ -1,4 +1,7 @@
-python-telegram-bot[httpx]>=20.0
+python-telegram-bot[httpx]>=21.0 # Ensure you have a recent version
 requests>=2.28.0
 pydantic>=2.0.0
-pydantic-settings
+pydantic-settings>=2.0.0
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0 # For running locally and as ASGI server
+telegramify-markdown

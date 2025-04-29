@@ -21,11 +21,10 @@ from pydantic import (
     BaseModel,
     Field,
 )  # Using Pydantic for request validation might be good practice
-from config import Settings
 
 # --- Configuration ---
 # It's highly recommended to use environment variables for sensitive info
-bot_config = Settings(_env_file=".env")
+from config import bot_config
 TELEGRAM_BOT_TOKEN = bot_config.telegram_bot_token
 SERVER_BASE_URL = bot_config.server_base_url
 

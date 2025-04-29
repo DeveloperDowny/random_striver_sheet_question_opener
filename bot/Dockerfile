@@ -1,26 +1,28 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11-slim
 
+# Set environment variables to prevent Python from writing pyc files and buffering stdout/stderr
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements file into the container at /app
+# Install system dependencies if any (e.g., for libraries needing compilation)
+# RUN apt-get update && apt-get install -y --no-install-recommends some-package && rm -rf /var/lib/apt/lists/*
+
+# Copy the requirements file into the container
 COPY requirements.txt .
 
-# Install any needed packages specified in requirements.txt
-# Use --no-cache-dir to reduce image size
-RUN pip install --no-cache-dir -r requirements.txt
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the application code into the container at /app
+# Copy the rest of the application code into the container
 COPY . .
 
-# Make port 8080 available to the world outside this container
-# Cloud Run expects the container to listen on the port defined by the PORT env var (default 8080)
-# While this specific bot uses polling and doesn't listen for HTTP requests directly from Cloud Run,
-# defining a PORT is standard practice for Cloud Run services.
-# The bot itself will initiate outbound connections to Telegram.
-ENV PORT=8080
-
-# Run telegram_bot.py when the container launches
-# Use python -u for unbuffered output, helpful for logging
-CMD ["python", "-u", "telegram_bot.py"]
+# Specify the command to run on container start
+# Use Uvicorn to run the FastAPI application.
+# --host 0.0.0.0 makes it accessible from outside the container.
+# --port 8080 is the default port Cloud Run expects.
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
