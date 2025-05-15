@@ -159,3 +159,14 @@ class DSACommonPatterns(SheetHandler):
 
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         return data["data"]
+
+
+class MultiAgentsDesignPatternSheet(SheetHandler):
+    def __init__(self):
+        super().__init__("multi_agents_design_pattern", "google.com")
+
+    def get_title(self, topic: Dict[str, Any]) -> str:
+        return topic["topic_name"]
+
+    def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        return data["data"]

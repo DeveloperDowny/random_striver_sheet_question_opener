@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "topic_name": "Single Agent System"
+    },
+    {
+      "id": "2",
+      "topic_name": "Multi-Agent System"
+    },
+    {
+      "id": "3",
+      "topic_name": "Sequential"
+    },
+    {
+      "id": "4",
+      "topic_name": "Router"
+    },
+    {
+      "id": "5",
+      "topic_name": "Parallel"
+    },
+    {
+      "id": "6",
+      "topic_name": "Generator"
+    },
+    {
+      "id": "7",
+      "topic_name": "Network"
+    },
+    {
+      "id": "8",
+      "topic_name": "Autonomous Agents"
+    }
+  ]
+}

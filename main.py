@@ -22,6 +22,7 @@ def main():
         "docker_commands",
         "langgraph",
         "dsa_common_patterns",
+        "multi_agents_design_pattern"
     ]
     filtered_sheet_types = SheetHandlerFactory.get_sheet_type(sheet_types)
     sheet_type = random.choice(filtered_sheet_types)

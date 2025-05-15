@@ -12,7 +12,7 @@ from sheet_handlers import (
     LinuxCommandsHandler,
     DockerCommandsHandler,
     DSACommonPatterns,
-    LanggraphHandler
+    LanggraphHandler, MultiAgentsDesignPatternSheet
 )
 
 class SheetHandlerFactory:
@@ -43,6 +43,8 @@ class SheetHandlerFactory:
             return LanggraphHandler()
         elif sheet_type == "dsa_common_patterns":
             return DSACommonPatterns()
+        elif sheet_type == "multi_agents_design_pattern":
+            return MultiAgentsDesignPatternSheet()
         else:
             raise ValueError(f"Invalid sheet type: {sheet_type}")
 
