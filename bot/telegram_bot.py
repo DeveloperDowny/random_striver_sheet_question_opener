@@ -25,6 +25,7 @@ from pydantic import (
 # --- Configuration ---
 # It's highly recommended to use environment variables for sensitive info
 from config import bot_config
+
 TELEGRAM_BOT_TOKEN = bot_config.telegram_bot_token
 SERVER_BASE_URL = bot_config.server_base_url
 
@@ -169,7 +170,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
     if not sheet_types:
         await update.message.reply_text(
-            "Could not fetch sheet types from the server. Please try again later or contact the administrator."
+            telegramify_markdown.standardize(
+                "Could not fetch sheet types from the server. Please try again later or contact the administrator."
+            )
         )
         return ConversationHandler.END
 
@@ -205,7 +208,9 @@ async def handle_sheet_selection(
     sheet_types = context.user_data.get("sheet_types")
     if not sheet_types:
         await update.message.reply_text(
-            "Sheet types not loaded. Please use /start again."
+            telegramify_markdown.standardize(
+                "Sheet types not loaded. Please use /start again."
+            )
         )
         return ConversationHandler.END
 
@@ -227,12 +232,16 @@ async def handle_sheet_selection(
                 selected_sheet_name_for_log = sheet_types[index]  # For logging only
             else:
                 await update.message.reply_text(
-                    f"Invalid index. Please enter a number between 0 and {len(sheet_types) - 1}."
+                    telegramify_markdown.standardize(
+                        f"Invalid index. Please enter a number between 0 and {len(sheet_types) - 1}."
+                    )
                 )
                 return SELECTING_SHEET  # Stay in the same state
         except ValueError:
             await update.message.reply_text(
-                "Invalid input. Please enter a number, text, or 'random'."
+                telegramify_markdown.standardize(
+                    "Invalid input. Please enter a number, text, or 'random'."
+                )
             )
             return SELECTING_SHEET
     else:  # Treat as filter text
@@ -244,7 +253,9 @@ async def handle_sheet_selection(
         logger.info(
             f"User {update.effective_user.username} selected: {selected_sheet_name_for_log}"
         )
-        await update.message.reply_text("Processing your selection...")
+        await update.message.reply_text(
+            telegramify_markdown.standardize("Processing your selection...")
+        )
 
         topic_data = await select_topic_from_server(selection_request, context)
 
@@ -276,7 +287,7 @@ async def handle_sheet_selection(
             reply_markup = InlineKeyboardMarkup(keyboard)
 
             await update.message.reply_text(
-                response_text,
+                telegramify_markdown.standardize(response_text),
                 reply_markup=reply_markup,
                 parse_mode="MarkdownV2",
                 disable_web_page_preview=True,
@@ -285,14 +296,18 @@ async def handle_sheet_selection(
         else:
             # Error message already sent by select_topic_from_server
             await update.message.reply_text(
-                "Failed to get a topic. Please try again or use /start."
+                telegramify_markdown.standardize(
+                    "Failed to get a topic. Please try again or use /start."
+                )
             )
             # Decide whether to end conversation or allow retry
             return SELECTING_SHEET  # Allow user to try again
 
     else:
         await update.message.reply_text(
-            "Invalid selection. Please enter a number, text, or 'random'."
+            telegramify_markdown.standardize(
+                "Invalid selection. Please enter a number, text, or 'random'."
+            )
         )
         return SELECTING_SHEET  # Stay in the same state
 
@@ -353,7 +368,11 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Cancels and ends the conversation."""
     user = update.effective_user
     logger.info(f"User {user.first_name} canceled the conversation.")
-    await update.message.reply_text("Okay, conversation canceled. Use /start anytime!")
+    await update.message.reply_text(
+        telegramify_markdown.standardize(
+            "Okay, conversation canceled. Use /start anytime!"
+        )
+    )
     # Clean up user data if needed
     context.user_data.clear()
     return ConversationHandler.END
