@@ -22,12 +22,19 @@ from schemas import (
     SheetSelectionRequest,
     SheetTypeResponse,
     StatusResponse,
-    TopicResponse, TopicEnrichmentRequest, SearchResult,
-
+    TopicResponse,
+    TopicEnrichmentRequest,
+    SearchResult,
 )
 from tavily_search_service import TavilySearchService
-from utils import get_mongo_client, get_db_config, get_tavily_service, categorize_search_results, \
-    generate_related_topics, extract_key_concepts
+from utils import (
+    get_mongo_client,
+    get_db_config,
+    get_tavily_service,
+    categorize_search_results,
+    generate_related_topics,
+    extract_key_concepts,
+)
 
 load_dotenv()
 
@@ -66,8 +73,8 @@ async def root():
 
 @app.get("/sheet-types", response_model=SheetTypeResponse)
 async def get_sheet_types(
-        mongo_client: MongoClient = Depends(get_mongo_client),
-        db_config: DBConfig = Depends(get_db_config),
+    mongo_client: MongoClient = Depends(get_mongo_client),
+    db_config: DBConfig = Depends(get_db_config),
 ):
     topics_col = mongo_client[db_config.DATABASE_NAME]["topics"]
     sheet_names = topics_col.distinct("sheet_name")
@@ -76,9 +83,9 @@ async def get_sheet_types(
 
 @app.post("/filter-sheets", response_model=SheetTypeResponse)
 async def filter_sheets(
-        request: SheetSelectionRequest,
-        mongo_client: MongoClient = Depends(get_mongo_client),
-        db_config: DBConfig = Depends(get_db_config),
+    request: SheetSelectionRequest,
+    mongo_client: MongoClient = Depends(get_mongo_client),
+    db_config: DBConfig = Depends(get_db_config),
 ):
     topics_col = mongo_client[db_config.DATABASE_NAME]["topics"]
     all_sheets = topics_col.distinct("sheet_name")
@@ -131,9 +138,9 @@ def mark_topic_for_revision(mongo_client, db_config, sheet_type: str, topic_id: 
 
 @app.post("/select-topic", response_model=TopicResponse)
 async def select_topic(
-        request: SheetSelectionRequest,
-        mongo_client: MongoClient = Depends(get_mongo_client),
-        db_config: DBConfig = Depends(get_db_config),
+    request: SheetSelectionRequest,
+    mongo_client: MongoClient = Depends(get_mongo_client),
+    db_config: DBConfig = Depends(get_db_config),
 ):
     topics_col = mongo_client[db_config.DATABASE_NAME]["topics"]
     sheet_names = topics_col.distinct("sheet_name")
@@ -183,9 +190,9 @@ async def select_topic(
 
 @app.post("/mark-revision", response_model=StatusResponse)
 async def mark_revision(
-        request: RevisionRequest,
-        mongo_client: MongoClient = Depends(get_mongo_client),
-        db_config: DBConfig = Depends(get_db_config),
+    request: RevisionRequest,
+    mongo_client: MongoClient = Depends(get_mongo_client),
+    db_config: DBConfig = Depends(get_db_config),
 ):
     mark_topic_for_revision(
         mongo_client, db_config, request.sheet_type, request.topic_id
@@ -195,9 +202,9 @@ async def mark_revision(
 
 @app.get("/revision-list/{sheet_type}", response_model=Dict[str, List[str]])
 async def get_revision_list(
-        sheet_type: str,
-        mongo_client: MongoClient = Depends(get_mongo_client),
-        db_config: DBConfig = Depends(get_db_config),
+    sheet_type: str,
+    mongo_client: MongoClient = Depends(get_mongo_client),
+    db_config: DBConfig = Depends(get_db_config),
 ):
     revision_col = mongo_client[db_config.DATABASE_NAME]["revision"]
     doc = revision_col.find_one({"sheet_name": sheet_type})
@@ -206,8 +213,8 @@ async def get_revision_list(
 
 @app.post("/enrich-topic", response_model=EnrichedTopicResponse)
 async def enrich_topic(
-        request: TopicEnrichmentRequest,
-        tavily_service: TavilySearchService = Depends(get_tavily_service),
+    request: TopicEnrichmentRequest,
+    tavily_service: TavilySearchService = Depends(get_tavily_service),
 ):
     """
     Enrich a topic with web search results and additional information
@@ -221,9 +228,6 @@ async def enrich_topic(
             search_query += f" {request.description}"
         if request.additional_context:
             search_query += f" {request.additional_context}"
-
-        # Add educational context to improve results
-        search_query += " tutorial guide explanation"
 
         logger.info(f"Enriching topic with search query: {search_query}")
 
