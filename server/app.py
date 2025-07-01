@@ -205,7 +205,7 @@ async def select_topic(
 
     topic_id = str(topic.get("id", "unknown"))
     title = get_title(topic)
-    link = create_link(title)
+    link = topic.get("link", None) or create_link(title)
 
     update_history(mongo_client, db_config, topic_id)
 
