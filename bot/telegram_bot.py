@@ -114,6 +114,41 @@ async def select_topic_from_server(
         )
         return None
 
+async def enrich_topic_from_server(topic_data: 
+    Optional[Dict[str, Any]], context: ContextTypes.DEFAULT_TYPE
+) -> Optional[Dict[str, Any]]:
+    """Enrich the topic using the server API."""
+    try: 
+        payload = topic_data
+        logger.info(f"Sending enrichment request to server: {payload}")
+
+        response = requests.post(f"{SERVER_BASE_URL}/enrich-topic", json=payload)
+        response.raise_for_status()
+        enriched_topic_data = response.json()
+        return enriched_topic_data
+    except requests.exceptions.RequestException as e:
+        logger.error(
+            f"Failed to enrich topic: {e} - Status Code: {e.response.status_code if e.response else 'N/A'} - Response: {e.response.text if e.response else 'N/A'}"
+        )
+        await context.bot.send_message(
+            chat_id=context.user_data.get(
+                "chat_id", "default_chat_id"
+            ),  # Ensure chat_id is stored or handle error
+            text=(
+                f"Error enriching topic: {e.response.json().get('detail', str(e))}"
+                if e.response
+                else str(e)
+            ),
+        )
+        return None
+    except Exception as e:
+        logger.error(f"An unexpected error occurred while enriching topic: {e}")
+        await context.bot.send_message(
+            chat_id=context.user_data.get("chat_id", "default_chat_id"),
+            text=f"An unexpected error occurred: {str(e)}",
+        )
+        return None
+
 
 async def mark_topic_for_revision(
     revision_details: RevisionRequest, context: ContextTypes.DEFAULT_TYPE
@@ -196,6 +231,66 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     return SELECTING_SHEET
 
 
+
+def format_enriched_response(enriched_data: Dict[str, Any]) -> str:
+    """
+    Format the enriched topic data into a readable message
+    
+    Args:
+        enriched_data: Response from /enrich-topic endpoint
+        
+    Returns:
+        Formatted message string
+    """
+    if not enriched_data:
+        return "❌ Failed to enrich topic data."
+    
+    # Extract data from response
+    original_topic = enriched_data.get('original_topic', {})
+    summary = enriched_data.get('summary', '')
+    key_concepts = enriched_data.get('key_concepts', [])
+    related_topics = enriched_data.get('related_topics', [])
+    study_resources = enriched_data.get('study_resources', [])
+    
+    # Build formatted message
+    message_parts = []
+    
+    # Topic header
+    topic_title = original_topic.get('title', 'Unknown Topic')
+    message_parts.append(f"📚 **{topic_title}**\n")
+    
+    # Summary
+    if summary:
+        message_parts.append(f"📖 **Summary:**\n{summary}\n")
+    
+    # # Key concepts
+    # if key_concepts:
+    #     concepts_text = ", ".join(key_concepts[:8])  # Limit to avoid too long message
+    #     if len(key_concepts) > 8:
+    #         concepts_text += f" and {len(key_concepts) - 8} more..."
+    #     message_parts.append(f"🔑 **Key Concepts:**\n{concepts_text}\n")
+    
+    # Related topics
+    if related_topics:
+        message_parts.append("🔗 **Related Topics:**")
+        for i, topic in enumerate(related_topics[:3], 1):  # Show top 5
+            message_parts.append(f"{i}. {topic}")
+        message_parts.append("")
+    
+    # Study resources
+    if study_resources:
+        message_parts.append("📚 **Study Resources:**")
+        for i, resource in enumerate(study_resources[:5], 1):  # Show top 5
+            title = resource.get('title', 'Unknown')
+            url = resource.get('url', '')
+            if url:
+                message_parts.append(f"{i}. [{title}]({url})")
+            else:
+                message_parts.append(f"{i}. {title}")
+        message_parts.append("")
+    
+    return "\n".join(message_parts)
+
 # --- Message Handlers ---
 async def handle_sheet_selection(
     update: Update, context: ContextTypes.DEFAULT_TYPE
@@ -258,6 +353,7 @@ async def handle_sheet_selection(
         )
 
         topic_data = await select_topic_from_server(selection_request, context)
+        
 
         if topic_data:
             # Format the response
@@ -292,6 +388,15 @@ async def handle_sheet_selection(
                 parse_mode="MarkdownV2",
                 disable_web_page_preview=True,
             )
+            enriched_topic = await enrich_topic_from_server(topic_data, context)
+            if enriched_topic:
+                formatted_enriched_topic = format_enriched_response(enriched_topic)
+                await update.message.reply_text(
+                    telegramify_markdown.standardize(formatted_enriched_topic),
+                    reply_markup=reply_markup,
+                    parse_mode="MarkdownV2",
+                    disable_web_page_preview=True,
+                )
             return CONFIRM_REVISION  # Move to revision confirmation state
         else:
             # Error message already sent by select_topic_from_server
@@ -302,6 +407,10 @@ async def handle_sheet_selection(
             )
             # Decide whether to end conversation or allow retry
             return SELECTING_SHEET  # Allow user to try again
+        
+
+        
+    
 
     else:
         await update.message.reply_text(
