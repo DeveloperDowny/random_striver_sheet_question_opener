@@ -9,6 +9,9 @@ from pymongo.errors import ConnectionFailure
 from db_config import DBConfig
 from schemas import SearchResult
 from tavily_search_service import TavilySearchService
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +32,7 @@ def get_db_config():
 
 
 def generate_related_topics(
-        search_results: List[Dict], original_topic: str
+    search_results: List[Dict], original_topic: str
 ) -> List[str]:
     """Generate related topics from search results"""
     related = set()
@@ -117,23 +120,23 @@ def extract_key_concepts(search_results: List[Dict], topic_title: str) -> List[s
             word.title()
             for word in words
             if len(word) > 4
-               and word
-               not in [
-                   "that",
-                   "this",
-                   "with",
-                   "from",
-                   "they",
-                   "have",
-                   "been",
-                   "will",
-                   "more",
-                   "about",
-                   "other",
-                   "which",
-                   "their",
-                   "would",
-               ]
+            and word
+            not in [
+                "that",
+                "this",
+                "with",
+                "from",
+                "they",
+                "have",
+                "been",
+                "will",
+                "more",
+                "about",
+                "other",
+                "which",
+                "their",
+                "would",
+            ]
         ]
 
         concepts.update(important_words[:3])  # Limit concepts per result
