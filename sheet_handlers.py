@@ -31,8 +31,13 @@ class LeetCodeSQLHandler(SheetHandler):
     def flatten(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
         logger.debug("Flattening LC SQL 50 data.")
         flattened_list = [
-            item for sublist in data["sheetData"] for item in sublist["questions"]
+            
         ]
+        for item in data["sheetData"]:
+            if "questions" in item:
+                flattened_list.extend(item["questions"])
+            else:
+                logger.warning(f"Item without 'questions' key found: {item}")
         return flattened_list
 
 

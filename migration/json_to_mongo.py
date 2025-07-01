@@ -12,27 +12,7 @@ from pymongo import MongoClient
 from pymongo.collection import Collection
 from pymongo.errors import ConnectionFailure, BulkWriteError, PyMongoError
 from migration.config import Config
-
-# --- IMPORTANT: Assume these imports are available ---
-# Make sure sheet_handler_factory.py, sheet_handlers.py, sheet_handler.py
-# are in the same directory or installed as a package.
-try:
-    from sheet_handler_factory import SheetHandlerFactory
-
-    # from sheet_handler import SheetHandler # Optional: if needed for type hinting
-except ImportError:
-    logging.error(
-        "Could not import SheetHandlerFactory. Make sure the necessary handler files are present."
-    )
-
-    # You might want to exit here if handlers are essential
-    # import sys
-    # sys.exit(1)
-    # As a fallback for the template, create a dummy factory
-    class SheetHandlerFactory:
-        @staticmethod
-        def create_handler(sheet_type: str):
-            raise ValueError(f"Dummy Factory: Cannot create handler for {sheet_type}")
+from sheet_handler_factory import SheetHandlerFactory
 
 
 # --- Configuration ---
@@ -159,7 +139,7 @@ def setup_logging() -> None:
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
-        filename="json_to_mongo.log",
+        # filename="json_to_mongo.log",
     )
 
 
@@ -250,7 +230,9 @@ def flatten_json_data(
         valid_items = []
         for i, item in enumerate(flattened_data):
             if isinstance(item, dict):
-                item["sheet_name"] = collection_name  
+                item["sheet_name"] = collection_name
+                item["name"] = handler.get_title(item)
+                item["link"] = handler.create_link(item["name"])
                 valid_items.append(item)
             else:
                 logging.warning(
