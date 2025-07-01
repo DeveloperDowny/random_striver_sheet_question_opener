@@ -4,64 +4,40 @@ FastAPI wrapper for the SheetHandler application.
 Provides REST API endpoints to interact with the sheet processing functionality.
 """
 
+import json
 import logging
 import random
-import os
-import json
-from typing import List, Optional, Dict, Any
-from contextlib import contextmanager
+from typing import Dict, List
 
-from fastapi import FastAPI, HTTPException, Depends, status
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
-from pymongo import MongoClient
-from pymongo.errors import ConnectionFailure
 from bson.json_util import dumps
-import httpx
-from db_config import DBConfig
 from dotenv import load_dotenv
-load_dotenv()
+from fastapi import Depends, FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pymongo import MongoClient
 
+from db_config import DBConfig
+from schemas import (
+    EnrichedTopicResponse,
+    RevisionRequest,
+    SheetSelectionRequest,
+    SheetTypeResponse,
+    StatusResponse,
+    TopicResponse, TopicEnrichmentRequest, SearchResult,
+
+)
+from tavily_search_service import TavilySearchService
+from utils import get_mongo_client, get_db_config, get_tavily_service, categorize_search_results, \
+    generate_related_topics, extract_key_concepts
+
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S", 
+    datefmt="%Y-%m-%d %H:%M:%S",
 )
 logger = logging.getLogger(__name__)
-
-
-# Define API models
-class SheetTypeResponse(BaseModel):
-    sheet_types: List[str] = Field(..., description="List of available sheet types")
-
-
-class SheetSelectionRequest(BaseModel):
-    filter_text: Optional[str] = Field(None, description="Text to filter sheet types")
-    selected_index: Optional[int] = Field(None, description="Index of selected sheet")
-    random_selection: bool = Field(
-        False, description="Whether to select a random sheet"
-    )
-
-
-class TopicResponse(BaseModel):
-    sheet_type: str = Field(..., description="Type of sheet processed")
-    topic_id: str = Field(..., description="ID of the selected topic")
-    title: str = Field(..., description="Title of the selected topic")
-    link: str = Field(..., description="Search link for the topic")
-    details: Dict[str, Any] = Field(..., description="Additional topic details")
-
-
-class RevisionRequest(BaseModel):
-    sheet_type: str = Field(..., description="Type of sheet")
-    topic_id: str = Field(..., description="ID of the topic to mark for revision")
-
-
-class StatusResponse(BaseModel):
-    status: str = Field(..., description="Status of the operation")
-    message: str = Field(..., description="Additional information")
-
 
 # FastAPI app instance
 app = FastAPI(
@@ -80,21 +56,6 @@ app.add_middleware(
 )
 
 
-def get_mongo_client():
-    db_config = DBConfig(_env_file=os.getenv("ENV_FILE_PATH", ".env"))
-    try:
-        client = MongoClient(db_config.MONGODB_URI)
-        client.admin.command("ismaster")
-        logger.info(f"Connected to MongoDB using {db_config.DATABASE_NAME}")
-        return client
-    except ConnectionFailure:
-        raise HTTPException(status_code=503, detail="Database connection failed")
-
-
-def get_db_config():
-    return DBConfig(_env_file=os.getenv("ENV_FILE_PATH", ".env"))
-
-
 @app.get("/", response_model=StatusResponse)
 async def root():
     return StatusResponse(
@@ -105,8 +66,8 @@ async def root():
 
 @app.get("/sheet-types", response_model=SheetTypeResponse)
 async def get_sheet_types(
-    mongo_client: MongoClient = Depends(get_mongo_client),
-    db_config: DBConfig = Depends(get_db_config),
+        mongo_client: MongoClient = Depends(get_mongo_client),
+        db_config: DBConfig = Depends(get_db_config),
 ):
     topics_col = mongo_client[db_config.DATABASE_NAME]["topics"]
     sheet_names = topics_col.distinct("sheet_name")
@@ -115,9 +76,9 @@ async def get_sheet_types(
 
 @app.post("/filter-sheets", response_model=SheetTypeResponse)
 async def filter_sheets(
-    request: SheetSelectionRequest,
-    mongo_client: MongoClient = Depends(get_mongo_client),
-    db_config: DBConfig = Depends(get_db_config),
+        request: SheetSelectionRequest,
+        mongo_client: MongoClient = Depends(get_mongo_client),
+        db_config: DBConfig = Depends(get_db_config),
 ):
     topics_col = mongo_client[db_config.DATABASE_NAME]["topics"]
     all_sheets = topics_col.distinct("sheet_name")
@@ -170,9 +131,9 @@ def mark_topic_for_revision(mongo_client, db_config, sheet_type: str, topic_id: 
 
 @app.post("/select-topic", response_model=TopicResponse)
 async def select_topic(
-    request: SheetSelectionRequest,
-    mongo_client: MongoClient = Depends(get_mongo_client),
-    db_config: DBConfig = Depends(get_db_config),
+        request: SheetSelectionRequest,
+        mongo_client: MongoClient = Depends(get_mongo_client),
+        db_config: DBConfig = Depends(get_db_config),
 ):
     topics_col = mongo_client[db_config.DATABASE_NAME]["topics"]
     sheet_names = topics_col.distinct("sheet_name")
@@ -222,9 +183,9 @@ async def select_topic(
 
 @app.post("/mark-revision", response_model=StatusResponse)
 async def mark_revision(
-    request: RevisionRequest,
-    mongo_client: MongoClient = Depends(get_mongo_client),
-    db_config: DBConfig = Depends(get_db_config),
+        request: RevisionRequest,
+        mongo_client: MongoClient = Depends(get_mongo_client),
+        db_config: DBConfig = Depends(get_db_config),
 ):
     mark_topic_for_revision(
         mongo_client, db_config, request.sheet_type, request.topic_id
@@ -234,186 +195,19 @@ async def mark_revision(
 
 @app.get("/revision-list/{sheet_type}", response_model=Dict[str, List[str]])
 async def get_revision_list(
-    sheet_type: str,
-    mongo_client: MongoClient = Depends(get_mongo_client),
-    db_config: DBConfig = Depends(get_db_config),
+        sheet_type: str,
+        mongo_client: MongoClient = Depends(get_mongo_client),
+        db_config: DBConfig = Depends(get_db_config),
 ):
     revision_col = mongo_client[db_config.DATABASE_NAME]["revision"]
     doc = revision_col.find_one({"sheet_name": sheet_type})
     return {"revision_ids": doc.get("revision_ids", []) if doc else []}
 
 
-# Tavily API configuration
-TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
-TAVILY_BASE_URL = "https://api.tavily.com"
-
-
-
-class TopicEnrichmentRequest(BaseModel):
-    title: str = Field(..., description="Title of the topic to enrich")
-    description: Optional[str] = Field(None, description="Optional description of the topic")
-    sheet_type: Optional[str] = Field(None, description="Type of sheet this topic belongs to")
-    additional_context: Optional[str] = Field(None, description="Additional context for search")
-
-
-class SearchResult(BaseModel):
-    title: str = Field(..., description="Title of the search result")
-    url: str = Field(..., description="URL of the search result")
-    snippet: str = Field(..., description="Snippet/description of the search result")
-
-
-class EnrichedTopicResponse(BaseModel):
-    original_topic: TopicEnrichmentRequest = Field(..., description="Original topic data")
-    search_query: str = Field(..., description="Query used for web search")
-    search_results: List[SearchResult] = Field(..., description="Web search results")
-    summary: str = Field(..., description="AI-generated summary of the topic")
-    key_concepts: List[str] = Field(..., description="Key concepts extracted from search")
-    related_topics: List[str] = Field(..., description="Related topics for further study")
-    study_resources: List[SearchResult] = Field(..., description="Educational resources found")
-
-
-class TavilySearchService:
-    """Service for interacting with Tavily search API"""
-    
-    def __init__(self, api_key: str):
-        self.api_key = api_key
-        self.base_url = TAVILY_BASE_URL
-        
-    async def search(self, query: str, max_results: int = 5) -> List[Dict[str, Any]]:
-        """Perform web search using Tavily API"""
-        if not self.api_key:
-            raise HTTPException(
-                status_code=500, 
-                detail="Tavily API key not configured"
-            )
-            
-        headers = {
-            "Content-Type": "application/json",
-        }
-        
-        payload = {
-            "api_key": self.api_key,
-            "query": query,
-            "search_depth": "advanced",
-            "include_answer": True,
-            "include_raw_content": False,
-            "max_results": max_results,
-            "include_domains": [],
-            "exclude_domains": []
-        }
-        
-        try:
-            async with httpx.AsyncClient(timeout=30.0) as client:
-                response = await client.post(
-                    f"{self.base_url}/search",
-                    headers=headers,
-                    json=payload
-                )
-                
-                if response.status_code != 200:
-                    logger.error(f"Tavily API error: {response.status_code} - {response.text}")
-                    raise HTTPException(
-                        status_code=500,
-                        detail=f"Search service error: {response.status_code}"
-                    )
-                    
-                return response.json()
-                
-        except httpx.TimeoutException:
-            logger.error("Tavily API timeout")
-            raise HTTPException(status_code=504, detail="Search service timeout")
-        except Exception as e:
-            logger.error(f"Tavily API error: {str(e)}")
-            raise HTTPException(status_code=500, detail="Search service unavailable")
-
-
-def get_tavily_service():
-    """Dependency to get Tavily search service"""
-    return TavilySearchService(TAVILY_API_KEY)
-
-def extract_key_concepts(search_results: List[Dict], topic_title: str) -> List[str]:
-    """Extract key concepts from search results"""
-    concepts = set()
-    
-    # Add the main topic
-    concepts.add(topic_title)
-    
-    # Extract from search results
-    for result in search_results:
-        snippet = result.get("content", "").lower()
-        title = result.get("title", "").lower()
-        
-        # Simple keyword extraction (can be enhanced with NLP)
-        import re
-        words = re.findall(r'\b[a-zA-Z]{4,}\b', snippet + " " + title)
-        
-        # Filter for potentially important terms
-        important_words = [
-            word.title() for word in words 
-            if len(word) > 4 and word not in [
-                'that', 'this', 'with', 'from', 'they', 'have', 'been', 
-                'will', 'more', 'about', 'other', 'which', 'their', 'would'
-            ]
-        ]
-        
-        concepts.update(important_words[:3])  # Limit concepts per result
-    
-    return list(concepts)[:10]  # Return top 10 concepts
-
-
-def generate_related_topics(search_results: List[Dict], original_topic: str) -> List[str]:
-    """Generate related topics from search results"""
-    related = set()
-    
-    for result in search_results:
-        title = result.get("title", "")
-        
-        # Extract potential topics from titles
-        if title and title.lower() != original_topic.lower():
-            # Clean and format the title
-            clean_title = title.replace(original_topic, "").strip()
-            if len(clean_title) > 10 and len(clean_title) < 100:
-                related.add(clean_title)
-    
-    return list(related)[:5]  # Return top 5 related topics
-
-
-
-
-def categorize_search_results(search_results: List[Dict]) -> List[SearchResult]:
-    """Filter and categorize search results for educational resources"""
-    educational_domains = [
-        'wikipedia.org', 'edu', 'coursera.org', 'edx.org', 'khanacademy.org',
-        'britannica.com', 'nationalgeographic.com', 'scientificamerican.com'
-    ]
-    
-    study_resources = []
-    
-    for result in search_results:
-        url = result.get("url", "")
-        title = result.get("title", "")
-        content = result.get("content", "")
-        
-        # Check if it's from an educational domain
-        is_educational = any(domain in url.lower() for domain in educational_domains)
-        
-        # Check if title suggests educational content
-        educational_keywords = ['tutorial', 'guide', 'course', 'lesson', 'learn', 'study']
-        has_educational_keywords = any(keyword in title.lower() for keyword in educational_keywords)
-        
-        if is_educational or has_educational_keywords:
-            study_resources.append(SearchResult(
-                title=title,
-                url=url,
-                snippet=content[:200] + "..." if len(content) > 200 else content
-            ))
-    
-    return study_resources[:5]  # Return top 5 educational resources
-
 @app.post("/enrich-topic", response_model=EnrichedTopicResponse)
 async def enrich_topic(
-    request: TopicEnrichmentRequest,
-    tavily_service: TavilySearchService = Depends(get_tavily_service)
+        request: TopicEnrichmentRequest,
+        tavily_service: TavilySearchService = Depends(get_tavily_service),
 ):
     """
     Enrich a topic with web search results and additional information
@@ -421,31 +215,37 @@ async def enrich_topic(
     try:
         # Construct search query
         search_query = request.title
+        if request.sheet_type:
+            search_query = search_query + " " + " ".join(request.sheet_type.split("_"))
         if request.description:
             search_query += f" {request.description}"
         if request.additional_context:
             search_query += f" {request.additional_context}"
-        
+
         # Add educational context to improve results
         search_query += " tutorial guide explanation"
-        
+
         logger.info(f"Enriching topic with search query: {search_query}")
-        
+
         # Perform web search
         search_response = await tavily_service.search(search_query, max_results=8)
-        
+
         # Extract search results
         raw_results = search_response.get("results", [])
-        
+
         # Convert to SearchResult objects
         search_results = []
         for result in raw_results:
-            search_results.append(SearchResult(
-                title=result.get("title", ""),
-                url=result.get("url", ""),
-                snippet=result.get("content", "")[:300] + "..." if len(result.get("content", "")) > 300 else result.get("content", "")
-            ))
-        
+            search_results.append(
+                SearchResult(
+                    title=result.get("title", ""),
+                    url=result.get("url", ""),
+                    snippet=result.get("content", "")[:300] + "..."
+                    if len(result.get("content", "")) > 300
+                    else result.get("content", ""),
+                )
+            )
+
         # Generate summary from search results
         answer = search_response.get("answer", "")
         if not answer:
@@ -456,16 +256,16 @@ async def enrich_topic(
                 if content:
                     summary_parts.append(content[:100])
             answer = " ".join(summary_parts) + "..."
-        
+
         # Extract key concepts
         key_concepts = extract_key_concepts(raw_results, request.title)
-        
+
         # Generate related topics
         related_topics = generate_related_topics(raw_results, request.title)
-        
+
         # Categorize study resources
         study_resources = categorize_search_results(raw_results)
-        
+
         return EnrichedTopicResponse(
             original_topic=request,
             search_query=search_query,
@@ -473,15 +273,12 @@ async def enrich_topic(
             summary=answer,
             key_concepts=key_concepts,
             related_topics=related_topics,
-            study_resources=study_resources
+            study_resources=study_resources,
         )
-        
+
     except Exception as e:
         logger.error(f"Error enriching topic: {str(e)}")
-        raise HTTPException(
-            status_code=500,
-            detail=f"Failed to enrich topic: {str(e)}"
-        )
+        raise HTTPException(status_code=500, detail=f"Failed to enrich topic: {str(e)}")
 
 
 if __name__ == "__main__":
