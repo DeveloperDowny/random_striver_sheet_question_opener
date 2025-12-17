@@ -1,0 +1,38 @@
+steps:
+  # Build the image
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "${LOCATION}-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REPO_NAME}/${_SERVICE_NAME}:$COMMIT_SHA",
+        ".",
+      ]
+    dir: "${_ROOT_DIR}"
+  # Push the image to Artifact Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "${LOCATION}-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REPO_NAME}/${_SERVICE_NAME}:$COMMIT_SHA",
+      ]
+  # Deploy image to Cloud Run
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      - "run"
+      - "deploy"
+      - "${_SERVICE_NAME}"
+      - "--image"
+      - "${LOCATION}-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REPO_NAME}/${_SERVICE_NAME}:$COMMIT_SHA"
+      - "--region"
+      - "${LOCATION}"
+      - "--set-env-vars=TELEGRAM_BOT_TOKEN=${_TELEGRAM_BOT_TOKEN}"
+      - "--set-env-vars=DATABASE_NAME=${_DATABASE_NAME}"
+      - "--set-env-vars=MONGODB_URI=${_MONGODB_URI}"
+      - "--set-env-vars=TAVILY_API_KEY=${_TAVILY_API_KEY}"
+      - "--allow-unauthenticated"
+images:
+  - "${LOCATION}-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REPO_NAME}/${_SERVICE_NAME}:$COMMIT_SHA"
+options:
+  logging: CLOUD_LOGGING_ONLY
